@@ -15,7 +15,7 @@ jobs:
 
     - name: Deploy to Hostinger
       run: |
-        ssh-keyscan -p 65002 -H 217.21.90.212 >> ~/.ssh/known_hosts
+  
         ssh -p 65002 u296449670@217.21.90.212 'cd /home/u296449670/domains/arbobtechteam.com/public_html/geo && git pull origin main'
       env:
         SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
