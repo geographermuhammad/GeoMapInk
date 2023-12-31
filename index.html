@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map with Tourist Points</title>
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+    <style>
+        /* Set the height of the map container */
+        #map {
+            height: calc(100vh - 50px); /* Adjusted height to accommodate the checkbox */
+        }
+
+        /* Style for checkboxes */
+        .checkbox-container {
+            display: inline-flex;
+            position: fixed;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: white;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000; /* Ensure the checkbox is above the map */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Map container -->
+    <div id="map"></div>
+
+    <!-- Checkbox container -->
+    <div class="checkbox-container">
+        <label>
+            <input type="checkbox" id="hotelCheckbox" checked>
+            Show Hotels
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" id="roadsCheckbox" checked>
+            Show Roads
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" id="touristPointsCheckbox" checked>
+            Show Tourist Points
+        </label>
+    </div>
+
+    <!-- Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <!-- Leaflet AJAX -->
+    <script src="https://unpkg.com/leaflet-ajax/dist/leaflet.ajax.min.js"></script>
+
+    <script>
+        // Initialize the map with the center at Hunza and a zoom level of 12
+        var map = L.map('map').setView([36.3167, 74.6500], 12);
+
+        // Add a tile layer
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+
+        // Load GeoJSON data for hotels
+        var hotelsLayer;
+
+        // Function to update hotels GeoJSON layer based on checkbox state
+        function updateHotelsLayer() {
+            if (document.getElementById('hotelCheckbox').checked) {
+                // Show hotels
+                hotelsLayer.addTo(map);
+            } else {
+                // Hide hotels
+                map.removeLayer(hotelsLayer);
+            }
+        }
+
+        // Add event listener to hotels checkbox
+        document.getElementById('hotelCheckbox').addEventListener('change', updateHotelsLayer);
+
+        // Load GeoJSON data for hotels
+        hotelsLayer = L.geoJSON.ajax('hotels.geojson', {
+            pointToLayer: function (feature, latlng) {
+                return L.marker(latlng, {
+                    icon: L.icon({
+                        iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
+                        iconSize: [10, 20],
+                        iconAnchor: [12, 41],
+                        popupAnchor: [1, -34],
+                    })
+                });
+            },
+            onEachFeature: function (feature, layer) {
+                layer.bindPopup('<strong>' + feature.properties.Name + '</strong><br>' + feature.properties.Type);
+            }
+        });
+
+        // Initial update of hotels based on checkbox state
+        updateHotelsLayer();
+
+        // Load GeoJSON data for boundary
+        var boundaryLayer = L.geoJSON.ajax('boundary.geojson', {
+            style: {
+                color: 'blue', // Set the boundary color to blue
+                weight: 2
+            }
+        }).addTo(map);
+
+        // Load GeoJSON data for roads
+        var roadsLayer;
+
+        // Function to update roads GeoJSON layer based on checkbox state
+        function updateRoadsLayer() {
+            if (document.getElementById('roadsCheckbox').checked) {
+                // Show roads
+                roadsLayer.addTo(map);
+            } else {
+                // Hide roads
+                map.removeLayer(roadsLayer);
+            }
+        }
+
+        // Add event listener to roads checkbox
+        document.getElementById('roadsCheckbox').addEventListener('change', updateRoadsLayer);
+
+        // Load GeoJSON data for roads
+        roadsLayer = L.geoJSON.ajax('roads.geojson', {
+            style: {
+                color: 'green', // Set the roads color to green
+                weight: 3
+            }
+        });
+
+        // Initial update of roads based on checkbox state
+        updateRoadsLayer();
+
+        // Load GeoJSON data for tourist points
+        var touristPointsLayer;
+
+        // Function to update tourist points GeoJSON layer based on checkbox state
+        function updateTouristPointsLayer() {
+            if (document.getElementById('touristPointsCheckbox').checked) {
+                // Show tourist points
+                touristPointsLayer.addTo(map);
+            } else {
+                // Hide tourist points
+                map.removeLayer(touristPointsLayer);
+            }
+        }
+
+        // Add event listener to tourist points checkbox
+        document.getElementById('touristPointsCheckbox').addEventListener('change', updateTouristPointsLayer);
+
+        // Load GeoJSON data for tourist points
+        touristPointsLayer = L.geoJSON.ajax('touristpoints.geojson', {
+            pointToLayer: function (feature, latlng) {
+                return L.marker(latlng, {
+                    icon: L.icon({
+                        iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-green.png',
+                        iconSize: [10, 20],
+                        iconAnchor: [12, 41],
+                        popupAnchor: [1, -34],
+                    })
+                });
+            },
+            onEachFeature: function (feature, layer) {
+                layer.bindPopup('<strong>' + feature.properties.Name + '</strong><br>' + feature.properties.Description);
+            }
+        });
+
+        // Initial update of tourist points based on checkbox state
+        updateTouristPointsLayer();
+    </script>
+
+</body>
+</html>
