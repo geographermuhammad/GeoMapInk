@@ -1,0 +1,13 @@
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Deploy to Hostinger
+      run: |
+        ssh israrahmad@hotmail.com 'cd /home/u296449670/domains/arbobtechteam.com/public_html/geo && git pull origin main'
+      env:
+        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
