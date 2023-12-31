@@ -1,13 +1,23 @@
+name: Deploy to Hostinger
+
+on:
+  push:
+    branches:
+      - main
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout Repository
-      uses: actions/checkout@v2
+      - name: Checkout Repository
+        uses: actions/checkout@v2
 
-    - name: Deploy to Hostinger
-      run: |
-        ssh israrahmad@hotmail.com 'cd /home/u296449670/domains/arbobtechteam.com/public_html/geo && git pull origin main'
-      env:
-        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+      - name: Set up SSH
+        uses: webfactory/ssh-agent@v0.5.3
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      - name: Deploy to Hostinger
+        run: |
+          ssh -p 65002 u296449670@217.21.90.212 'cd /home/u296449670/domains/arbobtechteam.com/public_html/geo && git pull origin main'
