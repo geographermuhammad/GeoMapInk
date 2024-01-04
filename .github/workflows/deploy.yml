@@ -10,13 +10,26 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout Repository
+    - name: Checkout repository
       uses: actions/checkout@v2
 
-    - name: Deploy to Hostinger
-      run: |
-  
-        ssh -p 65002 u296449670@217.21.90.212 'cd /home/u296449670/domains/arbobtechteam.com/public_html/geo && git pull origin main'
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: 14
 
-      env:
-        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+    - name: Install dependencies
+      run: npm install
+
+    - name: Build
+      run: npm run build  # Adjust this if you have a build script
+
+    - name: Deploy to Hostinger
+      uses: appleboy/scp-action@master
+      with:
+        host: ${{ secrets.HOSTINGER_SSH_IP }}
+        username: ${{ secrets.HOSTINGER_SSH_USERNAME }}
+        key: ${{ secrets.HOSTINGER_SSH_PRIVATE_KEY }}
+        port: ${{ secrets.HOSTINGER_SSH_PORT }}
+        source: "source: "/home/u296449670/domains/geomapink.com/*"  # Adjust this if your build output is in a different directory
+        target: "/public_html"  # Adjust this to the desired path on your Hostinger server
