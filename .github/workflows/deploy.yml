@@ -19,5 +19,5 @@ jobs:
         ftp-server: ${{ secrets.FTP_SERVER }}
         ftp-username: ${{ secrets.FTP_USERNAME }}
         ftp-password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: D:/GIS Projects/MXD/json/New2/.github/workflows
+        local-dir: /D/GIS Projects/MXD/json/New2 # Update this path
         remote-dir: /home/u296449670/domains/geomapink.com/public_html
