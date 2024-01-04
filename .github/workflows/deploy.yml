@@ -14,9 +14,14 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Deploy to FTP
-      uses: SamKirkland/FTP-Deploy-Action@3.1.1
-      with:
-        ftp-server: ftp.geomapink.com
-        ftp-username: u296449670.israr230
-        ftp-password: Shah@230
-        local-dir: .  # Adjust this path if needed
+      run: |
+        FTP_SERVER="ftp.arbobtechteam.com"
+        FTP_USER="u296449670.geomapink.com"
+        FTP_PASS="Shah@230"
+        LOCAL_DIR="./"  # Deploy the entire repository
+        REMOTE_DIR="public_html"
+
+        lftp -u "${FTP_USER}","${FTP_PASS}" "${FTP_SERVER}" <<EOF
+        mirror --reverse --delete --verbose "${LOCAL_DIR}" "${REMOTE_DIR}"
+        bye
+        EOF
