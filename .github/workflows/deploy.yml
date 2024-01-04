@@ -1,4 +1,4 @@
-name: Deploy to Hostinger
+name: Deploy to FTP
 
 on:
   push:
@@ -13,12 +13,12 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
-    - name: Deploy to Hostinger
-      uses: appleboy/scp-action@master
+    - name: Deploy to FTP
+      uses: SamKirkland/FTP-Deploy-Action@3.1.1
       with:
-        host: ${{ secrets.HOSTINGER_SSH_IP }}
-        username: ${{ secrets.HOSTINGER_SSH_USERNAME }}
-        key: ${{ secrets.HOSTINGER_SSH_PRIVATE_KEY }}
-        port: ${{ secrets.HOSTINGER_SSH_PORT }}
-        source: "."  # Upload all files from the repository root
-        target: "/public_html"  # Adjudsst this to the desired path on your Hostinger server
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        port: ${{ secrets.FTP_PORT }}
+        local-dir: /home/u296449670/domains/geomapink.com/public_html # Upload all files from the repository root
+        remote-dir: /public_html  # Adjust this to the desired path on your FTP server
