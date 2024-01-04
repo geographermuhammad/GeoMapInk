@@ -20,8 +20,3 @@ jobs:
         FTP_PASS="Shah@230"
         LOCAL_DIR="./"  # Deploy the entire repository
         REMOTE_DIR="public_html"
-
-        lftp -u "${FTP_USER}","${FTP_PASS}" "${FTP_SERVER}" <<EOF
-        mirror --reverse --delete --verbose "${LOCAL_DIR}" "${REMOTE_DIR}"
-        bye
-        EOF
