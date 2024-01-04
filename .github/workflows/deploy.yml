@@ -21,4 +21,4 @@ jobs:
         ftp-password: ${{ secrets.FTP_PASSWORD }}
         port: ${{ secrets.FTP_PORT }}
         local-dir: /home/u296449670/domains/geomapink.com/public_html
-        git-ftp-args: --insecure  # Adjust this based on your FTP server setup
+        git-ftp-args: --insecure  # Adjust  this based on your FTP server setup
