@@ -15,8 +15,15 @@ jobs:
 
     - name: Deploy to FTP
       run: |
-        FTP_SERVER="ftp.arbobtechteam.com"
+        FTP_SERVER_IP="217.21.90.212"
         FTP_USER="u296449670.geomapink.com"
         FTP_PASS="Shah@230"
-        LOCAL_DIR="./"  # Deploy the entire repository
+        LOCAL_DIR="./"
         REMOTE_DIR="public_html"
+
+        apt-get -y install lftp
+
+        lftp -c "open -u ${FTP_USER},${FTP_PASS} ${FTP_SERVER_IP} && mirror --reverse --delete --verbose ${LOCAL_DIR} ${REMOTE_DIR}"
+
+      
+       
