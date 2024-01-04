@@ -21,4 +21,4 @@ jobs:
         key: ${{ secrets.HOSTINGER_SSH_PRIVATE_KEY }}
         port: ${{ secrets.HOSTINGER_SSH_PORT }}
         source: "."  # Upload all files from the repository root
-        target: "/public_html"  # Adjust this to the desired path on your Hostinger server
+        target: "/public_html"  # Adjudsst this to the desired path on your Hostinger server
