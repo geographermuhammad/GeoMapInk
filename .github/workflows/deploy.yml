@@ -13,12 +13,6 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
-    - name: Install dependencies (if needed)
-      run: npm install  # Adjust this if you have dependencies to install
-
-    - name: Build (if needed)
-      run: npm run build  # Adjust this if you have a build script
-
     - name: Deploy to Hostinger
       uses: appleboy/scp-action@master
       with:
@@ -26,5 +20,5 @@ jobs:
         username: ${{ secrets.HOSTINGER_SSH_USERNAME }}
         key: ${{ secrets.HOSTINGER_SSH_PRIVATE_KEY }}
         port: ${{ secrets.HOSTINGER_SSH_PORT }}
-        source: "/home/u296449670/domains/geomapink.com/*"  # Corrected syntax
+        source: "."  # Upload all files from the repository root
         target: "/public_html"  # Adjust this to the desired path on your Hostinger server
