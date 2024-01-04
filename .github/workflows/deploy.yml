@@ -9,6 +9,9 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
 
+    container:
+      image: ghcr.io/samuelmeuli/action-exec-script:latest
+
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
@@ -20,10 +23,5 @@ jobs:
         FTP_PASS="Shah@230"
         LOCAL_DIR="./"
         REMOTE_DIR="public_html"
-
-        apt-get -y install lftp
-
+        
         lftp -c "open -u ${FTP_USER},${FTP_PASS} ${FTP_SERVER_IP} && mirror --reverse --delete --verbose ${LOCAL_DIR} ${REMOTE_DIR}"
-
-      
-       
