@@ -13,15 +13,10 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
-    - name: Set up Node.js
-      uses: actions/setup-node@v2
-      with:
-        node-version: 14
+    - name: Install dependencies (if needed)
+      run: npm install  # Adjust this if you have dependencies to install
 
-    - name: Install dependencies
-      run: npm install
-
-    - name: Build
+    - name: Build (if needed)
       run: npm run build  # Adjust this if you have a build script
 
     - name: Deploy to Hostinger
@@ -31,5 +26,5 @@ jobs:
         username: ${{ secrets.HOSTINGER_SSH_USERNAME }}
         key: ${{ secrets.HOSTINGER_SSH_PRIVATE_KEY }}
         port: ${{ secrets.HOSTINGER_SSH_PORT }}
-        source: "source: "/home/u296449670/domains/geomapink.com/*"  # Adjust this if your build output is in a different directory
+        source: "/home/u296449670/domains/geomapink.com/*"  # Corrected syntax
         target: "/public_html"  # Adjust this to the desired path on your Hostinger server
