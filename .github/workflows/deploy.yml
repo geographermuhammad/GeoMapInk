@@ -18,6 +18,5 @@ jobs:
       with:
         ftp-server: ftp.geomapink.com
         ftp-username: u296449670.israr230
-        ftp-password: Shah@230 # Replace with your actual FTP password
-        local-dir: .  # Update this path according to your project structure
-        remote-dir: /home/u296449670/domains/geomapink.com/public_html
+        ftp-password: Shah@230
+        local-dir: .  # Adjust this path if needed
