@@ -16,14 +16,13 @@ jobs:
       - name: Install lftp
         run: sudo apt-get -y install lftp
 
-      - name: Deploy using lftp
-        run: |
-          lftp -e "set ssl:verify-certificate no; open -u $FTP_USER,$FTP_PASSWORD -p $FTP_PORT $FTP_SERVER; mirror --reverse --delete --verbose $LOCAL_DIR $REMOTE_DIR; bye"
-    
-        env:
-          FTP_SERVER: ${{ secrets.FTP_SERVER }}
-          FTP_USER: ${{ secrets.FTP_USER }}
-          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
-          FTP_PORT: 21
-          LOCAL_DIR: "."
-          REMOTE_DIR: "/public_html"
+     - name: Deploy using lftp
+  run: |
+    lftp -e "set ssl:verify-certificate no; open -u $FTP_USER,$FTP_PASSWORD -p $FTP_PORT $FTP_SERVER; mirror --reverse --delete --verbose $LOCAL_DIR $REMOTE_DIR; bye"
+  env:
+    FTP_SERVER: ${{ secrets.FTP_SERVER }}
+    FTP_USER: ${{ secrets.FTP_USER }}
+    FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+    FTP_PORT: 21
+    LOCAL_DIR: "."
+    REMOTE_DIR: "/public_html"
