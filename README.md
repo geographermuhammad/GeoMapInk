@@ -13,7 +13,7 @@ Contact Information: For more details or inquiries, contact isrargojali@gmail.co
 Development Details:
 **
 Developer: @isrargojali**
-Website: geomapink.com
+Website: [geomapink.com](https://geomapink.com/)
 GitHub Repository: Link to GitHub Repository
 GitHub Repository Structure:
 
