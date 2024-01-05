@@ -9,9 +9,6 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
 
-    container:
-      image: my-custom-lftp-container:latest
-
     env:
       FTP_SERVER: ${{ secrets.FTP_SERVER }}
       FTP_USER: ${{ secrets.FTP_USER }}
@@ -23,6 +20,9 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
+
+    - name: Install lftp
+      run: sudo apt-get install lftp -y
 
     - name: Deploy using lftp
       run: |
