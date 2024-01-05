@@ -21,7 +21,9 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
+    - name: Install lftp
+      run: sudo apt-get install lftp -y
+
     - name: Deploy using lftp
       run: |
         lftp -e "set ssl:verify-certificate no; open -u $FTP_USER,$FTP_PASSWORD -p $FTP_PORT $FTP_SERVER; mirror --reverse --delete --verbose $LOCAL_DIR $REMOTE_DIR; bye"
-
