@@ -9,19 +9,20 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
 
-    container:
-      image: ghcr.io/samuelmeuli/action-exec-script:latest
-
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
-    - name: Deploy to FTP
-      run: |
-        FTP_SERVER_IP="217.21.90.212"
-        FTP_USER="u296449670.geomapink.com"
-        FTP_PASS="Shah@230"
-        LOCAL_DIR="./"
-        REMOTE_DIR="public_html"
-        
-        lftp -c "open -u ${FTP_USER},${FTP_PASS} ${FTP_SERVER_IP} && mirror --reverse --delete --verbose ${LOCAL_DIR} ${REMOTE_DIR}"
+      - name: Install lftp
+        run: sudo apt-get -y install lftp
+
+      - name: Deploy using lftp
+        run: |
+          lftp -e "open -u $FTP_USER,$FTP_PASSWORD -p $FTP_PORT $FTP_SERVER; mirror --reverse --delete --verbose $LOCAL_DIR $REMOTE_DIR; bye"
+        env:
+          FTP_SERVER: ${{ secrets.FTP_SERVER }}
+          FTP_USER: ${{ secrets.FTP_USER }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+          FTP_PORT: 21
+          LOCAL_DIR: "."
+          REMOTE_DIR: "/public_html"
