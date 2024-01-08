@@ -8,77 +8,98 @@
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 
+    <!-- Leaflet EasyPrint CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-easyprint/dist/easyprint.css" />
+
     <style>
         /* Set the height of the map container */
+        #map-container {
+            display: flex;
+        }
+
         #map {
-            height: calc(100vh - 50px); /* Adjusted height to accommodate the checkbox */
+            flex: 1;
+            height: 100vh;
+        }
+
+        /* Style for right-side bar */
+        .right-sidebar {
+            width: 10%; /* Adjust the width as needed */
+            padding: 10px;
+            background-color: white; /* Optional background color for the right sidebar */
         }
 
         /* Style for checkboxes */
         .checkbox-container {
-            display: inline-flex;
-            position: fixed;
-            bottom: 10px;
-            left: 50%;
-            transform: translateX(-50%);
-            background-color: white;
-            padding: 10px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            z-index: 1000; /* Ensure the checkbox is above the map */
+            margin-top: 10px;
+        }
+
+        /* Style for buttons */
+        .button-container {
+            margin-top: 10px;
         }
 
         /* Style for print button */
-        #printButton {
-            position: fixed;
-            bottom: 10px;
-            right: 10px;
+        .action-button {
             background-color: blue;
             color: white;
             padding: 10px;
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            z-index: 1000;
+            margin-right: 5px;
         }
     </style>
 </head>
 <body>
 
-    <!-- Map container -->
-    <div id="map"></div>
+    <!-- Map container and right-side bar -->
+    <div id="map-container">
+        <!-- Map -->
+        <div id="map"></div>
 
-    <!-- Checkbox container -->
-    <div class="checkbox-container">
-        <label>
-            <input type="checkbox" id="hotelCheckbox" checked>
-            Hotels
-        </label>
-        <br>
-        <label>
-            <input type="checkbox" id="roadsCheckbox" checked>
-           Roads
-        </label>
-        <br>
-        <label>
-            <input type="checkbox" id="touristPointsCheckbox" checked>
-       Tourist Points
-        </label>
-        <br>
-        <label>
-            <input type="checkbox" id="boundaryCheckbox" checked>
-           Boundary
-        </label>
-   
-		<br>
-        <label>
-            <input type="checkbox" id="villagesCheckbox" checked>
-            Villages
-        </label>
+        <!-- Right-side bar for checkboxes and buttons -->
+        <div class="right-sidebar">
+            <!-- Checkbox container -->
+            <div class="checkbox-container">
+                <label>
+                    <input type="checkbox" id="boundaryCheckbox" checked>
+                   Boundary
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" id="hotelCheckbox" checked>
+                    Hotels
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" id="roadsCheckbox" checked>
+                   Roads
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" id="touristPointsCheckbox" checked>
+                   Tourist Points
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" id="villagesCheckbox" checked>
+                    Villages
+                </label>
+            </div>
 
- </div>
-    <!-- Print button -->
-    <div id="printButton" onclick="printMap()">Print Map</div>
+            <!-- Button container -->
+            <div class="button-container">
+                <!-- Print button -->
+                <div class="action-button" onclick="prepareAndPrintMap()">Print Map</div>
+            </div>
+
+            <!-- Reset Zoom button -->
+            <div class="button-container">
+                <div class="action-button" onclick="resetZoom()">Reset Zoom</div>
+            </div>
+        </div>
+    </div>
 
     <!-- Leaflet JavaScript -->
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
@@ -86,38 +107,43 @@
     <!-- Leaflet AJAX -->
     <script src="https://unpkg.com/leaflet-ajax/dist/leaflet.ajax.min.js"></script>
 
+    <!-- Leaflet EasyPrint -->
+    <script src="https://unpkg.com/leaflet-easyprint/dist/bundle.js"></script>
+
     <script>
-        // Initialize the map with the center at Hunza and a zoom level of 12
-        var map = L.map('map').setView([36.3167, 74.6500], 10);
+     
+   // Initialize the map with the center at Hunza and a default zoom level
+       var defaultZoomLevel = 10;
+        var map = L.map('map').setView([36.3167, 74.6500], defaultZoomLevel);
 
         // Load GeoJSON data for boundary
         var boundaryLayer;
 
         // Function to update boundary GeoJSON layer based on checkbox state
-        // Function to update boundary GeoJSON layer based on checkbox state
-function updateBoundaryLayer() {
-    if (document.getElementById('boundaryCheckbox').checked) {
-        // Show boundary
-        boundaryLayer.setStyle({ fill: false, color: 'blue', weight: 2 });
-        boundaryLayer.addTo(map);
+        function updateBoundaryLayer() {
+            if (document.getElementById('boundaryCheckbox').checked) {
+                // Show boundary
+                boundaryLayer.setStyle({ fill: false, color: 'blue', weight: 2 });
+                boundaryLayer.addTo(map);
 
-        // Check if the boundaryLayer has valid bounds before trying to fit the map bounds
-        if (boundaryLayer.getBounds().isValid()) {
-            // Set map bounds based on boundary
-            map.fitBounds(boundaryLayer.getBounds());
+                // Check if the boundaryLayer has valid bounds before trying to fit the map bounds
+                if (boundaryLayer.getBounds().isValid()) {
+                    // Set map bounds based on boundary
+                    map.fitBounds(boundaryLayer.getBounds(), { padding: [50, 50] }); // Adjust padding as needed
 
-            // Display layer data (e.g., popup)
-            boundaryLayer.eachLayer(function (layer) {
-                layer.bindPopup('<strong>Boundary Info</strong><br>Any additional information you want to display.');
-            });
-        } else {
-            console.error('Invalid bounds for the boundary layer.');
+                    // Display layer data (e.g., popup)
+                    boundaryLayer.eachLayer(function (layer) {
+                        layer.bindPopup('<strong>Boundary Info</strong><br>Any additional information you want to display.');
+                    });
+                } else {
+                    console.error('Invalid bounds for the boundary layer.');
+                }
+            } else {
+                // Hide boundary
+                map.removeLayer(boundaryLayer);
+            }
         }
-    } else {
-        // Hide boundary
-        map.removeLayer(boundaryLayer);
-    }
-}
+
         // Add event listener to boundary checkbox
         document.getElementById('boundaryCheckbox').addEventListener('change', updateBoundaryLayer);
 
@@ -133,6 +159,10 @@ function updateBoundaryLayer() {
         // Initial update of boundary based on checkbox state
         updateBoundaryLayer();
 
+        // Load GeoJSON data for hotels, roads, tourist points, and villages...
+        // (Keep the existing code for loading other layers)
+
+        // Function to reset map zoom to defaultZoomLevel
         // Load GeoJSON data for hotels
         var hotelsLayer;
 
@@ -234,7 +264,9 @@ function updateBoundaryLayer() {
 
         // Initial update of tourist points based on checkbox state
         updateTouristPointsLayer();
-  var villagesLayer;
+
+        // Load GeoJSON data for villages
+        var villagesLayer;
 
         // Function to update villages GeoJSON layer based on checkbox state
         function updateVillagesLayer() {
@@ -270,10 +302,34 @@ function updateBoundaryLayer() {
         // Initial update of villages based on checkbox state
         updateVillagesLayer();
 
-        // Function to print the current view of the map
-        function printMap() {
+        function resetZoom() {
+            
+            L.map('map').setView([36.3167, 74.6500], defaultZoomLevel);
+        }
+
+        // Updated function to prepare the map for printing
+        function prepareAndPrintMap() {
+            // Create a copy of the map for printing
+            var printMap = L.map('printMapContainer', {
+                zoomControl: false, // Disable zoom control for the print map
+                attributionControl: false // Disable attribution control for the print map
+            });
+
+            // Copy the current map view to the print map
+            printMap.setView(map.getCenter(), map.getZoom());
+
+            // Add each GeoJSON layer to the print map based on checkbox states
+            if (document.getElementById('boundaryCheckbox').checked) {
+                boundaryLayer.addTo(printMap);
+            }
+
+            // Add more conditions for other layers as needed
+
+            // Open the print window
+            printMap.invalidateSize();
             window.print();
         }
+
     </script>
 
 </body>
