@@ -1,0 +1,12 @@
+{
+"type": "FeatureCollection",
+"name": "Passes",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32643" } },
+"features": [
+{ "type": "Feature", "properties": { "OBJECTID": 1, "OID_": 0, "Name": "Mintika pass", "FolderPath": "passes1.kmz/track", "SymbolID": 0, "AltMode": -1, "Base": 0.0, "Snippet": null, "PopupInfo": null, "HasLabel": -1, "LabelID": 0 }, "geometry": { "type": "Point", "coordinates": [ 487288.134700000286102, 4094288.693399999290705, 0.0 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 2, "OID_": 0, "Name": "Kilik pass", "FolderPath": "passes1.kmz/track", "SymbolID": 0, "AltMode": -1, "Base": 0.0, "Snippet": null, "PopupInfo": null, "HasLabel": -1, "LabelID": 0 }, "geometry": { "type": "Point", "coordinates": [ 471302.475499999709427, 4104161.453700000420213, 0.0 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 3, "OID_": 0, "Name": "khunjarab pass", "FolderPath": "passes1.kmz/track", "SymbolID": 0, "AltMode": -1, "Base": 0.0, "Snippet": null, "PopupInfo": null, "HasLabel": -1, "LabelID": 0 }, "geometry": { "type": "Point", "coordinates": [ 538127.475700000301003, 4078390.223999999463558, 0.0 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 4, "OID_": 0, "Name": "irshad pass", "FolderPath": "passes1.kmz/track", "SymbolID": 0, "AltMode": -1, "Base": 0.0, "Snippet": null, "PopupInfo": null, "HasLabel": -1, "LabelID": 0 }, "geometry": { "type": "Point", "coordinates": [ 423357.1239, 4081379.456199999898672, 0.0 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 5, "OID_": 0, "Name": "chillinji pass", "FolderPath": "passes1.kmz/track", "SymbolID": 0, "AltMode": -1, "Base": 0.0, "Snippet": null, "PopupInfo": null, "HasLabel": -1, "LabelID": 0 }, "geometry": { "type": "Point", "coordinates": [ 410141.040300000458956, 4076336.573999999091029, 0.0 ] } }
+]
+}

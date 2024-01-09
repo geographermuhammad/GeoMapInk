@@ -29,25 +29,31 @@
             background-color: white; /* Optional background color for the right sidebar */
         }
 
-        /* Style for checkboxes */
-        .checkbox-container {
-            margin-top: 10px;
-        }
-
-        /* Style for buttons */
+        /* Style for checkboxes and buttons */
+        .checkbox-container,
         .button-container {
             margin-top: 10px;
         }
 
+        .checkbox-container label,
+        .button-container .action-button {
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 5px;
+            margin-right: 5px;
+            color: blue;
+        }
+
+        .checkbox-container label:hover,
+        .button-container .action-button:hover {
+            text-decoration: underline;
+        }
+
         /* Style for print button */
-        .action-button {
+        .action-button.print {
             background-color: blue;
             color: white;
-            padding: 10px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-right: 5px;
         }
     </style>
 </head>
@@ -91,15 +97,14 @@
             <!-- Button container -->
             <div class="button-container">
                 <!-- Print button -->
-                <div class="action-button" onclick="prepareAndPrintMap()">Print Map</div>
-            </div>
+                <div class="action-button print" onclick="printScreen()">Print Map</div>
 
-            <!-- Reset Zoom button -->
-            <div class="button-container">
+                <!-- Reset Zoom button -->
                 <div class="action-button" onclick="resetZoom()">Reset Zoom</div>
             </div>
         </div>
     </div>
+
 
     <!-- Leaflet JavaScript -->
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
@@ -111,9 +116,9 @@
     <script src="https://unpkg.com/leaflet-easyprint/dist/bundle.js"></script>
 
     <script>
-     
-   // Initialize the map with the center at Hunza and a default zoom level
-       var defaultZoomLevel = 10;
+        
+  // Initialize the map with the center at Hunza and a default zoom level
+  var defaultZoomLevel = 9;
         var map = L.map('map').setView([36.3167, 74.6500], defaultZoomLevel);
 
         // Load GeoJSON data for boundary
@@ -158,6 +163,7 @@
 
         // Initial update of boundary based on checkbox state
         updateBoundaryLayer();
+
 
         // Load GeoJSON data for hotels, roads, tourist points, and villages...
         // (Keep the existing code for loading other layers)
@@ -302,34 +308,36 @@
         // Initial update of villages based on checkbox state
         updateVillagesLayer();
 
-        function resetZoom() {
-            
-            L.map('map').setView([36.3167, 74.6500], defaultZoomLevel);
-        }
+       
+        function printScreen() {
+    // Hide the right-sidebar before printing
+    var rightSidebar = document.querySelector('.right-sidebar');
+    rightSidebar.style.display = 'none';
 
-        // Updated function to prepare the map for printing
-        function prepareAndPrintMap() {
-            // Create a copy of the map for printing
-            var printMap = L.map('printMapContainer', {
-                zoomControl: false, // Disable zoom control for the print map
-                attributionControl: false // Disable attribution control for the print map
-            });
+    // Trigger the browser's print dialog
+    window.print();
 
-            // Copy the current map view to the print map
-            printMap.setView(map.getCenter(), map.getZoom());
-
-            // Add each GeoJSON layer to the print map based on checkbox states
-            if (document.getElementById('boundaryCheckbox').checked) {
-                boundaryLayer.addTo(printMap);
+    // Show the right-sidebar again after printing
+    rightSidebar.style.display = 'block';
+}
+           
+        function calculateCenterAndZoom() {
+            if (boundaryLayer.getBounds().isValid()) {
+                var center = boundaryLayer.getBounds().getCenter();
+                var zoom = map.getBoundsZoom(boundaryLayer.getBounds());
+                return { center: center, zoom: zoom };
+            } else {
+                console.error('Invalid bounds for the boundary layer.');
+                // Default values if bounds are invalid
+                return { center: [36.3167, 74.6500], zoom: defaultZoomLevel };
             }
-
-            // Add more conditions for other layers as needed
-
-            // Open the print window
-            printMap.invalidateSize();
-            window.print();
         }
 
+        // Updated function to reset the map center and zoom
+        function resetZoom() {
+            var centerAndZoom = calculateCenterAndZoom();
+            map.setView(centerAndZoom.center, centerAndZoom.zoom);
+        }
     </script>
 
 </body>
