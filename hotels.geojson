@@ -1,32 +1,5370 @@
 {
-"type": "FeatureCollection",
-"name": "Hotels",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32643" } },
-"features": [
-{ "type": "Feature", "properties": { "OBJECTID": 1, "Name": "Roomy Yurts, Gulmit Hunza", "FolderPath": "Hotels.kmz/Hotels", "SymbolID": 0, "AltMode": -1, "Base": 0.0, "Snippet": null, "PopupInfo": null, "HasLabel": -1, "LabelID": 0, "Type": "Hotel" }, "geometry": { "type": "Point", "coordinates": [ 487991.509499999694526, 4027211.787900000810623, 0.0 ] } },
-{ "type": "Feature", "properties": { "OBJECTID": 2, "Name": "Monarch Resort Hunza", "FolderPath": "Hotels.kmz/Hotels", "SymbolID": 0, "AltMode": -1, "Base": 0.0, "Snippet": null, "PopupInfo": null, "HasLabel": -1, "LabelID": 0, "Type": "Hotel" }, "geometry": { "type": "Point", "coordinates": [ 488662.791199999861419, 4028675.645500000566244, 0.0 ] } },
-{ "type": "Feature", "properties": { "OBJECTID": 3, "Name": "Eagle's Nest Hotel", "FolderPath": "Hotels.kmz/Hotels", "SymbolID": 0, "AltMode": -1, "Base": 0.0, "Snippet": null, "PopupInfo": null, "HasLabel": -1, "LabelID": 0, "Type": "Hotel" }, "geometry": { "type": "Point", "coordinates": [ 472147.16330000013113, 4019991.657600000500679, 0.0 ] } },
-{ "type": "Feature", "properties": { "OBJECTID": 4, "Name": "Hunza Tonight (Guest House)", "FolderPath": "Hotels.kmz/Hotels", "SymbolID": 0, "AltMode": -1, "Base": 0.0, "Snippet": null, "PopupInfo": null, "HasLabel": -1, "LabelID": 0, "Type": "Hotel" }, "geometry": { "type": "Point", "coordinates": [ 465092.296000000089407, 4015937.938100000843406, 0.0 ] } },
-{ "type": "Feature", "properties": { "OBJECTID": 5, "Name": "UCloud Nine and a Half Resort", "FolderPath": "Hotels.kmz/Hotels", "SymbolID": 0, "AltMode": -1, "Base": 0.0, "Snippet": null, "PopupInfo": null, "HasLabel": -1, "LabelID": 0, "Type": "Hotel" }, "geometry": { "type": "Point", "coordinates": [ 467640.611600000411272, 4018878.6886, 0.0 ] } },
-{ "type": "Feature", "properties": { "OBJECTID": 6, "Name": "Tribes and Tales", "FolderPath": "Hotels.kmz/Hotels", "SymbolID": 0, "AltMode": -1, "Base": 0.0, "Snippet": null, "PopupInfo": null, "HasLabel": -1, "LabelID": 0, "Type": "Hotel" }, "geometry": { "type": "Point", "coordinates": [ 488544.042000000365078, 4022090.673000000417233, 0.0 ] } },
-{ "type": "Feature", "properties": { "OBJECTID": 7, "Name": "Hidden Valley Lake Resort", "FolderPath": "Hotels.kmz/Hotels", "SymbolID": 0, "AltMode": -1, "Base": 0.0, "Snippet": null, "PopupInfo": null, "HasLabel": -1, "LabelID": 0, "Type": "Hotel" }, "geometry": { "type": "Point", "coordinates": [ 488493.548100000247359, 4021378.706499999389052, 0.0 ] } },
-{ "type": "Feature", "properties": { "OBJECTID": 8, "Name": "Pearl Huts and Resorts", "FolderPath": "Hotels.kmz/Hotels", "SymbolID": 0, "AltMode": -1, "Base": 0.0, "Snippet": null, "PopupInfo": null, "HasLabel": -1, "LabelID": 0, "Type": "Hotel" }, "geometry": { "type": "Point", "coordinates": [ 488340.780399999581277, 4019085.024399999529123, 0.0 ] } },
-{ "type": "Feature", "properties": { "OBJECTID": 9, "Name": "Luxus Hunza Attabad Lake Resort", "FolderPath": "Hotels.kmz/Hotels", "SymbolID": 0, "AltMode": -1, "Base": 0.0, "Snippet": null, "PopupInfo": null, "HasLabel": -1, "LabelID": 0, "Type": "Hotel" }, "geometry": { "type": "Point", "coordinates": [ 488612.277900000102818, 4019668.424799999222159, 0.0 ] } },
-{ "type": "Feature", "properties": { "OBJECTID": 10, "Name": "Famree resort attabad lake Hunza", "FolderPath": "Hotels.kmz/Hotels", "SymbolID": 0, "AltMode": -1, "Base": 0.0, "Snippet": null, "PopupInfo": null, "HasLabel": -1, "LabelID": 0, "Type": "Hotel" }, "geometry": { "type": "Point", "coordinates": [ 488934.292299999855459, 4019692.122700000181794, 0.0 ] } },
-{ "type": "Feature", "properties": { "OBJECTID": 11, "Name": "Horizon Resort Attabad Lake Hunza", "FolderPath": "Hotels.kmz/Hotels", "SymbolID": 0, "AltMode": -1, "Base": 0.0, "Snippet": null, "PopupInfo": null, "HasLabel": -1, "LabelID": 0, "Type": "Hotel" }, "geometry": { "type": "Point", "coordinates": [ 488832.747499999590218, 4020245.358799999579787, 0.0 ] } },
-{ "type": "Feature", "properties": { "OBJECTID": 12, "Name": "Moksha Resorts", "FolderPath": "Hotels.kmz/Hotels", "SymbolID": 0, "AltMode": -1, "Base": 0.0, "Snippet": null, "PopupInfo": null, "HasLabel": -1, "LabelID": 0, "Type": "Hotel" }, "geometry": { "type": "Point", "coordinates": [ 487869.833800000138581, 4026273.251900000497699, 0.0 ] } },
-{ "type": "Feature", "properties": { "OBJECTID": 13, "Name": "Silk Route Lodge", "FolderPath": "Hotels.kmz/Hotels", "SymbolID": 0, "AltMode": -1, "Base": 0.0, "Snippet": null, "PopupInfo": null, "HasLabel": -1, "LabelID": 0, "Type": "Hotel" }, "geometry": { "type": "Point", "coordinates": [ 488218.993200000375509, 4026887.33049999922514, 0.0 ] } },
-{ "type": "Feature", "properties": { "OBJECTID": 14, "Name": "Karakorum Family Guest House Hunza", "FolderPath": "Hotels.kmz/Hotels", "SymbolID": 0, "AltMode": -1, "Base": 0.0, "Snippet": null, "PopupInfo": null, "HasLabel": -1, "LabelID": 0, "Type": "Hotel" }, "geometry": { "type": "Point", "coordinates": [ 488225.20160000026226, 4027030.226500000804663, 0.0 ] } },
-{ "type": "Feature", "properties": { "OBJECTID": 15, "Name": "Rehman Backpacker Hostel", "FolderPath": "Hotels.kmz/Hotels", "SymbolID": 0, "AltMode": -1, "Base": 0.0, "Snippet": null, "PopupInfo": null, "HasLabel": -1, "LabelID": 0, "Type": "Hotel" }, "geometry": { "type": "Point", "coordinates": [ 488935.744500000029802, 4029341.084300000220537, 0.0 ] } },
-{ "type": "Feature", "properties": { "OBJECTID": 16, "Name": "Borith Lake Hotel & Resort", "FolderPath": "Hotels.kmz/Hotels", "SymbolID": 0, "AltMode": -1, "Base": 0.0, "Snippet": null, "PopupInfo": null, "HasLabel": -1, "LabelID": 0, "Type": "Hotel" }, "geometry": { "type": "Point", "coordinates": [ 487799.158200000412762, 4031470.031600000336766, 0.0 ] } },
-{ "type": "Feature", "properties": { "OBJECTID": 17, "Name": "Camp_and_cafe", "FolderPath": "Hotels.kmz/Hotels", "SymbolID": 0, "AltMode": -1, "Base": 0.0, "Snippet": null, "PopupInfo": null, "HasLabel": -1, "LabelID": 0, "Type": "Hotel" }, "geometry": { "type": "Point", "coordinates": [ 487767.839999999850988, 4032598.0515, 0.0 ] } },
-{ "type": "Feature", "properties": { "OBJECTID": 18, "Name": "Passu Tourist Lodge (PTL)", "FolderPath": "Hotels.kmz/Hotels", "SymbolID": 0, "AltMode": -1, "Base": 0.0, "Snippet": null, "PopupInfo": null, "HasLabel": -1, "LabelID": 0, "Type": "Hotel" }, "geometry": { "type": "Point", "coordinates": [ 489270.276600000448525, 4038346.822599999606609, 0.0 ] } },
-{ "type": "Feature", "properties": { "OBJECTID": 19, "Name": "Shah Guest House", "FolderPath": "Hotels.kmz/Hotels", "SymbolID": 0, "AltMode": -1, "Base": 0.0, "Snippet": null, "PopupInfo": null, "HasLabel": -1, "LabelID": 0, "Type": "Hotel" }, "geometry": { "type": "Point", "coordinates": [ 482033.076299999840558, 4047880.847500000149012, 0.0 ] } },
-{ "type": "Feature", "properties": { "OBJECTID": 20, "Name": "Sarai Karimabad Hotel and Restaurant", "FolderPath": "Hotels.kmz/Hotels", "SymbolID": 0, "AltMode": -1, "Base": 0.0, "Snippet": null, "PopupInfo": null, "HasLabel": -1, "LabelID": 0, "Type": "Hotel" }, "geometry": { "type": "Point", "coordinates": [ 482453.838499999605119, 4044872.240399999544024, 0.0 ] } },
-{ "type": "Feature", "properties": { "OBJECTID": 21, "Name": "Moksha Serenity Resort", "FolderPath": "Hotels.kmz/Hotels", "SymbolID": 0, "AltMode": -1, "Base": 0.0, "Snippet": null, "PopupInfo": null, "HasLabel": -1, "LabelID": 0, "Type": "Hotel" }, "geometry": { "type": "Point", "coordinates": [ 486772.009800000116229, 4049410.780200000852346, 0.0 ] } },
-{ "type": "Feature", "properties": { "OBJECTID": 22, "Name": "Ghalapan inn", "FolderPath": "Hotels.kmz/Hotels", "SymbolID": 0, "AltMode": -1, "Base": 0.0, "Snippet": null, "PopupInfo": null, "HasLabel": -1, "LabelID": 0, "Type": "Hotel" }, "geometry": { "type": "Point", "coordinates": [ 487034.182900000363588, 4049647.52280000038445, 0.0 ] } },
-{ "type": "Feature", "properties": { "OBJECTID": 23, "Name": "Roomy Khawna Hotel, Sost", "FolderPath": "Hotels.kmz/Hotels", "SymbolID": 0, "AltMode": -1, "Base": 0.0, "Snippet": null, "PopupInfo": null, "HasLabel": -1, "LabelID": 0, "Type": "Hotel" }, "geometry": { "type": "Point", "coordinates": [ 484503.348600000143051, 4059587.739, 0.0 ] } },
-{ "type": "Feature", "properties": { "OBJECTID": 24, "Name": "Khunjerab Hotel & Restaurant", "FolderPath": "Hotels.kmz/Hotels", "SymbolID": 0, "AltMode": -1, "Base": 0.0, "Snippet": null, "PopupInfo": null, "HasLabel": -1, "LabelID": 0, "Type": "Hotel" }, "geometry": { "type": "Point", "coordinates": [ 485473.721300000324845, 4058603.181399999186397, 0.0 ] } },
-{ "type": "Feature", "properties": { "OBJECTID": 25, "Name": "Passu Ambassador Hotel", "FolderPath": "Hotels.kmz/Hotels", "SymbolID": 0, "AltMode": -1, "Base": 0.0, "Snippet": null, "PopupInfo": null, "HasLabel": -1, "LabelID": 0, "Type": "Hotel" }, "geometry": { "type": "Point", "coordinates": [ 489343.009999999776483, 4037623.516000000759959, 0.0 ] } }
-]
+  "type" : "FeatureCollection",
+  "features" : [
+    {
+      "type" : "Feature",
+      "id" : 1,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.61805030000005,
+          36.307745300000079,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 1,
+        "OBJECTID_1" : 1,
+        "OBJECTID" : 3,
+        "timestamp" : " ",
+        "name" : "Cafe and student biryani restaurent",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 2,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.819740300000035,
+          36.691394800000069,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 2,
+        "OBJECTID_1" : 2,
+        "OBJECTID" : 6,
+        "timestamp" : " ",
+        "name" : "PTDC Motel",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 3,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.882475600000078,
+          36.482779900000025,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 3,
+        "OBJECTID_1" : 3,
+        "OBJECTID" : 7,
+        "timestamp" : " ",
+        "name" : "Passu Peak Inn",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 4,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.615346600000066,
+          36.307807500000024,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 4,
+        "OBJECTID_1" : 4,
+        "OBJECTID" : 11,
+        "timestamp" : " ",
+        "name" : "hunza paradise",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 5,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.866336100000069,
+          36.39073060000004,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 5,
+        "OBJECTID_1" : 5,
+        "OBJECTID" : 17,
+        "timestamp" : " ",
+        "name" : "Gulmit Continental Hotel",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 6,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.652098800000033,
+          36.316728100000034,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 6,
+        "OBJECTID_1" : 6,
+        "OBJECTID" : 20,
+        "timestamp" : " ",
+        "name" : "PTDC Motel",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 7,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.652993200000083,
+          36.31566760000004,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 7,
+        "OBJECTID_1" : 7,
+        "OBJECTID" : 21,
+        "timestamp" : " ",
+        "name" : " Hunza hotel",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 8,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.82075750000007,
+          36.688534300000072,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 8,
+        "OBJECTID_1" : 8,
+        "OBJECTID" : 22,
+        "timestamp" : " ",
+        "name" : "Riveria Hotel",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 9,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.689812300000028,
+          36.325099800000032,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 9,
+        "OBJECTID_1" : 9,
+        "OBJECTID" : 23,
+        "timestamp" : " ",
+        "name" : "Eagle’s Nest Hotel",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 10,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.67990750000007,
+          36.319503800000064,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 10,
+        "OBJECTID_1" : 10,
+        "OBJECTID" : 80,
+        "timestamp" : " ",
+        "name" : "Altit Inn",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 11,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.870039800000029,
+          36.425215100000059,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 11,
+        "OBJECTID_1" : 11,
+        "OBJECTID" : 132,
+        "timestamp" : " ",
+        "name" : "Iqbal Guest House",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 12,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.66617720000005,
+          36.318914600000028,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 12,
+        "OBJECTID_1" : 12,
+        "OBJECTID" : 201,
+        "timestamp" : " ",
+        "name" : "Old Huza Inn",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 13,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.670153800000037,
+          36.321405600000048,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 13,
+        "OBJECTID_1" : 13,
+        "OBJECTID" : 204,
+        "timestamp" : " ",
+        "name" : "Cafe de Hunza",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 14,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.86572730000006,
+          36.389720400000044,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 14,
+        "OBJECTID_1" : 14,
+        "OBJECTID" : 205,
+        "timestamp" : " ",
+        "name" : "Marco Polo Inn",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 15,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.668828400000052,
+          36.324457900000027,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 15,
+        "OBJECTID_1" : 15,
+        "OBJECTID" : 207,
+        "timestamp" : " ",
+        "name" : "Hunza Food Pavillion",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 16,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.66972590000006,
+          36.321340400000054,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 16,
+        "OBJECTID_1" : 16,
+        "OBJECTID" : 209,
+        "timestamp" : " ",
+        "name" : "Hilltop Hotel",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 17,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.821850600000062,
+          36.68595490000007,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 17,
+        "OBJECTID_1" : 17,
+        "OBJECTID" : 212,
+        "timestamp" : " ",
+        "name" : "Tibet Motel;Tibet Hotel",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 18,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.82111210000005,
+          36.688753200000065,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 18,
+        "OBJECTID_1" : 18,
+        "OBJECTID" : 213,
+        "timestamp" : " ",
+        "name" : "Sost Diamond",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 19,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.821361201000059,
+          36.689194500000042,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 19,
+        "OBJECTID_1" : 19,
+        "OBJECTID" : 214,
+        "timestamp" : " ",
+        "name" : "Sky Bridge Hotel",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 20,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.880094900000074,
+          36.490412200000037,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 20,
+        "OBJECTID_1" : 20,
+        "OBJECTID" : 217,
+        "timestamp" : " ",
+        "name" : "Passu Tourist Lodge",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 21,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.822110200000054,
+          36.687872800000036,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 21,
+        "OBJECTID_1" : 21,
+        "OBJECTID" : 218,
+        "timestamp" : " ",
+        "name" : "Deewan Hotel",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 22,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.821093200000064,
+          36.690509800000029,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 22,
+        "OBJECTID_1" : 22,
+        "OBJECTID" : 220,
+        "timestamp" : " ",
+        "name" : "Four Brothers Corridor Hotal & Restaurant",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 23,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.67264810000006,
+          36.317377700000065,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 23,
+        "OBJECTID_1" : 23,
+        "OBJECTID" : 229,
+        "timestamp" : " ",
+        "name" : "Himaliyan inn",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 24,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          75.318639000000076,
+          36.438925500000039,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 24,
+        "OBJECTID_1" : 24,
+        "OBJECTID" : 231,
+        "timestamp" : " ",
+        "name" : "Shimshal Tourist Lodge",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 25,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.670207700000049,
+          36.321918500000038,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 25,
+        "OBJECTID_1" : 25,
+        "OBJECTID" : 233,
+        "timestamp" : " ",
+        "name" : "Al-Barakaat Hotel",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 26,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.668792400000029,
+          36.320625300000074,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 26,
+        "OBJECTID_1" : 26,
+        "OBJECTID" : 234,
+        "timestamp" : " ",
+        "name" : "Mulbery Hotel",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 27,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.863972100000069,
+          36.428102400000057,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 27,
+        "OBJECTID_1" : 27,
+        "OBJECTID" : 239,
+        "timestamp" : " ",
+        "name" : "Borith Lake View Hotel & Camping",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 28,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.671854100000076,
+          36.317787900000042,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 28,
+        "OBJECTID_1" : 28,
+        "OBJECTID" : 241,
+        "timestamp" : " ",
+        "name" : "Karakorum Hotel",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 29,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.680165800000054,
+          36.319778400000075,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 29,
+        "OBJECTID_1" : 29,
+        "OBJECTID" : 242,
+        "timestamp" : " ",
+        "name" : "Altit Inn",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 30,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.666599900000051,
+          36.319029500000056,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 30,
+        "OBJECTID_1" : 30,
+        "OBJECTID" : 244,
+        "timestamp" : " ",
+        "name" : "Sweet Tooth",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 31,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.666404100000079,
+          36.318903800000044,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 31,
+        "OBJECTID_1" : 31,
+        "OBJECTID" : 245,
+        "timestamp" : " ",
+        "name" : "Haider",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 32,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.660765500000082,
+          36.324177600000041,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 32,
+        "OBJECTID_1" : 32,
+        "OBJECTID" : 246,
+        "timestamp" : " ",
+        "name" : "Karimabad Inn",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 33,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.66698880000007,
+          36.319416100000069,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 33,
+        "OBJECTID_1" : 33,
+        "OBJECTID" : 247,
+        "timestamp" : " ",
+        "name" : "Hotel Darbar",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 34,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.616458600000044,
+          36.308395100000041,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 34,
+        "OBJECTID_1" : 34,
+        "OBJECTID" : 250,
+        "timestamp" : " ",
+        "name" : "Al-Hami",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 35,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.662955300000078,
+          36.326836700000058,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 35,
+        "OBJECTID_1" : 35,
+        "OBJECTID" : 251,
+        "timestamp" : " ",
+        "name" : "Soup",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 36,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.660863400000039,
+          36.324468200000069,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 36,
+        "OBJECTID_1" : 36,
+        "OBJECTID" : 253,
+        "timestamp" : " ",
+        "name" : "Nadeem Restaurant",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 37,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.665138400000046,
+          36.325406500000042,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 37,
+        "OBJECTID_1" : 37,
+        "OBJECTID" : 255,
+        "timestamp" : " ",
+        "name" : "New Karimabad Inn",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 38,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.663326200000029,
+          36.326843800000063,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 38,
+        "OBJECTID_1" : 38,
+        "OBJECTID" : 256,
+        "timestamp" : " ",
+        "name" : "city hotel",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 39,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.669990100000064,
+          36.321217500000046,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 39,
+        "OBJECTID_1" : 39,
+        "OBJECTID" : 257,
+        "timestamp" : " ",
+        "name" : "Melting",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 40,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.500285600000041,
+          36.826369600000078,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 40,
+        "OBJECTID_1" : 40,
+        "OBJECTID" : 259,
+        "timestamp" : " ",
+        "name" : "Pamir Mountain Guest House",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 41,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.821701300000029,
+          36.687149100000056,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 41,
+        "OBJECTID_1" : 41,
+        "OBJECTID" : 260,
+        "timestamp" : " ",
+        "name" : "Baba Gundhi Hotel",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 42,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.821571400000039,
+          36.687322700000038,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 42,
+        "OBJECTID_1" : 42,
+        "OBJECTID" : 261,
+        "timestamp" : " ",
+        "name" : "Hotel Mountain View",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 43,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.505188700000076,
+          36.825165800000036,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 43,
+        "OBJECTID_1" : 43,
+        "OBJECTID" : 262,
+        "timestamp" : " ",
+        "name" : "Hill Top Guest House",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 44,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.408601600000054,
+          36.827601300000026,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 44,
+        "OBJECTID_1" : 44,
+        "OBJECTID" : 263,
+        "timestamp" : " ",
+        "name" : "Shah Guest House",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 45,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.666980400000057,
+          36.318929400000059,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 45,
+        "OBJECTID_1" : 45,
+        "OBJECTID" : 266,
+        "timestamp" : " ",
+        "name" : "Baltit Café",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 46,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.868671500000062,
+          36.38710100000003,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 46,
+        "OBJECTID_1" : 46,
+        "OBJECTID" : 269,
+        "timestamp" : " ",
+        "name" : "Silk Road Lodge Gulmit",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 47,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.619321400000047,
+          36.307011900000077,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 47,
+        "OBJECTID_1" : 47,
+        "OBJECTID" : 272,
+        "timestamp" : " ",
+        "name" : "PCG Hotel",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 48,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.820339100000069,
+          36.689436800000067,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 48,
+        "OBJECTID_1" : 48,
+        "OBJECTID" : 273,
+        "timestamp" : " ",
+        "name" : "Asia Star",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 49,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.66886640000007,
+          36.324400900000057,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 49,
+        "OBJECTID_1" : 49,
+        "OBJECTID" : 276,
+        "timestamp" : " ",
+        "name" : "HunzaGrill",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 50,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.668745300000069,
+          36.324579800000038,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 50,
+        "OBJECTID_1" : 50,
+        "OBJECTID" : 277,
+        "timestamp" : " ",
+        "name" : "UltarHotel",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 51,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.665979501000038,
+          36.319408800000076,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 51,
+        "OBJECTID_1" : 51,
+        "OBJECTID" : 280,
+        "timestamp" : " ",
+        "name" : "Hunza Serena Inn",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 52,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.669628700000032,
+          36.323059000000057,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 52,
+        "OBJECTID_1" : 52,
+        "OBJECTID" : 281,
+        "timestamp" : " ",
+        "name" : "World Roof Hotel",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 53,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.620675200000051,
+          36.307864900000027,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 53,
+        "OBJECTID_1" : 53,
+        "OBJECTID" : 282,
+        "timestamp" : " ",
+        "name" : "Ali Booq Briyani House",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 54,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.868062500000065,
+          36.388294400000063,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 54,
+        "OBJECTID_1" : 54,
+        "OBJECTID" : 284,
+        "timestamp" : " ",
+        "name" : "Gulmit Tourist Inn",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 55,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.876283300000068,
+          36.408766000000071,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 55,
+        "OBJECTID_1" : 55,
+        "OBJECTID" : 287,
+        "timestamp" : " ",
+        "name" : "Rehman’s Backpacker Lodge",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 56,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.867595400000084,
+          36.385355700000048,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 56,
+        "OBJECTID_1" : 56,
+        "OBJECTID" : 288,
+        "timestamp" : " ",
+        "name" : "Taj Restaurant",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 57,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.615669300000036,
+          36.30687770000003,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 57,
+        "OBJECTID_1" : 57,
+        "OBJECTID" : 289,
+        "timestamp" : " ",
+        "name" : " StudentCafe",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 58,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.876568899000063,
+          36.408952500000055,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 58,
+        "OBJECTID_1" : 58,
+        "OBJECTID" : 290,
+        "timestamp" : " ",
+        "name" : "Green Corner Kitchen",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 59,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.87622760000005,
+          36.408809200000064,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 59,
+        "OBJECTID_1" : 59,
+        "OBJECTID" : 291,
+        "timestamp" : " ",
+        "name" : "New Hostel with very nice owner",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 60,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.61562390000006,
+          36.306826400000034,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 60,
+        "OBJECTID_1" : 60,
+        "OBJECTID" : 297,
+        "timestamp" : " ",
+        "name" : "Café De Kamal",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 61,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.370210001000032,
+          36.250497200000041,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 61,
+        "OBJECTID_1" : 61,
+        "OBJECTID" : 298,
+        "timestamp" : " ",
+        "name" : "Homestay",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 62,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.610208000000057,
+          36.309197900000072,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 62,
+        "OBJECTID_1" : 62,
+        "OBJECTID" : 299,
+        "timestamp" : " ",
+        "name" : "Mountain Story Resort",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 63,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          75.318292600000063,
+          36.438072000000034,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 63,
+        "OBJECTID_1" : 63,
+        "OBJECTID" : 300,
+        "timestamp" : " ",
+        "name" : "Sifat G.H",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 64,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.610940799000048,
+          36.306318300000044,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 64,
+        "OBJECTID_1" : 64,
+        "OBJECTID" : 308,
+        "timestamp" : " ",
+        "name" : "Dream World Guest House",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 65,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.876254800000083,
+          36.408825300000046,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 65,
+        "OBJECTID_1" : 65,
+        "OBJECTID" : 309,
+        "timestamp" : " ",
+        "name" : "Rehman Backpackers Hostel",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 66,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.879466400000069,
+          36.421999000000028,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 66,
+        "OBJECTID_1" : 66,
+        "OBJECTID" : 310,
+        "timestamp" : " ",
+        "name" : "GuestHouse",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 67,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.624089300000037,
+          36.309996600000034,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 67,
+        "OBJECTID_1" : 67,
+        "OBJECTID" : 311,
+        "timestamp" : " ",
+        "name" : "The Village Cafe",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 68,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.669288600000073,
+          36.323723200000074,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 68,
+        "OBJECTID_1" : 68,
+        "OBJECTID" : 313,
+        "timestamp" : " ",
+        "name" : "Baltit Heritage Inn",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 69,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.668303800000047,
+          36.324342100000024,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 69,
+        "OBJECTID_1" : 69,
+        "OBJECTID" : 321,
+        "timestamp" : " ",
+        "name" : "Baltit Restaurant",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 70,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.873082600000032,
+          36.322052000000042,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 70,
+        "OBJECTID_1" : 70,
+        "OBJECTID" : 326,
+        "timestamp" : " ",
+        "name" : "Luxus Hunza",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 71,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.669021000000043,
+          36.323930800000028,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 71,
+        "OBJECTID_1" : 71,
+        "OBJECTID" : 327,
+        "timestamp" : " ",
+        "name" : "Hunza ruby restaurant",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 72,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.668211700000029,
+          36.320615400000065,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 72,
+        "OBJECTID_1" : 72,
+        "OBJECTID" : 328,
+        "timestamp" : " ",
+        "name" : "Backpackers Inn (1200Rs dbl room)",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 73,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.762105500000075,
+          36.791216400000053,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 73,
+        "OBJECTID_1" : 73,
+        "OBJECTID" : 333,
+        "timestamp" : " ",
+        "name" : "Misgar guest house (no name)",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 74,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.848552600000062,
+          36.649187200000028,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 74,
+        "OBJECTID_1" : 74,
+        "OBJECTID" : 340,
+        "timestamp" : " ",
+        "name" : "Gircha View Hotel",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 75,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.856788100000074,
+          36.397986900000035,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 75,
+        "OBJECTID_1" : 75,
+        "OBJECTID" : 343,
+        "timestamp" : " ",
+        "name" : "Tara Hometsay",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 76,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.863631100000077,
+          36.389384600000028,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 76,
+        "OBJECTID_1" : 76,
+        "OBJECTID" : 346,
+        "timestamp" : " ",
+        "name" : "Bozlanj",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 77,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.866693100000077,
+          36.384857900000043,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 77,
+        "OBJECTID_1" : 77,
+        "OBJECTID" : 347,
+        "timestamp" : " ",
+        "name" : "Mintika Lodge",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 78,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.866539100000068,
+          36.391702300000077,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 78,
+        "OBJECTID_1" : 78,
+        "OBJECTID" : 349,
+        "timestamp" : " ",
+        "name" : "Zirk",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 79,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.865535300000033,
+          36.383780800000068,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 79,
+        "OBJECTID_1" : 79,
+        "OBJECTID" : 351,
+        "timestamp" : " ",
+        "name" : "Gulmit Biryani House",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 80,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.868619100000046,
+          36.388468000000046,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 80,
+        "OBJECTID_1" : 80,
+        "OBJECTID" : 352,
+        "timestamp" : " ",
+        "name" : "Nazar Cafe",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 81,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.867142100000081,
+          36.39183330000003,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 81,
+        "OBJECTID_1" : 81,
+        "OBJECTID" : 354,
+        "timestamp" : " ",
+        "name" : "Lakhani",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 82,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.867085200000076,
+          36.391957600000069,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 82,
+        "OBJECTID_1" : 82,
+        "OBJECTID" : 355,
+        "timestamp" : " ",
+        "name" : "Biryani House",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 83,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.866328600000031,
+          36.389528900000073,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 83,
+        "OBJECTID_1" : 83,
+        "OBJECTID" : 356,
+        "timestamp" : " ",
+        "name" : "Gulmit Food Hut",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 84,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.868526000000031,
+          36.389598100000057,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 84,
+        "OBJECTID_1" : 84,
+        "OBJECTID" : 357,
+        "timestamp" : " ",
+        "name" : "Amin Biryani & Chowmein",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 85,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.667122100000029,
+          36.320199900000034,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 85,
+        "OBJECTID_1" : 85,
+        "OBJECTID" : 359,
+        "timestamp" : " ",
+        "name" : "Baig luxuries",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 86,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.688056300000085,
+          36.324982000000034,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 86,
+        "OBJECTID_1" : 86,
+        "OBJECTID" : 360,
+        "timestamp" : " ",
+        "name" : "Roomy Vantage Resort",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 87,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.862577501000032,
+          36.411017400000048,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 87,
+        "OBJECTID_1" : 87,
+        "OBJECTID" : 362,
+        "timestamp" : " ",
+        "name" : "Rehman Homestay",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 88,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.894198000000074,
+          36.46036950000007,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 88,
+        "OBJECTID_1" : 88,
+        "OBJECTID" : 363,
+        "timestamp" : " ",
+        "name" : "Yak Grill",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 89,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.876613200000065,
+          36.322596900000065,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 89,
+        "OBJECTID_1" : 89,
+        "OBJECTID" : 364,
+        "timestamp" : " ",
+        "name" : "Lexus Resort",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 90,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.681699500000036,
+          36.317561300000079,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 90,
+        "OBJECTID_1" : 90,
+        "OBJECTID" : 384,
+        "timestamp" : " ",
+        "name" : " HillTop Hotel",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 91,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.871195100000079,
+          36.425651600000037,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 91,
+        "OBJECTID_1" : 91,
+        "OBJECTID" : 393,
+        "timestamp" : " ",
+        "name" : "guest house",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 92,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.792119100000036,
+          36.57164430000006,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 92,
+        "OBJECTID_1" : 92,
+        "OBJECTID" : 394,
+        "timestamp" : " ",
+        "name" : "Restaurant",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 93,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.819944200000066,
+          36.690847500000075,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 93,
+        "OBJECTID_1" : 93,
+        "OBJECTID" : 395,
+        "timestamp" : " ",
+        "name" : "Gems Palace Hotel",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 94,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.883195200000046,
+          36.492178100000046,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 94,
+        "OBJECTID_1" : 94,
+        "OBJECTID" : 397,
+        "timestamp" : " ",
+        "name" : "Passu Snow leopard resort",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 95,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.691238400000032,
+          36.325500600000055,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 95,
+        "OBJECTID_1" : 95,
+        "OBJECTID" : 400,
+        "timestamp" : " ",
+        "name" : "Hunza Elysian Resort Duikar",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 96,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.892100900000059,
+          36.460599800000068,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 96,
+        "OBJECTID_1" : 96,
+        "OBJECTID" : 403,
+        "timestamp" : " ",
+        "name" : "Glacier Breeze",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 97,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.61711020000007,
+          36.307117300000073,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 97,
+        "OBJECTID_1" : 97,
+        "OBJECTID" : 405,
+        "timestamp" : " ",
+        "name" : "Hunza Backpackers Hostel",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 98,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.665943000000084,
+          36.318783500000052,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 98,
+        "OBJECTID_1" : 98,
+        "OBJECTID" : 406,
+        "timestamp" : " ",
+        "name" : "Tourist cottage hunza",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 99,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.667853199000035,
+          36.318671800000061,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 99,
+        "OBJECTID_1" : 99,
+        "OBJECTID" : 409,
+        "timestamp" : " ",
+        "name" : "Burgerville",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 100,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.874591000000066,
+          36.327685700000075,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 100,
+        "OBJECTID_1" : 100,
+        "OBJECTID" : 419,
+        "timestamp" : " ",
+        "name" : "Mountain Table",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 101,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.821404701000063,
+          36.688990900000078,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 101,
+        "OBJECTID_1" : 101,
+        "OBJECTID" : 424,
+        "timestamp" : " ",
+        "name" : "Cafe Karvaan",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 102,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.667202300000042,
+          36.321386000000075,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 102,
+        "OBJECTID_1" : 102,
+        "OBJECTID" : 434,
+        "timestamp" : " ",
+        "name" : "Offto Resort",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 103,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.632726200000036,
+          36.31370540000006,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 103,
+        "OBJECTID_1" : 103,
+        "OBJECTID" : 437,
+        "timestamp" : " ",
+        "name" : "Odyssey Hunza",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 104,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.669935700000053,
+          36.321167100000025,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 104,
+        "OBJECTID_1" : 104,
+        "OBJECTID" : 438,
+        "timestamp" : " ",
+        "name" : "Shanghai Chinese and Thai",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 105,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.414578600000084,
+          36.82702450000005,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 105,
+        "OBJECTID_1" : 105,
+        "OBJECTID" : 448,
+        "timestamp" : " ",
+        "name" : "HunzaSwans",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 106,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.821163800000079,
+          36.690318600000069,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 106,
+        "OBJECTID_1" : 106,
+        "OBJECTID" : 449,
+        "timestamp" : " ",
+        "name" : "SilkRoute Hotel",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 107,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.50733960000008,
+          36.824256200000036,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 107,
+        "OBJECTID_1" : 107,
+        "OBJECTID" : 452,
+        "timestamp" : " ",
+        "name" : "Markah Guesthouse",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 108,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.82104460000005,
+          36.689529500000049,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 108,
+        "OBJECTID_1" : 108,
+        "OBJECTID" : 453,
+        "timestamp" : " ",
+        "name" : " Hotel",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 109,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          75.320464000000072,
+          36.438689500000066,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 109,
+        "OBJECTID_1" : 109,
+        "OBJECTID" : 455,
+        "timestamp" : " ",
+        "name" : "Embassy Guest House",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 110,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.429364300000032,
+          36.83054020000003,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 110,
+        "OBJECTID_1" : 110,
+        "OBJECTID" : 456,
+        "timestamp" : " ",
+        "name" : "Hunza hotel",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 111,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.428400601000078,
+          36.830729600000041,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 111,
+        "OBJECTID_1" : 111,
+        "OBJECTID" : 457,
+        "timestamp" : " ",
+        "name" : "ParadiseINN",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 112,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.40417560000003,
+          36.828012500000057,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 112,
+        "OBJECTID_1" : 112,
+        "OBJECTID" : 458,
+        "timestamp" : " ",
+        "name" : "Roof of the world",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 113,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          75.316920900000071,
+          36.437091000000066,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 113,
+        "OBJECTID_1" : 113,
+        "OBJECTID" : 459,
+        "timestamp" : " ",
+        "name" : "HunzaHeavens",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 114,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.625127500000076,
+          36.311236600000029,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 114,
+        "OBJECTID_1" : 114,
+        "OBJECTID" : 468,
+        "timestamp" : " ",
+        "name" : "Hunza Vintage Huts",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 115,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          75.313525000000084,
+          36.436618600000031,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 115,
+        "OBJECTID_1" : 115,
+        "OBJECTID" : 469,
+        "timestamp" : " ",
+        "name" : "KhandaHunza",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 116,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.695984900000042,
+          36.318716900000027,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 116,
+        "OBJECTID_1" : 116,
+        "OBJECTID" : 474,
+        "timestamp" : " ",
+        "name" : "Apple / cherry / apricot juice",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 117,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.610112166000079,
+          36.309046147000061,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 117,
+        "OBJECTID_1" : 117,
+        "OBJECTID" : 0,
+        "timestamp" : " ",
+        "name" : "Mountain Story Resort Hunza",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : "hoteels.kmz/Temporary Places",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 118,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.53086090100004,
+          36.252201177000074,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 118,
+        "OBJECTID_1" : 118,
+        "OBJECTID" : 0,
+        "timestamp" : " ",
+        "name" : "Osho Thang",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : "hoteels.kmz/Temporary Places",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 119,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.530336013000067,
+          36.249343968000062,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 119,
+        "OBJECTID_1" : 119,
+        "OBJECTID" : 0,
+        "timestamp" : " ",
+        "name" : "Hard Rock Hotel Minapin",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : "hoteels.kmz/Temporary Places",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 120,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.536205707000079,
+          36.251959113000055,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 120,
+        "OBJECTID_1" : 120,
+        "OBJECTID" : 0,
+        "timestamp" : " ",
+        "name" : "Hotel Cherry Garden",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : "hoteels.kmz/Temporary Places",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 121,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.506931734000034,
+          36.245498804000079,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 121,
+        "OBJECTID_1" : 121,
+        "OBJECTID" : 0,
+        "timestamp" : " ",
+        "name" : "Brown Mountain Restaurant",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : "hoteels.kmz/Temporary Places",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 122,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.523466885000062,
+          36.260292718000073,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 122,
+        "OBJECTID_1" : 122,
+        "OBJECTID" : 0,
+        "timestamp" : " ",
+        "name" : "Koh e Qaf Hunza",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : "hoteels.kmz/Temporary Places",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 123,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.536671997000042,
+          36.236302770000066,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 123,
+        "OBJECTID_1" : 123,
+        "OBJECTID" : 0,
+        "timestamp" : " ",
+        "name" : "RB rest point",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : "hoteels.kmz/Temporary Places",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 124,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.488946351000038,
+          36.239229121000051,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 124,
+        "OBJECTID_1" : 124,
+        "OBJECTID" : 0,
+        "timestamp" : " ",
+        "name" : "Burgeristan restaurant",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : "hoteels.kmz/Temporary Places",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 125,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.547264733000077,
+          36.257877957000062,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 125,
+        "OBJECTID_1" : 125,
+        "OBJECTID" : 0,
+        "timestamp" : " ",
+        "name" : "PC Legacy Hunza",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : "hoteels.kmz/Temporary Places",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 126,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.489772612000081,
+          36.23788944000006,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 126,
+        "OBJECTID_1" : 126,
+        "OBJECTID" : 0,
+        "timestamp" : " ",
+        "name" : "Rakaposhi Hotel and Camping Site Base 1",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : "hoteels.kmz/Temporary Places",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 127,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.487765053000032,
+          36.239706459000047,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 127,
+        "OBJECTID_1" : 127,
+        "OBJECTID" : 0,
+        "timestamp" : " ",
+        "name" : "Rakaposhi View Point Hotel & Restaurant",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : "hoteels.kmz/Temporary Places",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 128,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.48916412300008,
+          36.235587166000073,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 128,
+        "OBJECTID_1" : 128,
+        "OBJECTID" : 0,
+        "timestamp" : " ",
+        "name" : "Aghaz Hotel & Restaurant",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : "hoteels.kmz/Temporary Places",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 129,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.48225698300007,
+          36.239730974000054,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 129,
+        "OBJECTID_1" : 129,
+        "OBJECTID" : 0,
+        "timestamp" : " ",
+        "name" : "Hotel Odyssey Nagar",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : "hoteels.kmz/Temporary Places",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 130,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.322742488000074,
+          36.251590346000057,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 130,
+        "OBJECTID_1" : 130,
+        "OBJECTID" : 0,
+        "timestamp" : " ",
+        "name" : "Chalt View Hotel & Restaurant",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : "hoteels.kmz/Temporary Places",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 131,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.614679520000038,
+          36.311670522000043,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 131,
+        "OBJECTID_1" : 131,
+        "OBJECTID" : 0,
+        "timestamp" : " ",
+        "name" : "Hunza Elites",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : "hoteels.kmz/Temporary Places",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 132,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.629277683000055,
+          36.314309298000069,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 132,
+        "OBJECTID_1" : 132,
+        "OBJECTID" : 0,
+        "timestamp" : " ",
+        "name" : "Arcadian Inn Hotel",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : "hoteels.kmz/Temporary Places",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 133,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.615981370000043,
+          36.306977139000026,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 133,
+        "OBJECTID_1" : 133,
+        "OBJECTID" : 0,
+        "timestamp" : " ",
+        "name" : "UHunza City Hotel",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : "hoteels.kmz/Temporary Places",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 134,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.619900471000051,
+          36.312157395000042,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 134,
+        "OBJECTID_1" : 134,
+        "OBJECTID" : 0,
+        "timestamp" : " ",
+        "name" : "Hunza Hidden Palace",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : "hoteels.kmz/Temporary Places",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 135,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.632851972000083,
+          36.313619521000078,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 135,
+        "OBJECTID_1" : 135,
+        "OBJECTID" : 0,
+        "timestamp" : " ",
+        "name" : "Odyssey Cafe",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : "hoteels.kmz/Temporary Places",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 136,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.625210300000049,
+          36.309765982000044,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 136,
+        "OBJECTID_1" : 136,
+        "OBJECTID" : 0,
+        "timestamp" : " ",
+        "name" : "Fairy Garden & Resorts",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : "hoteels.kmz/Temporary Places",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 137,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.631113607000032,
+          36.313892211000052,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 137,
+        "OBJECTID_1" : 137,
+        "OBJECTID" : 0,
+        "timestamp" : " ",
+        "name" : "Hunza Retreat Hotel",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : "hoteels.kmz/Temporary Places",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 138,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.627688222000074,
+          36.312706216000038,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 138,
+        "OBJECTID_1" : 138,
+        "OBJECTID" : 0,
+        "timestamp" : " ",
+        "name" : "North View Hotel",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : "hoteels.kmz/Temporary Places",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 139,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.866098954000051,
+          36.38997203200006,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 139,
+        "OBJECTID_1" : 139,
+        "OBJECTID" : 0,
+        "timestamp" : " ",
+        "name" : "Roomy Yurts, Gulmit Hunza",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : "Hotels.kmz/Hotels",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 140,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.873562711000034,
+          36.403177338000035,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 140,
+        "OBJECTID_1" : 140,
+        "OBJECTID" : 0,
+        "timestamp" : " ",
+        "name" : "Monarch Resort Hunza",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : "Hotels.kmz/Hotels",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 141,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.68968624300004,
+          36.324551884000073,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 141,
+        "OBJECTID_1" : 141,
+        "OBJECTID" : 0,
+        "timestamp" : " ",
+        "name" : "Eagle's Nest Hotel",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : "Hotels.kmz/Hotels",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 142,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.611269519000075,
+          36.287776600000029,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 142,
+        "OBJECTID_1" : 142,
+        "OBJECTID" : 0,
+        "timestamp" : " ",
+        "name" : "Hunza Tonight (Guest House)",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : "Hotels.kmz/Hotels",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 143,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.639524933000075,
+          36.314377265000076,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 143,
+        "OBJECTID_1" : 143,
+        "OBJECTID" : 0,
+        "timestamp" : " ",
+        "name" : "UCloud Nine and a Half Resort",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : "Hotels.kmz/Hotels",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 144,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.872335416000055,
+          36.343810044000065,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 144,
+        "OBJECTID_1" : 144,
+        "OBJECTID" : 0,
+        "timestamp" : " ",
+        "name" : "Tribes and Tales",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : "Hotels.kmz/Hotels",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 145,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.871783237000045,
+          36.337390773000038,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 145,
+        "OBJECTID_1" : 145,
+        "OBJECTID" : 0,
+        "timestamp" : " ",
+        "name" : "Hidden Valley Lake Resort",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : "Hotels.kmz/Hotels",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 146,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.870115268000063,
+          36.316710410000042,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 146,
+        "OBJECTID_1" : 146,
+        "OBJECTID" : 0,
+        "timestamp" : " ",
+        "name" : "Pearl Huts and Resorts",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : "Hotels.kmz/Hotels",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 147,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.873131244000035,
+          36.321973270000058,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 147,
+        "OBJECTID_1" : 147,
+        "OBJECTID" : 0,
+        "timestamp" : " ",
+        "name" : "Luxus Hunza Attabad Lake Resort",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : "Hotels.kmz/Hotels",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 148,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.87671841000008,
+          36.322190670000055,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 148,
+        "OBJECTID_1" : 148,
+        "OBJECTID" : 0,
+        "timestamp" : " ",
+        "name" : "Famree resort attabad lake Hunza",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : "Hotels.kmz/Hotels",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 149,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.875579187000085,
+          36.327177161000066,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 149,
+        "OBJECTID_1" : 149,
+        "OBJECTID" : 0,
+        "timestamp" : " ",
+        "name" : "Horizon Resort Attabad Lake Hunza",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : "Hotels.kmz/Hotels",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 150,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.864756863000082,
+          36.38150928500005,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 150,
+        "OBJECTID_1" : 150,
+        "OBJECTID" : 0,
+        "timestamp" : " ",
+        "name" : "Moksha Resorts",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : "Hotels.kmz/Hotels",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 151,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.868640433000053,
+          36.387049756000067,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 151,
+        "OBJECTID_1" : 151,
+        "OBJECTID" : 0,
+        "timestamp" : " ",
+        "name" : "Silk Route Lodge",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : "Hotels.kmz/Hotels",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 152,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.868707491000066,
+          36.388338088000069,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 152,
+        "OBJECTID_1" : 152,
+        "OBJECTID" : 0,
+        "timestamp" : " ",
+        "name" : "Karakorum Family Guest House Hunza",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : "Hotels.kmz/Hotels",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 153,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.876597308000044,
+          36.409179659000074,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 153,
+        "OBJECTID_1" : 153,
+        "OBJECTID" : 0,
+        "timestamp" : " ",
+        "name" : "Rehman Backpacker Hostel",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : "Hotels.kmz/Hotels",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 154,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.863887190000071,
+          36.428358957000057,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 154,
+        "OBJECTID_1" : 154,
+        "OBJECTID" : 0,
+        "timestamp" : " ",
+        "name" : "Borith Lake Hotel & Resort",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : "Hotels.kmz/Hotels",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 155,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.86352000200003,
+          36.43852795500004,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 155,
+        "OBJECTID_1" : 155,
+        "OBJECTID" : 0,
+        "timestamp" : " ",
+        "name" : "Camp_and_cafe",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : "Hotels.kmz/Hotels",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 156,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.880203658000084,
+          36.490372396000055,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 156,
+        "OBJECTID_1" : 156,
+        "OBJECTID" : 0,
+        "timestamp" : " ",
+        "name" : "Passu Tourist Lodge (PTL)",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : "Hotels.kmz/Hotels",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 157,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.799179264000031,
+          36.57621393900007,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 157,
+        "OBJECTID_1" : 157,
+        "OBJECTID" : 0,
+        "timestamp" : " ",
+        "name" : "Shah Guest House",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : "Hotels.kmz/Hotels",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 158,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.803950746000055,
+          36.549099052000031,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 158,
+        "OBJECTID_1" : 158,
+        "OBJECTID" : 0,
+        "timestamp" : " ",
+        "name" : "Sarai Karimabad Hotel and Restaurant",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : "Hotels.kmz/Hotels",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 159,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.852120999000078,
+          36.590083793000076,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 159,
+        "OBJECTID_1" : 159,
+        "OBJECTID" : 0,
+        "timestamp" : " ",
+        "name" : "Moksha Serenity Resort",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : "Hotels.kmz/Hotels",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 160,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.855047898000066,
+          36.592221633000065,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 160,
+        "OBJECTID_1" : 160,
+        "OBJECTID" : 0,
+        "timestamp" : " ",
+        "name" : "Ghalapan inn",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : "Hotels.kmz/Hotels",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 161,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.826553650000051,
+          36.681794319000062,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 161,
+        "OBJECTID_1" : 161,
+        "OBJECTID" : 0,
+        "timestamp" : " ",
+        "name" : "Roomy Khawna Hotel, Sost",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : "Hotels.kmz/Hotels",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 162,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.837433186000055,
+          36.672933971000077,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 162,
+        "OBJECTID_1" : 162,
+        "OBJECTID" : 0,
+        "timestamp" : " ",
+        "name" : "Khunjerab Hotel & Restaurant",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : "Hotels.kmz/Hotels",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 163,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.881025689000069,
+          36.483852463000062,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 163,
+        "OBJECTID_1" : 163,
+        "OBJECTID" : 0,
+        "timestamp" : " ",
+        "name" : "Passu Ambassador Hotel",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : "Hotels.kmz/Hotels",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 164,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.610112166000079,
+          36.309046147000061,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 164,
+        "OBJECTID_1" : 164,
+        "OBJECTID" : 0,
+        "timestamp" : " ",
+        "name" : "Mountain Story Resort Hunza",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : "hoteels.kmz/Temporary Places",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 165,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.53086090100004,
+          36.252201177000074,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 165,
+        "OBJECTID_1" : 165,
+        "OBJECTID" : 0,
+        "timestamp" : " ",
+        "name" : "Osho Thang",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : "hoteels.kmz/Temporary Places",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 166,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.530336013000067,
+          36.249343968000062,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 166,
+        "OBJECTID_1" : 166,
+        "OBJECTID" : 0,
+        "timestamp" : " ",
+        "name" : "Hard Rock Hotel Minapin",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : "hoteels.kmz/Temporary Places",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 167,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.536205707000079,
+          36.251959113000055,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 167,
+        "OBJECTID_1" : 167,
+        "OBJECTID" : 0,
+        "timestamp" : " ",
+        "name" : "Hotel Cherry Garden",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : "hoteels.kmz/Temporary Places",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 168,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.506931734000034,
+          36.245498804000079,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 168,
+        "OBJECTID_1" : 168,
+        "OBJECTID" : 0,
+        "timestamp" : " ",
+        "name" : "Brown Mountain Restaurant",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : "hoteels.kmz/Temporary Places",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 169,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.523466885000062,
+          36.260292718000073,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 169,
+        "OBJECTID_1" : 169,
+        "OBJECTID" : 0,
+        "timestamp" : " ",
+        "name" : "Koh e Qaf Hunza",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : "hoteels.kmz/Temporary Places",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 170,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.536671997000042,
+          36.236302770000066,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 170,
+        "OBJECTID_1" : 170,
+        "OBJECTID" : 0,
+        "timestamp" : " ",
+        "name" : "RB rest point",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : "hoteels.kmz/Temporary Places",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 171,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.488946351000038,
+          36.239229121000051,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 171,
+        "OBJECTID_1" : 171,
+        "OBJECTID" : 0,
+        "timestamp" : " ",
+        "name" : "Burgeristan restaurant",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : "hoteels.kmz/Temporary Places",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 172,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.547264733000077,
+          36.257877957000062,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 172,
+        "OBJECTID_1" : 172,
+        "OBJECTID" : 0,
+        "timestamp" : " ",
+        "name" : "PC Legacy Hunza",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : "hoteels.kmz/Temporary Places",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 173,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.489772612000081,
+          36.23788944000006,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 173,
+        "OBJECTID_1" : 173,
+        "OBJECTID" : 0,
+        "timestamp" : " ",
+        "name" : "Rakaposhi Hotel and Camping Site Base 1",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : "hoteels.kmz/Temporary Places",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 174,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.487765053000032,
+          36.239706459000047,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 174,
+        "OBJECTID_1" : 174,
+        "OBJECTID" : 0,
+        "timestamp" : " ",
+        "name" : "Rakaposhi View Point Hotel & Restaurant",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : "hoteels.kmz/Temporary Places",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 175,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.48916412300008,
+          36.235587166000073,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 175,
+        "OBJECTID_1" : 175,
+        "OBJECTID" : 0,
+        "timestamp" : " ",
+        "name" : "Aghaz Hotel & Restaurant",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : "hoteels.kmz/Temporary Places",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 176,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.48225698300007,
+          36.239730974000054,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 176,
+        "OBJECTID_1" : 176,
+        "OBJECTID" : 0,
+        "timestamp" : " ",
+        "name" : "Hotel Odyssey Nagar",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : "hoteels.kmz/Temporary Places",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 177,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.322742488000074,
+          36.251590346000057,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 177,
+        "OBJECTID_1" : 177,
+        "OBJECTID" : 0,
+        "timestamp" : " ",
+        "name" : "Chalt View Hotel & Restaurant",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : "hoteels.kmz/Temporary Places",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 178,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.614679520000038,
+          36.311670522000043,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 178,
+        "OBJECTID_1" : 178,
+        "OBJECTID" : 0,
+        "timestamp" : " ",
+        "name" : "Hunza Elites",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : "hoteels.kmz/Temporary Places",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 179,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.629277683000055,
+          36.314309298000069,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 179,
+        "OBJECTID_1" : 179,
+        "OBJECTID" : 0,
+        "timestamp" : " ",
+        "name" : "Arcadian Inn Hotel",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : "hoteels.kmz/Temporary Places",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 180,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.615981370000043,
+          36.306977139000026,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 180,
+        "OBJECTID_1" : 180,
+        "OBJECTID" : 0,
+        "timestamp" : " ",
+        "name" : "UHunza City Hotel",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : "hoteels.kmz/Temporary Places",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 181,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.619900471000051,
+          36.312157395000042,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 181,
+        "OBJECTID_1" : 181,
+        "OBJECTID" : 0,
+        "timestamp" : " ",
+        "name" : "Hunza Hidden Palace",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : "hoteels.kmz/Temporary Places",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 182,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.632851972000083,
+          36.313619521000078,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 182,
+        "OBJECTID_1" : 182,
+        "OBJECTID" : 0,
+        "timestamp" : " ",
+        "name" : "Odyssey Cafe",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : "hoteels.kmz/Temporary Places",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 183,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.625210300000049,
+          36.309765982000044,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 183,
+        "OBJECTID_1" : 183,
+        "OBJECTID" : 0,
+        "timestamp" : " ",
+        "name" : "Fairy Garden & Resorts",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : "hoteels.kmz/Temporary Places",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 184,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.631113607000032,
+          36.313892211000052,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 184,
+        "OBJECTID_1" : 184,
+        "OBJECTID" : 0,
+        "timestamp" : " ",
+        "name" : "Hunza Retreat Hotel",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : "hoteels.kmz/Temporary Places",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 185,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.627688222000074,
+          36.312706216000038,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID_12" : 185,
+        "OBJECTID_1" : 185,
+        "OBJECTID" : 0,
+        "timestamp" : " ",
+        "name" : "North View Hotel",
+        "type" : "hotel",
+        "OID_" : 0,
+        "FolderPath" : "hoteels.kmz/Temporary Places",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "LabelID" : 0
+      }
+    }
+  ]
 }

@@ -1,63 +1,1545 @@
 {
-"type": "FeatureCollection",
-"name": "village",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
-"features": [
-{ "type": "Feature", "properties": { "Name": "Yarzerech", "FolderPath": "CHUPURSION.kml/CHUPURSION" }, "geometry": { "type": "Point", "coordinates": [ 74.723119881000059, 36.737325661000057, 0.0 ] } },
-{ "type": "Feature", "properties": { "Name": "Khairabad Raminj", "FolderPath": "CHUPURSION.kml/CHUPURSION" }, "geometry": { "type": "Point", "coordinates": [ 74.706555077000075, 36.756220041000063, 0.0 ] } },
-{ "type": "Feature", "properties": { "Name": "Ramanji", "FolderPath": "CHUPURSION.kml/CHUPURSION" }, "geometry": { "type": "Point", "coordinates": [ 74.688992283000061, 36.78419490400006, 0.0 ] } },
-{ "type": "Feature", "properties": { "Name": "Past Kirmin", "FolderPath": "CHUPURSION.kml/CHUPURSION" }, "geometry": { "type": "Point", "coordinates": [ 74.620011444000056, 36.814628371000026, 0.0 ] } },
-{ "type": "Feature", "properties": { "Name": "Wuch Kirmin", "FolderPath": "CHUPURSION.kml/CHUPURSION" }, "geometry": { "type": "Point", "coordinates": [ 74.586208490000047, 36.815629811000065, 0.0 ] } },
-{ "type": "Feature", "properties": { "Name": "Kil", "FolderPath": "CHUPURSION.kml/CHUPURSION" }, "geometry": { "type": "Point", "coordinates": [ 74.544707512000059, 36.820449232000044, 0.0 ] } },
-{ "type": "Feature", "properties": { "Name": "sheresubz", "FolderPath": "CHUPURSION.kml/CHUPURSION" }, "geometry": { "type": "Point", "coordinates": [ 74.495147268000039, 36.830307413000071, 0.0 ] } },
-{ "type": "Feature", "properties": { "Name": "Ispenj", "FolderPath": "CHUPURSION.kml/CHUPURSION" }, "geometry": { "type": "Point", "coordinates": [ 74.464021555000045, 36.831245140000078, 0.0 ] } },
-{ "type": "Feature", "properties": { "Name": "Shetmerg", "FolderPath": "CHUPURSION.kml/CHUPURSION" }, "geometry": { "type": "Point", "coordinates": [ 74.435989490000054, 36.832869575000075, 0.0 ] } },
-{ "type": "Feature", "properties": { "Name": "Yashkuk", "FolderPath": "CHUPURSION.kml/CHUPURSION" }, "geometry": { "type": "Point", "coordinates": [ 74.366408960000058, 36.818954990000066, 0.0 ] } },
-{ "type": "Feature", "properties": { "Name": "Badaghundi Ziarat", "FolderPath": "CHUPURSION.kml/CHUPURSION" }, "geometry": { "type": "Point", "coordinates": [ 74.243488598000056, 36.842152406000025, 0.0 ] } },
-{ "type": "Feature", "properties": { "Name": "Mulangi", "FolderPath": "CHUPURSION.kml/CHUPURSION" }, "geometry": { "type": "Point", "coordinates": [ 74.485734682000043, 36.924701562000052, 0.0 ] } },
-{ "type": "Feature", "properties": { "Name": "Watwashk", "FolderPath": "CHUPURSION.kml/CHUPURSION" }, "geometry": { "type": "Point", "coordinates": [ 74.595428748000074, 36.87047997500008, 0.0 ] } },
-{ "type": "Feature", "properties": { "Name": "Kalam Darchi", "FolderPath": "CHUPURSION.kml/CHUPURSION" }, "geometry": { "type": "Point", "coordinates": [ 74.693097441000077, 36.822990818000051, 0.0 ] } },
-{ "type": "Feature", "properties": { "Name": "Hussain Abad", "FolderPath": "Hunza" }, "geometry": { "type": "Point", "coordinates": [ 74.392748106587263, 36.250604672939609, 0.0 ] } },
-{ "type": "Feature", "properties": { "Name": "Mauin", "FolderPath": "Hunza" }, "geometry": { "type": "Point", "coordinates": [ 74.424298013771789, 36.240029686672784, 0.0 ] } },
-{ "type": "Feature", "properties": { "Name": "Khan Abad", "FolderPath": "Hunza" }, "geometry": { "type": "Point", "coordinates": [ 74.453425037610785, 36.248741096632578, 0.0 ] } },
-{ "type": "Feature", "properties": { "Name": "NasirAbad", "FolderPath": "Hunza" }, "geometry": { "type": "Point", "coordinates": [ 74.530096582703166, 36.266052079623911, 0.0 ] } },
-{ "type": "Feature", "properties": { "Name": "Murtazabad", "FolderPath": "Hunza" }, "geometry": { "type": "Point", "coordinates": [ 74.60232004947062, 36.283732925686593, 0.0 ] } },
-{ "type": "Feature", "properties": { "Name": "Hassanabad", "FolderPath": "Hunza" }, "geometry": { "type": "Point", "coordinates": [ 74.59034849307568, 36.295602009085911, 0.0 ] } },
-{ "type": "Feature", "properties": { "Name": "Aliabad", "FolderPath": "Hunza" }, "geometry": { "type": "Point", "coordinates": [ 74.618386034409582, 36.311606491709568, 0.0 ] } },
-{ "type": "Feature", "properties": { "Name": "Dorkhan", "FolderPath": "Hunza" }, "geometry": { "type": "Point", "coordinates": [ 74.633540678571237, 36.313441371679517, 0.0 ] } },
-{ "type": "Feature", "properties": { "Name": "HaiderAbad", "FolderPath": "Hunza" }, "geometry": { "type": "Point", "coordinates": [ 74.642019476788107, 36.324279389800239, 0.0 ] } },
-{ "type": "Feature", "properties": { "Name": "karimabad", "FolderPath": "Hunza" }, "geometry": { "type": "Point", "coordinates": [ 74.659453167142971, 36.326958434555095, 0.0 ] } },
-{ "type": "Feature", "properties": { "Name": "ALtit", "FolderPath": "Hunza" }, "geometry": { "type": "Point", "coordinates": [ 74.686422598266532, 36.322025145904618, 0.0 ] } },
-{ "type": "Feature", "properties": { "Name": "Ahmad abad", "FolderPath": "Hunza" }, "geometry": { "type": "Point", "coordinates": [ 74.733702306822593, 36.307093221593107, 0.0 ] } },
-{ "type": "Feature", "properties": { "Name": "salman abad", "FolderPath": "Hunza" }, "geometry": { "type": "Point", "coordinates": [ 74.776937469692413, 36.308875350691636, 0.0 ] } },
-{ "type": "Feature", "properties": { "Name": "Sarat", "FolderPath": "Hunza" }, "geometry": { "type": "Point", "coordinates": [ 74.793290734820872, 36.310399380699707, 0.0 ] } },
-{ "type": "Feature", "properties": { "Name": "Attaabad", "FolderPath": "Hunza" }, "geometry": { "type": "Point", "coordinates": [ 74.810043712414625, 36.316377371553834, 0.0 ] } },
-{ "type": "Feature", "properties": { "Name": "Shiskiat", "FolderPath": "Hunza" }, "geometry": { "type": "Point", "coordinates": [ 74.865167361366318, 36.359342313750879, 0.0 ] } },
-{ "type": "Feature", "properties": { "Name": "Gulmut", "FolderPath": "Hunza" }, "geometry": { "type": "Point", "coordinates": [ 74.856157561625679, 36.385637438121698, 0.0 ] } },
-{ "type": "Feature", "properties": { "Name": "Gulkin", "FolderPath": "Hunza" }, "geometry": { "type": "Point", "coordinates": [ 74.860966050255414, 36.408895100940754, 0.0 ] } },
-{ "type": "Feature", "properties": { "Name": "Hussani", "FolderPath": "Hunza" }, "geometry": { "type": "Point", "coordinates": [ 74.875602256016435, 36.42778035187002, 0.0 ] } },
-{ "type": "Feature", "properties": { "Name": "Zar Abad", "FolderPath": "Hunza" }, "geometry": { "type": "Point", "coordinates": [ 74.896867110267507, 36.432443902628059, 0.0 ] } },
-{ "type": "Feature", "properties": { "Name": "Khuramabad", "FolderPath": "Hunza" }, "geometry": { "type": "Point", "coordinates": [ 74.908247988368245, 36.443056394332565, 0.0 ] } },
-{ "type": "Feature", "properties": { "Name": "Passu", "FolderPath": "Hunza" }, "geometry": { "type": "Point", "coordinates": [ 74.896409934500269, 36.464806411080616, 0.0 ] } },
-{ "type": "Feature", "properties": { "Name": "Khyber", "FolderPath": "Hunza" }, "geometry": { "type": "Point", "coordinates": [ 74.791317397250069, 36.579505798734331, 0.0 ] } },
-{ "type": "Feature", "properties": { "Name": "Galapan", "FolderPath": "Hunza" }, "geometry": { "type": "Point", "coordinates": [ 74.858255677670087, 36.594989026089102, 0.0 ] } },
-{ "type": "Feature", "properties": { "Name": "Moorkhun", "FolderPath": "Hunza" }, "geometry": { "type": "Point", "coordinates": [ 74.868087708594729, 36.612431473204829, 0.0 ] } },
-{ "type": "Feature", "properties": { "Name": "Jamal abad", "FolderPath": "Hunza" }, "geometry": { "type": "Point", "coordinates": [ 74.863279527452647, 36.620174260587341, 0.0 ] } },
-{ "type": "Feature", "properties": { "Name": "Gircha", "FolderPath": "Hunza" }, "geometry": { "type": "Point", "coordinates": [ 74.848232103214727, 36.649441321980682, 0.0 ] } },
-{ "type": "Feature", "properties": { "Name": "Sost", "FolderPath": "Hunza" }, "geometry": { "type": "Point", "coordinates": [ 74.846933828732446, 36.658410892794741, 0.0 ] } },
-{ "type": "Feature", "properties": { "Name": "Nazimabad", "FolderPath": "Hunza" }, "geometry": { "type": "Point", "coordinates": [ 74.841270951188889, 36.67347871585573, 0.0 ] } },
-{ "type": "Feature", "properties": { "Name": "Hussain Abad", "FolderPath": "Hunza" }, "geometry": { "type": "Point", "coordinates": [ 74.836792559141628, 36.684760313256625, 0.0 ] } },
-{ "type": "Feature", "properties": { "Name": "Khuda Abad", "FolderPath": "Hunza" }, "geometry": { "type": "Point", "coordinates": [ 74.820229085695971, 36.679652986205561, 0.0 ] } },
-{ "type": "Feature", "properties": { "Name": "Misgar", "FolderPath": "Hunza" }, "geometry": { "type": "Point", "coordinates": [ 74.761934247563218, 36.788729423302406, 0.0 ] } },
-{ "type": "Feature", "properties": { "Name": "Khunjarab National Park", "FolderPath": "Hunza" }, "geometry": { "type": "Point", "coordinates": [ 74.998064804561707, 36.862023959632538, 0.0 ] } },
-{ "type": "Feature", "properties": { "Name": "Bara khun", "FolderPath": "Hunza" }, "geometry": { "type": "Point", "coordinates": [ 75.162044759894954, 36.876570842608146, 0.0 ] } },
-{ "type": "Feature", "properties": { "Name": "Kalam Darchi", "FolderPath": "Hunza" }, "geometry": { "type": "Point", "coordinates": [ 74.710282909408193, 36.820193805123637, 0.0 ] } },
-{ "type": "Feature", "properties": { "Name": "Mulangi", "FolderPath": "Hunza" }, "geometry": { "type": "Point", "coordinates": [ 74.496795114099839, 36.918558157324178, 0.0 ] } },
-{ "type": "Feature", "properties": { "Name": "Duet", "FolderPath": "Hunza" }, "geometry": { "type": "Point", "coordinates": [ 75.006677241412945, 36.532359599297521, 0.0 ] } },
-{ "type": "Feature", "properties": { "Name": "Muhabat abad shimshal", "FolderPath": "Hunza" }, "geometry": { "type": "Point", "coordinates": [ 75.223259949929229, 36.499895807039429, 0.0 ] } },
-{ "type": "Feature", "properties": { "Name": "shimshal", "FolderPath": "Hunza" }, "geometry": { "type": "Point", "coordinates": [ 75.316033482746263, 36.437839357262305, 0.0 ] } },
-{ "type": "Feature", "properties": { "Name": "Bandasar", "FolderPath": "Hunza" }, "geometry": { "type": "Point", "coordinates": [ 75.351533004379789, 36.442448825051677, 0.0 ] } },
-{ "type": "Feature", "properties": { "Name": null, "FolderPath": null }, "geometry": { "type": "Point", "coordinates": [ 74.840073354691157, 36.663199005371602, 0.0 ] } },
-{ "type": "Feature", "properties": { "Name": null, "FolderPath": null }, "geometry": { "type": "Point", "coordinates": [ -1.79769313486231571e+308, -1.79769313486231571e+308, -1.79769313486231571e+308 ] } }
-]
+  "type" : "FeatureCollection",
+  "features" : [
+    {
+      "type" : "Feature",
+      "id" : 1,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.70688288100007,
+          36.75144330300003,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 1,
+        "OID_" : 0,
+        "Name" : "Khairabad Raminj",
+        "FolderPath" : "Temporary Places.kmz/Temporary Places",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "HasLabel" : -1,
+        "LabelID" : 0,
+        "Type" : " ",
+        "Name_1" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 2,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.687876119000066,
+          36.783707332000063,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 2,
+        "OID_" : 0,
+        "Name" : "Ramanji",
+        "FolderPath" : "Temporary Places.kmz/Temporary Places",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "HasLabel" : -1,
+        "LabelID" : 0,
+        "Type" : " ",
+        "Name_1" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 3,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.631745869000042,
+          36.814134529000057,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 3,
+        "OID_" : 0,
+        "Name" : "Past Kirmin",
+        "FolderPath" : "Temporary Places.kmz/Temporary Places",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "HasLabel" : -1,
+        "LabelID" : 0,
+        "Type" : " ",
+        "Name_1" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 4,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.605195604000073,
+          36.29396365100007,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 4,
+        "OID_" : 0,
+        "Name" : "hassanabad",
+        "FolderPath" : "Temporary Places.kmz/Temporary Places",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "HasLabel" : -1,
+        "LabelID" : 0,
+        "Type" : " ",
+        "Name_1" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 5,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.611540262000062,
+          36.81376472200003,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 5,
+        "OID_" : 0,
+        "Name" : "Chipurson",
+        "FolderPath" : "Temporary Places.kmz/Temporary Places",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "HasLabel" : -1,
+        "LabelID" : 0,
+        "Type" : " ",
+        "Name_1" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 6,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.588911417000077,
+          36.814547709000067,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 6,
+        "OID_" : 0,
+        "Name" : "Wuch Kirmin",
+        "FolderPath" : "Temporary Places.kmz/Temporary Places",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "HasLabel" : -1,
+        "LabelID" : 0,
+        "Type" : " ",
+        "Name_1" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 7,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.549075157000061,
+          36.819031186000075,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 7,
+        "OID_" : 0,
+        "Name" : "Kil",
+        "FolderPath" : "Temporary Places.kmz/Temporary Places",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "HasLabel" : -1,
+        "LabelID" : 0,
+        "Type" : " ",
+        "Name_1" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 8,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.514677679000044,
+          36.824772169000028,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 8,
+        "OID_" : 0,
+        "Name" : "Reshit",
+        "FolderPath" : "Temporary Places.kmz/Temporary Places",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "HasLabel" : -1,
+        "LabelID" : 0,
+        "Type" : " ",
+        "Name_1" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 9,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.495235859000047,
+          36.828243397000051,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 9,
+        "OID_" : 0,
+        "Name" : "Sheresubz",
+        "FolderPath" : "Temporary Places.kmz/Temporary Places",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "HasLabel" : -1,
+        "LabelID" : 0,
+        "Type" : " ",
+        "Name_1" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 10,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.459688186000051,
+          36.831206072000043,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 10,
+        "OID_" : 0,
+        "Name" : "Ispenj",
+        "FolderPath" : "Temporary Places.kmz/Temporary Places",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "HasLabel" : -1,
+        "LabelID" : 0,
+        "Type" : " ",
+        "Name_1" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 11,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.442909086000043,
+          36.829556618000026,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 11,
+        "OID_" : 0,
+        "Name" : "Kumpir Diyor",
+        "FolderPath" : "Temporary Places.kmz/Temporary Places",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "HasLabel" : -1,
+        "LabelID" : 0,
+        "Type" : " ",
+        "Name_1" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 12,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.427798730000063,
+          36.829443973000025,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 12,
+        "OID_" : 0,
+        "Name" : "Zuwudkhoon",
+        "FolderPath" : "Temporary Places.kmz/Temporary Places",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "HasLabel" : -1,
+        "LabelID" : 0,
+        "Type" : " ",
+        "Name_1" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 13,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.366367681000042,
+          36.812431608000054,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 13,
+        "OID_" : 0,
+        "Name" : "Yashkuk",
+        "FolderPath" : "Temporary Places.kmz/Temporary Places",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "HasLabel" : -1,
+        "LabelID" : 0,
+        "Type" : " ",
+        "Name_1" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 14,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.275067107000041,
+          36.834915932000058,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 14,
+        "OID_" : 0,
+        "Name" : "BABA gundi zarat",
+        "FolderPath" : "Temporary Places.kmz/Temporary Places",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "HasLabel" : -1,
+        "LabelID" : 0,
+        "Type" : " ",
+        "Name_1" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 15,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.392748107000045,
+          36.250604673000055,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 15,
+        "OID_" : 0,
+        "Name" : "Hussain Abad",
+        "FolderPath" : "Hunza",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "HasLabel" : -1,
+        "LabelID" : 0,
+        "Type" : " ",
+        "Name_1" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 16,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.424298014000044,
+          36.24002968700006,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 16,
+        "OID_" : 0,
+        "Name" : "Mauin",
+        "FolderPath" : "Hunza",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "HasLabel" : -1,
+        "LabelID" : 0,
+        "Type" : " ",
+        "Name_1" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 17,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.453425038000034,
+          36.24874109700005,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 17,
+        "OID_" : 0,
+        "Name" : "Khan Abad",
+        "FolderPath" : "Hunza",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "HasLabel" : -1,
+        "LabelID" : 0,
+        "Type" : " ",
+        "Name_1" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 18,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.530096583000045,
+          36.266052080000065,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 18,
+        "OID_" : 0,
+        "Name" : "NasirAbad",
+        "FolderPath" : "Hunza",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "HasLabel" : -1,
+        "LabelID" : 0,
+        "Type" : " ",
+        "Name_1" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 19,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.60232004900007,
+          36.283732926000027,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 19,
+        "OID_" : 0,
+        "Name" : "Murtazabad",
+        "FolderPath" : "Hunza",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "HasLabel" : -1,
+        "LabelID" : 0,
+        "Type" : " ",
+        "Name_1" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 20,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.590348493000079,
+          36.295602009000049,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 20,
+        "OID_" : 0,
+        "Name" : "Hassanabad",
+        "FolderPath" : "Hunza",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "HasLabel" : -1,
+        "LabelID" : 0,
+        "Type" : " ",
+        "Name_1" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 21,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.618386034000082,
+          36.311606492000067,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 21,
+        "OID_" : 0,
+        "Name" : "Aliabad",
+        "FolderPath" : "Hunza",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "HasLabel" : -1,
+        "LabelID" : 0,
+        "Type" : " ",
+        "Name_1" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 22,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.633540679000077,
+          36.313441372000057,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 22,
+        "OID_" : 0,
+        "Name" : "Dorkhan",
+        "FolderPath" : "Hunza",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "HasLabel" : -1,
+        "LabelID" : 0,
+        "Type" : " ",
+        "Name_1" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 23,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.642019477000076,
+          36.324279390000072,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 23,
+        "OID_" : 0,
+        "Name" : "HaiderAbad",
+        "FolderPath" : "Hunza",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "HasLabel" : -1,
+        "LabelID" : 0,
+        "Type" : " ",
+        "Name_1" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 24,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.659453167000038,
+          36.326958435000051,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 24,
+        "OID_" : 0,
+        "Name" : "karimabad",
+        "FolderPath" : "Hunza",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "HasLabel" : -1,
+        "LabelID" : 0,
+        "Type" : " ",
+        "Name_1" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 25,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.686422598000036,
+          36.322025146000044,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 25,
+        "OID_" : 0,
+        "Name" : "ALtit",
+        "FolderPath" : "Hunza",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "HasLabel" : -1,
+        "LabelID" : 0,
+        "Type" : " ",
+        "Name_1" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 26,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.733702307000044,
+          36.307093222000049,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 26,
+        "OID_" : 0,
+        "Name" : "Ahmad abad",
+        "FolderPath" : "Hunza",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "HasLabel" : -1,
+        "LabelID" : 0,
+        "Type" : " ",
+        "Name_1" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 27,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.776937470000064,
+          36.30887535100004,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 27,
+        "OID_" : 0,
+        "Name" : "salman abad",
+        "FolderPath" : "Hunza",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "HasLabel" : -1,
+        "LabelID" : 0,
+        "Type" : " ",
+        "Name_1" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 28,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.793290735000085,
+          36.310399381000025,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 28,
+        "OID_" : 0,
+        "Name" : "Sarat",
+        "FolderPath" : "Hunza",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "HasLabel" : -1,
+        "LabelID" : 0,
+        "Type" : " ",
+        "Name_1" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 29,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.810043712000038,
+          36.316377372000034,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 29,
+        "OID_" : 0,
+        "Name" : "Attaabad",
+        "FolderPath" : "Hunza",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "HasLabel" : -1,
+        "LabelID" : 0,
+        "Type" : " ",
+        "Name_1" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 30,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.865167361000033,
+          36.35934231400006,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 30,
+        "OID_" : 0,
+        "Name" : "Shiskiat",
+        "FolderPath" : "Hunza",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "HasLabel" : -1,
+        "LabelID" : 0,
+        "Type" : " ",
+        "Name_1" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 31,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.856157562000078,
+          36.38563743800006,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 31,
+        "OID_" : 0,
+        "Name" : "Gulmut",
+        "FolderPath" : "Hunza",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "HasLabel" : -1,
+        "LabelID" : 0,
+        "Type" : " ",
+        "Name_1" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 32,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.860966050000059,
+          36.408895101000041,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 32,
+        "OID_" : 0,
+        "Name" : "Gulkin",
+        "FolderPath" : "Hunza",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "HasLabel" : -1,
+        "LabelID" : 0,
+        "Type" : " ",
+        "Name_1" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 33,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.875602256000036,
+          36.42778035200007,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 33,
+        "OID_" : 0,
+        "Name" : "Hussani",
+        "FolderPath" : "Hunza",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "HasLabel" : -1,
+        "LabelID" : 0,
+        "Type" : " ",
+        "Name_1" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 34,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.896867110000073,
+          36.432443903000035,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 34,
+        "OID_" : 0,
+        "Name" : "Zar Abad",
+        "FolderPath" : "Hunza",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "HasLabel" : -1,
+        "LabelID" : 0,
+        "Type" : " ",
+        "Name_1" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 35,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.908247988000085,
+          36.443056394000052,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 35,
+        "OID_" : 0,
+        "Name" : "Khuramabad",
+        "FolderPath" : "Hunza",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "HasLabel" : -1,
+        "LabelID" : 0,
+        "Type" : " ",
+        "Name_1" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 36,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.896409935000065,
+          36.46480641100004,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 36,
+        "OID_" : 0,
+        "Name" : "Passu",
+        "FolderPath" : "Hunza",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "HasLabel" : -1,
+        "LabelID" : 0,
+        "Type" : " ",
+        "Name_1" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 37,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.791317397000057,
+          36.57950579900006,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 37,
+        "OID_" : 0,
+        "Name" : "Khyber",
+        "FolderPath" : "Hunza",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "HasLabel" : -1,
+        "LabelID" : 0,
+        "Type" : " ",
+        "Name_1" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 38,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.858255678000035,
+          36.594989026000064,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 38,
+        "OID_" : 0,
+        "Name" : "Galapan",
+        "FolderPath" : "Hunza",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "HasLabel" : -1,
+        "LabelID" : 0,
+        "Type" : " ",
+        "Name_1" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 39,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.868087709000065,
+          36.612431473000072,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 39,
+        "OID_" : 0,
+        "Name" : "Murkhun",
+        "FolderPath" : "Hunza",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "HasLabel" : -1,
+        "LabelID" : 0,
+        "Type" : " ",
+        "Name_1" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 40,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.863279527000032,
+          36.620174261000045,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 40,
+        "OID_" : 0,
+        "Name" : "Jamal abad",
+        "FolderPath" : "Hunza",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "HasLabel" : -1,
+        "LabelID" : 0,
+        "Type" : " ",
+        "Name_1" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 41,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.848232103000043,
+          36.64944132200003,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 41,
+        "OID_" : 0,
+        "Name" : "Gircha",
+        "FolderPath" : "Hunza",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "HasLabel" : -1,
+        "LabelID" : 0,
+        "Type" : " ",
+        "Name_1" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 42,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.846933829000079,
+          36.658410893000053,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 42,
+        "OID_" : 0,
+        "Name" : "Sost",
+        "FolderPath" : "Hunza",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "HasLabel" : -1,
+        "LabelID" : 0,
+        "Type" : " ",
+        "Name_1" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 43,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.84127095100007,
+          36.673478716000034,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 43,
+        "OID_" : 0,
+        "Name" : "Nazimabad",
+        "FolderPath" : "Hunza",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "HasLabel" : -1,
+        "LabelID" : 0,
+        "Type" : " ",
+        "Name_1" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 44,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.83679255900006,
+          36.684760313000027,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 44,
+        "OID_" : 0,
+        "Name" : "Hussain Abad",
+        "FolderPath" : "Hunza",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "HasLabel" : -1,
+        "LabelID" : 0,
+        "Type" : " ",
+        "Name_1" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 45,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.82022908600004,
+          36.679652986000065,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 45,
+        "OID_" : 0,
+        "Name" : "Khuda Abad",
+        "FolderPath" : "Hunza",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "HasLabel" : -1,
+        "LabelID" : 0,
+        "Type" : " ",
+        "Name_1" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 46,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.761934248000045,
+          36.788729423000063,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 46,
+        "OID_" : 0,
+        "Name" : "Misgar",
+        "FolderPath" : "Hunza",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "HasLabel" : -1,
+        "LabelID" : 0,
+        "Type" : " ",
+        "Name_1" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 47,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.99806480500007,
+          36.862023960000045,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 47,
+        "OID_" : 0,
+        "Name" : "Khunjarab National Park",
+        "FolderPath" : "Hunza",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "HasLabel" : -1,
+        "LabelID" : 0,
+        "Type" : " ",
+        "Name_1" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 48,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          75.162044760000072,
+          36.876570843000025,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 48,
+        "OID_" : 0,
+        "Name" : "Bara khun",
+        "FolderPath" : "Hunza",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "HasLabel" : -1,
+        "LabelID" : 0,
+        "Type" : " ",
+        "Name_1" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 49,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.710282909000057,
+          36.820193805000031,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 49,
+        "OID_" : 0,
+        "Name" : "Kalam Darchi",
+        "FolderPath" : "Hunza",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "HasLabel" : -1,
+        "LabelID" : 0,
+        "Type" : " ",
+        "Name_1" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 50,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.496795114000065,
+          36.918558157000064,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 50,
+        "OID_" : 0,
+        "Name" : "Mulangi",
+        "FolderPath" : "Hunza",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "HasLabel" : -1,
+        "LabelID" : 0,
+        "Type" : " ",
+        "Name_1" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 51,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          75.006677241000034,
+          36.532359599000074,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 51,
+        "OID_" : 0,
+        "Name" : "Duet",
+        "FolderPath" : "Hunza",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "HasLabel" : -1,
+        "LabelID" : 0,
+        "Type" : " ",
+        "Name_1" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 52,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          75.223259950000056,
+          36.49989580700003,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 52,
+        "OID_" : 0,
+        "Name" : "Muhabat abad shimshal",
+        "FolderPath" : "Hunza",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "HasLabel" : -1,
+        "LabelID" : 0,
+        "Type" : " ",
+        "Name_1" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 53,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          75.316033483000069,
+          36.43783935700003,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 53,
+        "OID_" : 0,
+        "Name" : "shimshal",
+        "FolderPath" : "Hunza",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "HasLabel" : -1,
+        "LabelID" : 0,
+        "Type" : " ",
+        "Name_1" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 54,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          75.351533004000032,
+          36.442448825000042,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 54,
+        "OID_" : 0,
+        "Name" : "Bandasar",
+        "FolderPath" : "Hunza",
+        "SymbolID" : 0,
+        "AltMode" : -1,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "HasLabel" : -1,
+        "LabelID" : 0,
+        "Type" : " ",
+        "Name_1" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 55,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.840073355000072,
+          36.663199005000024,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 55,
+        "OID_" : 0,
+        "Name" : "Sirtaz",
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "HasLabel" : 0,
+        "LabelID" : 0,
+        "Type" : " ",
+        "Name_1" : " "
+      }
+    }
+  ]
 }

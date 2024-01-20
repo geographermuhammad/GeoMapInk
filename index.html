@@ -3,342 +3,195 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Map with Tourist Points</title>
-
-    <!-- Leaflet CSS -->
+    <title>Interactive Map of Hunza</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-
-    <!-- Leaflet EasyPrint CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet-easyprint/dist/easyprint.css" />
-
     <style>
-        /* Set the height of the map container */
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
         #map-container {
             display: flex;
+            height: 100%;
         }
-
         #map {
-            flex: 1;
+            flex-grow: 1;
             height: 100vh;
         }
-
-        /* Style for right-side bar */
         .right-sidebar {
-            width: 10%; /* Adjust the width as needed */
-            padding: 10px;
-            background-color: white; /* Optional background color for the right sidebar */
+            width: 250px;
+            padding: 20px;
+            background-color: #f8f9fa;
+            overflow-y: auto;
+            box-sizing: border-box;
         }
-
-        /* Style for checkboxes and buttons */
-        .checkbox-container,
-        .button-container {
-            margin-top: 10px;
+        .checkbox-container, .button-container {
+            margin-top: 20px;
         }
-
-        .checkbox-container label,
-        .button-container .action-button {
-            background: transparent;
-            border: none;
-            cursor: pointer;
+        .checkbox-container label, .button-container button {
+            display: block;
             padding: 5px;
-            margin-right: 5px;
-            color: blue;
+            cursor: pointer;
+            border: 1px solid #ddd;
+            background: #fff;
+            margin-bottom: 5px;
         }
-
-        .checkbox-container label:hover,
-        .button-container .action-button:hover {
-            text-decoration: underline;
+        .checkbox-container label:hover, .button-container button:hover {
+            background: #e9ecef;
         }
-
-        /* Style for print button */
-        .action-button.print {
-            background-color: blue;
+        .print-button {
+            background-color: #007bff;
             color: white;
+            border-color: #007bff;
+        }
+        @media (max-width: 768px) {
+            .right-sidebar {
+                width: 100%;
+                height: auto;
+                position: absolute;
+                bottom: 0;
+                z-index: 1000;
+            }
+            #map {
+                height: calc(100vh - 200px);
+            }
+        }
+        .sub-checkbox {
+            margin-left: 20px;
         }
     </style>
 </head>
 <body>
-
-    <!-- Map container and right-side bar -->
     <div id="map-container">
-        <!-- Map -->
         <div id="map"></div>
-
-        <!-- Right-side bar for checkboxes and buttons -->
         <div class="right-sidebar">
-            <!-- Checkbox container -->
             <div class="checkbox-container">
-                <label>
-                    <input type="checkbox" id="boundaryCheckbox" checked>
-                   Boundary
-                </label>
-                <br>
-                <label>
-                    <input type="checkbox" id="hotelCheckbox" checked>
-                    Hotels
-                </label>
-                <br>
-                <label>
-                    <input type="checkbox" id="roadsCheckbox" checked>
-                   Roads
-                </label>
-                <br>
-                <label>
-                    <input type="checkbox" id="touristPointsCheckbox" checked>
-                   Tourist Points
-                </label>
-                <br>
-                <label>
-                    <input type="checkbox" id="villagesCheckbox" checked>
-                    Villages
-                </label>
+                <label><input type="checkbox" id="boundaryCheckbox" checked> Boundary</label>
+                <label><input type="checkbox" id="hotelCheckbox" checked> Hotels</label>
+                <label> Roads</label>
+                <div class="sub-checkbox">
+                    <label><input type="checkbox" id="highwaysCheckbox" checked> Highways</label>
+                    <label><input type="checkbox" id="linkRoadsCheckbox" checked> Link Roads</label>
+                    <label><input type="checkbox" id="pathsCheckbox" checked> Paths</label>
+                    <label><input type="checkbox" id="residentRoadsCheckbox" checked> Residential Roads</label>
+                </div>
+                <label><input type="checkbox" id="touristPointsCheckbox" checked> Tourist Points</label>
+                <label><input type="checkbox" id="villagesCheckbox" checked> Villages</label>
+                <label><input type="checkbox" id="passesCheckbox"> Passes</label>
+                <label><input type="checkbox" id="tracksCheckbox"> Tracks</label>
+                <label><input type="checkbox" id="glaciersCheckbox"> Glaciers</label>
             </div>
-
-            <!-- Button container -->
             <div class="button-container">
-                <!-- Print button -->
-                <div class="action-button print" onclick="printScreen()">Print Map</div>
-
-                <!-- Reset Zoom button -->
-                <div class="action-button" onclick="resetZoom()">Reset Zoom</div>
+                <button class="print-button" onclick="printMap()">Print Map</button>
+                <button onclick="resetZoom()">Reset Zoom</button>
             </div>
         </div>
     </div>
 
-
-    <!-- Leaflet JavaScript -->
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-
-    <!-- Leaflet AJAX -->
     <script src="https://unpkg.com/leaflet-ajax/dist/leaflet.ajax.min.js"></script>
-
-    <!-- Leaflet EasyPrint -->
     <script src="https://unpkg.com/leaflet-easyprint/dist/bundle.js"></script>
-
     <script>
+        var map = L.map('map').setView([36.3167, 74.6500], 9);
         
-  // Initialize the map with the center at Hunza and a default zoom level
-  var defaultZoomLevel = 9;
-        var map = L.map('map').setView([36.3167, 74.6500], defaultZoomLevel);
+        // Add base layer
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 18,
+            attribution: 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors'
+        }).addTo(map);
 
-        // Load GeoJSON data for boundary
-        var boundaryLayer;
+        // Define custom icons using the names of the GeoJSON files
+        var icons = {
+            hotels: L.icon({ iconUrl: 'icons/hotel.png', iconSize: [15, 15] }),
+            touristpoints: L.icon({ iconUrl: 'icons/touristpoint.png', iconSize: [15, 15] }),
+            passes: L.icon({ iconUrl: 'icons/passes.png', iconSize: [25, 25] }),
+            glaciers: L.icon({ iconUrl: 'icons/glacier.png', iconSize: [15, 15] }),
+            villages: L.icon({ iconUrl: 'icons/village.png', iconSize: [15, 15] })
+            // Add other icons as needed
+        };
 
-        // Function to update boundary GeoJSON layer based on checkbox state
-        function updateBoundaryLayer() {
-            if (document.getElementById('boundaryCheckbox').checked) {
-                // Show boundary
-                boundaryLayer.setStyle({ fill: false, color: 'blue', weight: 2 });
-                boundaryLayer.addTo(map);
+        // Modify pointToLayer function to use the appropriate icon
+        function pointToLayer(feature, latlng, layerType) {
+            return L.marker(latlng, { icon: icons[layerType] });
+        }
 
-                // Check if the boundaryLayer has valid bounds before trying to fit the map bounds
-                if (boundaryLayer.getBounds().isValid()) {
-                    // Set map bounds based on boundary
-                    map.fitBounds(boundaryLayer.getBounds(), { padding: [50, 50] }); // Adjust padding as needed
+        // Define and load layers with custom icons
+        var boundaryLayer = L.geoJSON.ajax('boundary.geojson').addTo(map);
+        var hotelsLayer = L.geoJSON.ajax('hotels.geojson', {
+            pointToLayer: function(feature, latlng) {
+                return pointToLayer(feature, latlng, 'hotels');
+            }
+        }).addTo(map);
+        var touristPointsLayer = L.geoJSON.ajax('touristpoints.geojson', {
+            pointToLayer: function(feature, latlng) {
+                return pointToLayer(feature, latlng, 'touristpoints');
+            }
+        }).addTo(map);
+        var passesLayer = L.geoJSON.ajax('passes.geojson', {
+            pointToLayer: function(feature, latlng) {
+                return pointToLayer(feature, latlng, 'passes');
+            }
+        }).addTo(map);
+        var glaciersLayer = L.geoJSON.ajax('glaciers.geojson', {
+            pointToLayer: function(feature, latlng) {
+                return pointToLayer(feature, latlng, 'glaciers');
+            }
+        }).addTo(map);
 
-                    // Display layer data (e.g., popup)
-                    boundaryLayer.eachLayer(function (layer) {
-                        layer.bindPopup('<strong>Boundary Info</strong><br>Any additional information you want to display.');
-                    });
+        // Define and load road layers (with color styling)
+        var highwaysLayer = L.geoJSON.ajax('highways.geojson', {style: {color: 'blue'}}).addTo(map);
+        var linkRoadsLayer = L.geoJSON.ajax('linkroads.geojson', {style: {color: 'green'}}).addTo(map);
+        var pathsLayer = L.geoJSON.ajax('paths.geojson', {style: {color: 'orange'}}).addTo(map);
+        var residentRoadsLayer = L.geoJSON.ajax('residentroads.geojson', {style: {color: 'red'}}).addTo(map);
+
+        var villagesLayer = L.geoJSON.ajax('villages.geojson', {
+            pointToLayer: function(feature, latlng) {
+                return pointToLayer(feature, latlng, 'villages');
+            }
+        }).addTo(map);
+        var tracksLayer = L.geoJSON.ajax('tracks.geojson', {style: {color: 'gray'}}).addTo(map);
+
+        // Functions to update layer visibility
+        function toggleLayer(checkboxId, layer) {
+            var checkbox = document.getElementById(checkboxId);
+            checkbox.addEventListener('change', function() {
+                if (this.checked) {
+                    layer.addTo(map);
                 } else {
-                    console.error('Invalid bounds for the boundary layer.');
+                    map.removeLayer(layer);
                 }
-            } else {
-                // Hide boundary
-                map.removeLayer(boundaryLayer);
-            }
+            });
         }
 
-        // Add event listener to boundary checkbox
-        document.getElementById('boundaryCheckbox').addEventListener('change', updateBoundaryLayer);
+        // Toggle layers based on checkboxes
+        toggleLayer('boundaryCheckbox', boundaryLayer);
+        toggleLayer('hotelCheckbox', hotelsLayer);
+        toggleLayer('highwaysCheckbox', highwaysLayer);
+        toggleLayer('linkRoadsCheckbox', linkRoadsLayer);
+        toggleLayer('pathsCheckbox', pathsLayer);
+        toggleLayer('residentRoadsCheckbox', residentRoadsLayer);
+        toggleLayer('touristPointsCheckbox', touristPointsLayer);
+        toggleLayer('villagesCheckbox', villagesLayer);
+        toggleLayer('passesCheckbox', passesLayer);
+        toggleLayer('tracksCheckbox', tracksLayer);
+        toggleLayer('glaciersCheckbox', glaciersLayer);
 
-        // Load GeoJSON data for boundary
-        boundaryLayer = L.geoJSON.ajax('boundary.geojson', {
-            style: {
-                fill: false, // Set fill to false for no fill
-                color: 'blue', // Set the boundary color to blue
-                weight: 2
-            }
-        });
-
-        // Initial update of boundary based on checkbox state
-        updateBoundaryLayer();
-
-
-        // Load GeoJSON data for hotels, roads, tourist points, and villages...
-        // (Keep the existing code for loading other layers)
-
-        // Function to reset map zoom to defaultZoomLevel
-        // Load GeoJSON data for hotels
-        var hotelsLayer;
-
-        // Function to update hotels GeoJSON layer based on checkbox state
-        function updateHotelsLayer() {
-            if (document.getElementById('hotelCheckbox').checked) {
-                // Show hotels
-                hotelsLayer.addTo(map);
-            } else {
-                // Hide hotels
-                map.removeLayer(hotelsLayer);
-            }
+        // Print map function
+        function printMap() {
+            var printPlugin = L.easyPrint({
+                sizeModes: ['Current', 'A4Landscape', 'A4Portrait'],
+                filename: 'Hunza_map',
+                exportOnly: true,
+                hideControlContainer: true
+            }).addTo(map);
+            printPlugin.printMap('CurrentSize', 'Hunza_map');
         }
 
-        // Add event listener to hotels checkbox
-        document.getElementById('hotelCheckbox').addEventListener('change', updateHotelsLayer);
-
-        // Load GeoJSON data for hotels
-        hotelsLayer = L.geoJSON.ajax('hotels.geojson', {
-            pointToLayer: function (feature, latlng) {
-                return L.marker(latlng, {
-                    icon: L.icon({
-                        iconUrl: './icons/hotel.png',
-                        iconSize: [10, 20],
-                        iconAnchor: [12, 41],
-                        popupAnchor: [1, -34],
-                    })
-                });
-            },
-            onEachFeature: function (feature, layer) {
-                layer.bindPopup('<strong>' + feature.properties.Name + '</strong><br>' + feature.properties.Type);
-            }
-        });
-
-        // Initial update of hotels based on checkbox state
-        updateHotelsLayer();
-
-        // Load GeoJSON data for roads
-        var roadsLayer;
-
-        // Function to update roads GeoJSON layer based on checkbox state
-        function updateRoadsLayer() {
-            if (document.getElementById('roadsCheckbox').checked) {
-                // Show roads
-                roadsLayer.addTo(map);
-            } else {
-                // Hide roads
-                map.removeLayer(roadsLayer);
-            }
-        }
-
-        // Add event listener to roads checkbox
-        document.getElementById('roadsCheckbox').addEventListener('change', updateRoadsLayer);
-
-        // Load GeoJSON data for roads
-        roadsLayer = L.geoJSON.ajax('roads.geojson', {
-            style: {
-                color: 'green', // Set the roads color to green
-                weight: 3
-            }
-        });
-
-        // Initial update of roads based on checkbox state
-        updateRoadsLayer();
-
-        // Load GeoJSON data for tourist points
-        var touristPointsLayer;
-
-        // Function to update tourist points GeoJSON layer based on checkbox state
-        function updateTouristPointsLayer() {
-            if (document.getElementById('touristPointsCheckbox').checked) {
-                // Show tourist points
-                touristPointsLayer.addTo(map);
-            } else {
-                // Hide tourist points
-                map.removeLayer(touristPointsLayer);
-            }
-        }
-
-        // Add event listener to tourist points checkbox
-        document.getElementById('touristPointsCheckbox').addEventListener('change', updateTouristPointsLayer);
-
-        // Load GeoJSON data for tourist points
-        touristPointsLayer = L.geoJSON.ajax('touristpoints.geojson', {
-            pointToLayer: function (feature, latlng) {
-                return L.marker(latlng, {
-                    icon: L.icon({
-                        iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-green.png',
-                        iconSize: [10, 20],
-                        iconAnchor: [12, 41],
-                        popupAnchor: [1, -34],
-                    })
-                });
-            },
-            onEachFeature: function (feature, layer) {
-                layer.bindPopup('<strong>' + feature.properties.Name + '</strong><br>' + feature.properties.Description);
-            }
-        });
-
-        // Initial update of tourist points based on checkbox state
-        updateTouristPointsLayer();
-
-        // Load GeoJSON data for villages
-        var villagesLayer;
-
-        // Function to update villages GeoJSON layer based on checkbox state
-        function updateVillagesLayer() {
-            if (document.getElementById('villagesCheckbox').checked) {
-                // Show villages
-                villagesLayer.addTo(map);
-            } else {
-                // Hide villages
-                map.removeLayer(villagesLayer);
-            }
-        }
-
-        // Add event listener to villages checkbox
-        document.getElementById('villagesCheckbox').addEventListener('change', updateVillagesLayer);
-
-        // Load GeoJSON data for villages
-        villagesLayer = L.geoJSON.ajax('villages.geojson', {
-            pointToLayer: function (feature, latlng) {
-                return L.marker(latlng, {
-                    icon: L.icon({
-                        iconUrl: './icons/village.png', // Replace with the path to your village icon
-                        iconSize: [10, 20],
-                        iconAnchor: [12, 41],
-                        popupAnchor: [1, -34],
-                    })
-                });
-            },
-            onEachFeature: function (feature, layer) {
-                layer.bindPopup('<strong>' + feature.properties.Name + '</strong><br>' + feature.properties.Description);
-            }
-        });
-
-        // Initial update of villages based on checkbox state
-        updateVillagesLayer();
-
-       
-        function printScreen() {
-    // Hide the right-sidebar before printing
-    var rightSidebar = document.querySelector('.right-sidebar');
-    rightSidebar.style.display = 'none';
-
-    // Trigger the browser's print dialog
-    window.print();
-
-    // Show the right-sidebar again after printing
-    rightSidebar.style.display = 'block';
-}
-           
-        function calculateCenterAndZoom() {
-            if (boundaryLayer.getBounds().isValid()) {
-                var center = boundaryLayer.getBounds().getCenter();
-                var zoom = map.getBoundsZoom(boundaryLayer.getBounds());
-                return { center: center, zoom: zoom };
-            } else {
-                console.error('Invalid bounds for the boundary layer.');
-                // Default values if bounds are invalid
-                return { center: [36.3167, 74.6500], zoom: defaultZoomLevel };
-            }
-        }
-
-        // Updated function to reset the map center and zoom
+        // Reset zoom function
         function resetZoom() {
-            var centerAndZoom = calculateCenterAndZoom();
-            map.setView(centerAndZoom.center, centerAndZoom.zoom);
+            map.setView([36.3167, 74.6500], 9);
         }
     </script>
-
 </body>
 </html>
