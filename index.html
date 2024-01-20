@@ -41,9 +41,9 @@
             background: #e9ecef;
         }
         .print-button {
-            background-color: #007bff;
-            color: white;
-            border-color: #007bff;
+            background-color: black;
+            color: black;
+            border-color: white;
         }
         @media (max-width: 768px) {
             .right-sidebar {
@@ -73,14 +73,13 @@
                 <div class="sub-checkbox">
                     <label><input type="checkbox" id="highwaysCheckbox" checked> Highways</label>
                     <label><input type="checkbox" id="linkRoadsCheckbox" checked> Link Roads</label>
-                    <label><input type="checkbox" id="pathsCheckbox" checked> Paths</label>
                     <label><input type="checkbox" id="residentRoadsCheckbox" checked> Residential Roads</label>
                 </div>
                 <label><input type="checkbox" id="touristPointsCheckbox" checked> Tourist Points</label>
                 <label><input type="checkbox" id="villagesCheckbox" checked> Villages</label>
-                <label><input type="checkbox" id="passesCheckbox"> Passes</label>
-                <label><input type="checkbox" id="tracksCheckbox"> Tracks</label>
-                <label><input type="checkbox" id="glaciersCheckbox"> Glaciers</label>
+                <label><input type="checkbox" id="passesCheckbox"checked> Passes</label>
+                <label><input type="checkbox" id="tracksCheckbox"checked> Tracks</label>
+                <label><input type="checkbox" id="glaciersCheckbox"checked> Glaciers</label>
             </div>
             <div class="button-container">
                 <button class="print-button" onclick="printMap()">Print Map</button>
@@ -117,40 +116,40 @@
         }
 
         // Define and load layers with custom icons
-        var boundaryLayer = L.geoJSON.ajax('boundary.geojson').addTo(map);
-        var hotelsLayer = L.geoJSON.ajax('hotels.geojson', {
+        var boundaryLayer = L.geoJSON.ajax('src/boundary.geojson').addTo(map);
+        var hotelsLayer = L.geoJSON.ajax('src/hotels.geojson', {
             pointToLayer: function(feature, latlng) {
                 return pointToLayer(feature, latlng, 'hotels');
             }
         }).addTo(map);
-        var touristPointsLayer = L.geoJSON.ajax('touristpoints.geojson', {
+        var touristPointsLayer = L.geoJSON.ajax('src/touristpoints.geojson', {
             pointToLayer: function(feature, latlng) {
                 return pointToLayer(feature, latlng, 'touristpoints');
             }
         }).addTo(map);
-        var passesLayer = L.geoJSON.ajax('passes.geojson', {
+        var passesLayer = L.geoJSON.ajax('src/passes.geojson', {
             pointToLayer: function(feature, latlng) {
                 return pointToLayer(feature, latlng, 'passes');
             }
         }).addTo(map);
-        var glaciersLayer = L.geoJSON.ajax('glaciers.geojson', {
+        var glaciersLayer = L.geoJSON.ajax('src/glaciers.geojson', {
             pointToLayer: function(feature, latlng) {
                 return pointToLayer(feature, latlng, 'glaciers');
             }
         }).addTo(map);
 
         // Define and load road layers (with color styling)
-        var highwaysLayer = L.geoJSON.ajax('highways.geojson', {style: {color: 'blue'}}).addTo(map);
-        var linkRoadsLayer = L.geoJSON.ajax('linkroads.geojson', {style: {color: 'green'}}).addTo(map);
-        var pathsLayer = L.geoJSON.ajax('paths.geojson', {style: {color: 'orange'}}).addTo(map);
-        var residentRoadsLayer = L.geoJSON.ajax('residentroads.geojson', {style: {color: 'red'}}).addTo(map);
+        var highwaysLayer = L.geoJSON.ajax('src/highway.geojson', {style: {color: 'blue'}}).addTo(map);
+        var linkRoadsLayer = L.geoJSON.ajax('src/linkroads.geojson', {style: {color: 'black'}}).addTo(map);
+       
+        var residentRoadsLayer = L.geoJSON.ajax('src/residential.geojson', {style: {color: 'yellow'}}).addTo(map);
 
-        var villagesLayer = L.geoJSON.ajax('villages.geojson', {
+        var villagesLayer = L.geoJSON.ajax('src/villages.geojson', {
             pointToLayer: function(feature, latlng) {
                 return pointToLayer(feature, latlng, 'villages');
             }
         }).addTo(map);
-        var tracksLayer = L.geoJSON.ajax('tracks.geojson', {style: {color: 'gray'}}).addTo(map);
+        var tracksLayer = L.geoJSON.ajax('src/tracks.geojson', {style: {color: 'green'}}).addTo(map);
 
         // Functions to update layer visibility
         function toggleLayer(checkboxId, layer) {
@@ -169,7 +168,6 @@
         toggleLayer('hotelCheckbox', hotelsLayer);
         toggleLayer('highwaysCheckbox', highwaysLayer);
         toggleLayer('linkRoadsCheckbox', linkRoadsLayer);
-        toggleLayer('pathsCheckbox', pathsLayer);
         toggleLayer('residentRoadsCheckbox', residentRoadsLayer);
         toggleLayer('touristPointsCheckbox', touristPointsLayer);
         toggleLayer('villagesCheckbox', villagesLayer);
