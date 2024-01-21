@@ -60,6 +60,46 @@
         .sub-checkbox {
             margin-left: 20px;
         }
+        .info.legend {
+    padding: 6px 8px;
+    background: white; /* Ensure the background is white */
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    line-height: 18px;
+    color: #555;
+}
+.info.legend i {
+    float: left;
+    margin-right: 8px;
+    opacity: 0.8;
+    height: 18px; /* Ensuring a standard height */
+    display: flex;
+    align-items: center; /* Vertically center the content */
+}
+
+/* Specific style for icon symbols in legend */
+.info.legend .icon-symbol {
+    width: 18px; /* Standard icon width */
+    height: 18px; /* Standard icon height */
+    background-size: cover; /* Cover the area without stretching */
+}
+
+/* Specific style for line symbols in legend */
+.info.legend .line-symbol {
+    width: 30px; /* Width of the line symbol */
+    height: 2px; /* Height of the line symbol */
+    background-color: currentColor; /* Use the color of the parent element */
+    margin-top: 8px; /* Adjust for vertical alignment with text */
+    margin-bottom: 8px; /* Ensure consistent spacing */
+}
+
+        .map-label {
+            background-color: white;
+            padding: 5px;
+            border: 1px solid #999;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
@@ -79,7 +119,7 @@
                 <label><input type="checkbox" id="villagesCheckbox" checked> Villages</label>
                 <label><input type="checkbox" id="passesCheckbox"checked> Passes</label>
                 <label><input type="checkbox" id="tracksCheckbox"checked> Tracks</label>
-                <label><input type="checkbox" id="glaciersCheckbox"checked> Glaciers</label>
+                <label><input type="checkbox" id="glaciersCheckbox"> Glaciers</label>
             </div>
             <div class="button-container">
                 <button class="print-button" onclick="printMap()">Print Map</button>
@@ -100,6 +140,7 @@
             attribution: 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors'
         }).addTo(map);
 
+     
         // Define custom icons using the names of the GeoJSON files
         var icons = {
             hotels: L.icon({ iconUrl: 'icons/hotel.png', iconSize: [15, 15] }),
@@ -160,9 +201,10 @@
                 } else {
                     map.removeLayer(layer);
                 }
+                updateLegend();
             });
         }
-
+           
         // Toggle layers based on checkboxes
         toggleLayer('boundaryCheckbox', boundaryLayer);
         toggleLayer('hotelCheckbox', hotelsLayer);
@@ -175,7 +217,64 @@
         toggleLayer('tracksCheckbox', tracksLayer);
         toggleLayer('glaciersCheckbox', glaciersLayer);
 
-        // Print map function
+   // Function to update the legend based on selected layers
+function updateLegend() {
+    var layersInfo = {
+        "Boundary": { layer: boundaryLayer, color: "red", type: "line" },
+        "Hotels": { layer: hotelsLayer, icon: icons.hotels, type: "point" },
+        "Tourist Points": { layer: touristPointsLayer, icon: icons.touristpoints, type: "point" },
+        "Villages": { layer: villagesLayer, icon: icons.villages, type: "point" },
+        "Passes": { layer: passesLayer, icon: icons.passes, type: "point" },
+        "Highways": { layer: highwaysLayer, color: "blue", type: "line" },
+        "Link Roads": { layer: linkRoadsLayer, color: "black", type: "line" },
+        "Residential Roads": { layer: residentRoadsLayer, color: "yellow", type: "line" },
+        "Tracks": { layer: tracksLayer, color: "green", type: "line" }
+        // Add other layers as needed
+    };
+
+    var legendContent = '<strong>Legend</strong><br>';
+    for (var key in layersInfo) {
+        if (map.hasLayer(layersInfo[key].layer)) {
+            if (layersInfo[key].type === "point") {
+                // For point layers, use icon with 'icon-symbol' class
+                legendContent += '<i class="icon-symbol" style="background-image: url(' + layersInfo[key].icon.options.iconUrl + ');"></i> ' + key + '<br>';
+            } else {
+                // For line layers, use colored line with 'line-symbol' class
+                legendContent += '<i class="line-symbol" style="background: ' + layersInfo[key].color + ';"></i> ' + key + '<br>';
+            }
+        }
+    }
+
+    var legendDiv = document.getElementById('map-legend');
+    if (legendDiv) {
+        legendDiv.innerHTML = legendContent;
+    }
+}
+
+
+        var legend = L.control({ position: 'bottomleft' });
+        legend.onAdd = function(map) {
+            var div = L.DomUtil.create('div', 'info legend');
+            div.id = 'map-legend';
+            div.innerHTML = '';
+            return div;
+        };
+        legend.addTo(map);
+
+        // Create and add a label control for "@geomapink.com"
+        var label = L.control({ position: 'bottomright' }); // Position doesn't matter due to absolute CSS
+label.onAdd = function(map) {
+    var div = L.DomUtil.create('div', 'map-label');
+    div.innerHTML = 'Project of NCRG:IST Karachi <br> Developed by Israr Ahmad<br> @GEO-MAP-INK';
+    return div;
+    
+};
+label.addTo(map);
+        // Initial call to update the legend and event listener for layer changes
+        updateLegend();
+        map.on('overlayadd overlayremove', updateLegend);
+
+        
         function printMap() {
             var printPlugin = L.easyPrint({
                 sizeModes: ['Current', 'A4Landscape', 'A4Portrait'],
