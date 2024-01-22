@@ -132,8 +132,11 @@
     <script src="https://unpkg.com/leaflet-ajax/dist/leaflet.ajax.min.js"></script>
     <script src="https://unpkg.com/leaflet-easyprint/dist/bundle.js"></script>
     <script>
-        var map = L.map('map').setView([36.3167, 74.6500], 9);
-        
+      //  var map = L.map('map').setView([36.3167, 74.6500], 9);
+        var map = L.map('map', {
+    closePopupOnClick: false // Disable closing popups on map click
+}).setView([36.3167, 74.6500], 9);
+
         // Add base layer
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             maxZoom: 18,
@@ -143,11 +146,11 @@
      
         // Define custom icons using the names of the GeoJSON files
         var icons = {
-            hotels: L.icon({ iconUrl: 'icons/hotel.png', iconSize: [15, 15] }),
-            touristpoints: L.icon({ iconUrl: 'icons/touristpoint.png', iconSize: [15, 15] }),
-            passes: L.icon({ iconUrl: 'icons/passes.png', iconSize: [25, 25] }),
+            hotels: L.icon({ iconUrl: 'icons/hotel.svg', iconSize: [20, 20] }),
+            touristpoints: L.icon({ iconUrl: 'icons/touristpoint.svg', iconSize: [35, 35] }),
+            passes: L.icon({ iconUrl: 'icons/passes.svg', iconSize: [35, 35] }),
             glaciers: L.icon({ iconUrl: 'icons/glacier.png', iconSize: [15, 15] }),
-            villages: L.icon({ iconUrl: 'icons/village.png', iconSize: [15, 15] })
+            villages: L.icon({ iconUrl: 'icons/village.svg', iconSize: [20, 20] })
             // Add other icons as needed
         };
 
@@ -158,21 +161,70 @@
 
         // Define and load layers with custom icons
         var boundaryLayer = L.geoJSON.ajax('src/boundary.geojson').addTo(map);
+       //* var hotelsLayer = L.geoJSON.ajax('src/hotels.geojson', {
+           // pointToLayer: function(feature, latlng) {
+            //    return pointToLayer(feature, latlng, 'hotels');
+          //  }
+        //}).addTo(map);
         var hotelsLayer = L.geoJSON.ajax('src/hotels.geojson', {
-            pointToLayer: function(feature, latlng) {
-                return pointToLayer(feature, latlng, 'hotels');
+    pointToLayer: function(feature, latlng) {
+        var marker = L.marker(latlng, { icon: icons.hotels });
+
+        if (feature.properties) {
+            var popupContent = '';
+            if (feature.properties.name) {
+                popupContent +='<strong>'+feature.properties.name +'</strong>'+ '<br>';
             }
-        }).addTo(map);
+            if (feature.properties.Type) {
+                popupContent += '<strong> ' + feature.properties.type+'</strong>';
+            }
+            marker.bindPopup(popupContent, { autoClose: false });
+        }
+
+        return marker;
+    }
+}).addTo(map);
+
+
         var touristPointsLayer = L.geoJSON.ajax('src/touristpoints.geojson', {
             pointToLayer: function(feature, latlng) {
-                return pointToLayer(feature, latlng, 'touristpoints');
+        var marker = L.marker(latlng, { icon: icons.touristpoints });
+
+        if (feature.properties) {
+            var popupContent = '';
+            if (feature.properties.Name) {
+                popupContent += feature.properties.Name + '<br>';
             }
-        }).addTo(map);
+            if (feature.properties.type) {
+                popupContent += '<strong>'+ feature.properties.type+'</strong>';
+            }
+            marker.bindPopup(popupContent, { autoClose: false });
+        }
+
+        return marker;
+    }
+}).addTo(map);
+
+
         var passesLayer = L.geoJSON.ajax('src/passes.geojson', {
             pointToLayer: function(feature, latlng) {
-                return pointToLayer(feature, latlng, 'passes');
+        var marker = L.marker(latlng, { icon: icons.passes });
+
+        if (feature.properties) {
+            var popupContent = '';
+            if (feature.properties.Name) {
+                popupContent += feature.properties.Name + '<br>';
             }
-        }).addTo(map);
+            if (feature.properties.type) {
+                popupContent +=feature.properties.type;
+            }
+            marker.bindPopup(popupContent, { autoClose: false });
+        }
+
+        return marker;
+    }
+}).addTo(map);
+
         var glaciersLayer = L.geoJSON.ajax('src/glaciers.geojson', {
             pointToLayer: function(feature, latlng) {
                 return pointToLayer(feature, latlng, 'glaciers');
@@ -187,9 +239,23 @@
 
         var villagesLayer = L.geoJSON.ajax('src/villages.geojson', {
             pointToLayer: function(feature, latlng) {
-                return pointToLayer(feature, latlng, 'villages');
+        var marker = L.marker(latlng, { icon: icons.villages });
+
+        if (feature.properties) {
+            var popupContent = '';
+            if (feature.properties.Name) {
+                popupContent += feature.properties.Name + '<br>' ;
             }
-        }).addTo(map);
+            if (feature.properties.Type) {
+                popupContent += '<strong>'+feature.properties.Type+'</strong>';
+            }
+            marker.bindPopup(popupContent, { autoClose: false });
+        }
+
+        return marker;
+    }
+}).addTo(map);
+
         var tracksLayer = L.geoJSON.ajax('src/tracks.geojson', {style: {color: 'green'}}).addTo(map);
 
         // Functions to update layer visibility
