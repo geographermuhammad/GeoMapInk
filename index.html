@@ -45,7 +45,7 @@
             color: black;
             border-color: white;
         }
-        @media (max-width: 768px) {
+        /* @media (max-width: 768px) {
             .right-sidebar {
                 width: 100%;
                 height: auto;
@@ -55,8 +55,24 @@
             }
             #map {
                 height: calc(100vh - 200px);
-            }
-        }
+             }
+        } */
+        @media print {
+    /* Hide elements that should not be printed */
+    .right-sidebar, 
+    other-elements-to-hide {
+        display: none;
+    }
+    
+    /* Ensure the map takes up the full page */
+    #map {
+        height: auto;
+        width: 100%;
+    }
+    
+    /* Additional print styles as needed */
+}
+
         .sub-checkbox {
             margin-left: 20px;
         }
@@ -123,6 +139,8 @@
             </div>
             <div class="button-container">
                 <button class="print-button" onclick="printMap()">Print Map</button>
+
+                <!-- <button class="print-button" onclick="printMap()">Print Map</button> -->
                 <button onclick="resetZoom()">Reset Zoom</button>
             </div>
         </div>
@@ -341,17 +359,20 @@ label.addTo(map);
         map.on('overlayadd overlayremove', updateLegend);
 
         
-        function printMap() {
-            var printPlugin = L.easyPrint({
-                sizeModes: ['Current', 'A4Landscape', 'A4Portrait'],
-                filename: 'Hunza_map',
-                exportOnly: true,
-                hideControlContainer: true
-            }).addTo(map);
-            printPlugin.printMap('CurrentSize', 'Hunza_map');
-        }
+        // function printMap() {
+        //     var printPlugin = L.easyPrint({
+        //         sizeModes: ['Current', 'A4Landscape', 'A4Portrait'],
+        //         filename: 'Hunza_map',
+        //         exportOnly: true,
+        //         hideControlContainer: true
+        //     }).addTo(map);
+        //     printPlugin.printMap('CurrentSize', 'Hunza_map');
+        // }
 
         // Reset zoom function
+        function printMap() {
+    window.print(); // This triggers the browser's print dialog
+}
         function resetZoom() {
             map.setView([36.3167, 74.6500], 9);
         }
