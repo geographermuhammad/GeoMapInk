@@ -16,7 +16,9 @@
       "properties" : {
         "OBJECTID" : 1,
         "OID_" : 0,
-        "Name" : "Mintika pass",
+        "name" : "Mintika pass",
+        "desc" : "Mintikha Pass in near to Misghar Valley  ",
+        "imageUrl": "src/pass/mintika.jpg",
         "FolderPath" : "passes1.kmz/track",
         "SymbolID" : 0,
         "AltMode" : -1,
@@ -42,7 +44,10 @@
       "properties" : {
         "OBJECTID" : 2,
         "OID_" : 0,
-        "Name" : "Kilik pass",
+        "name" : "Kilik pass",
+        "desc" : "Klick Pass in near to Misghar Valley  ",
+        "imageUrl": "src/pass/klick.jpg",
+
         "FolderPath" : "passes1.kmz/track",
         "SymbolID" : 0,
         "AltMode" : -1,
@@ -68,7 +73,7 @@
       "properties" : {
         "OBJECTID" : 3,
         "OID_" : 0,
-        "Name" : "khunjarab pass",
+        "name" : "Khunjarab Pass",
         "FolderPath" : "passes1.kmz/track",
         "SymbolID" : 0,
         "AltMode" : -1,
@@ -94,7 +99,7 @@
       "properties" : {
         "OBJECTID" : 4,
         "OID_" : 0,
-        "Name" : "irshad pass",
+        "name" : "Irshad Pass",
         "FolderPath" : "passes1.kmz/track",
         "SymbolID" : 0,
         "AltMode" : -1,
@@ -120,7 +125,7 @@
       "properties" : {
         "OBJECTID" : 5,
         "OID_" : 0,
-        "Name" : "chillinji pass",
+        "name" : "Chillinji Pass",
         "FolderPath" : "passes1.kmz/track",
         "SymbolID" : 0,
         "AltMode" : -1,

@@ -3204,7 +3204,7 @@
       "properties" : {
         "OBJECTID" : 1,
         "OID_" : 0,
-        "Name" : "shishper track",
+        "name" : "Shishper Track",
         "FolderPath" : "passes1.kmz/track",
         "SymbolID" : 0,
         "AltMode" : 0,
@@ -4382,7 +4382,7 @@
       "properties" : {
         "OBJECTID" : 2,
         "OID_" : 0,
-        "Name" : "Egal nest track",
+        "name" : "Egal nest track",
         "FolderPath" : "passes1.kmz/track",
         "SymbolID" : 0,
         "AltMode" : 0,
@@ -4552,7 +4552,7 @@
       "properties" : {
         "OBJECTID" : 3,
         "OID_" : 0,
-        "Name" : "Ultar glacier track",
+        "name" : "Ultar glacier track",
         "FolderPath" : "passes1.kmz/track",
         "SymbolID" : 0,
         "AltMode" : 0,
@@ -9786,7 +9786,7 @@
       "properties" : {
         "OBJECTID" : 4,
         "OID_" : 0,
-        "Name" : "buloo track",
+        "name" : "buloo track",
         "FolderPath" : "passes1.kmz/track",
         "SymbolID" : 1,
         "AltMode" : 0,
@@ -10166,7 +10166,7 @@
       "properties" : {
         "OBJECTID" : 5,
         "OID_" : 0,
-        "Name" : "ondra poygah",
+        "name" : "ondra poygah",
         "FolderPath" : "passes1.kmz/track",
         "SymbolID" : 2,
         "AltMode" : 0,
@@ -10306,7 +10306,7 @@
       "properties" : {
         "OBJECTID" : 6,
         "OID_" : 0,
-        "Name" : "Baskochi medows Ainbad",
+        "name" : "Baskochi medows Ainbad",
         "FolderPath" : "passes1.kmz/track",
         "SymbolID" : 2,
         "AltMode" : 0,
@@ -10986,7 +10986,7 @@
       "properties" : {
         "OBJECTID" : 7,
         "OID_" : 0,
-        "Name" : "Borit lake and Passu Glacier View point",
+        "name" : "Borit lake and Passu Glacier View point",
         "FolderPath" : "passes1.kmz/track",
         "SymbolID" : 2,
         "AltMode" : 0,
@@ -11300,7 +11300,7 @@
       "properties" : {
         "OBJECTID" : 8,
         "OID_" : 0,
-        "Name" : "Patundas treak",
+        "name" : "Patundas treak",
         "FolderPath" : "passes1.kmz/track",
         "SymbolID" : 2,
         "AltMode" : 0,
@@ -11962,7 +11962,7 @@
       "properties" : {
         "OBJECTID" : 9,
         "OID_" : 0,
-        "Name" : "Yasperth and lupzdur treak",
+        "name" : "Yasperth and lupzdur treak",
         "FolderPath" : "passes1.kmz/track",
         "SymbolID" : 2,
         "AltMode" : 0,
@@ -12588,7 +12588,7 @@
       "properties" : {
         "OBJECTID" : 10,
         "OID_" : 0,
-        "Name" : "Khyber medows",
+        "name" : "Khyber medows",
         "FolderPath" : "passes1.kmz/track",
         "SymbolID" : 2,
         "AltMode" : 0,

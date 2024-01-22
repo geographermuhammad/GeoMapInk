@@ -6,6 +6,8 @@
     <title>Interactive Map of Hunza</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet-easyprint/dist/easyprint.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+
     <style>
         body, html {
             height: 100%;
@@ -149,6 +151,8 @@
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="https://unpkg.com/leaflet-ajax/dist/leaflet.ajax.min.js"></script>
     <script src="https://unpkg.com/leaflet-easyprint/dist/bundle.js"></script>
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+
     <script>
       //  var map = L.map('map').setView([36.3167, 74.6500], 9);
         var map = L.map('map', {
@@ -210,8 +214,8 @@
 
         if (feature.properties) {
             var popupContent = '';
-            if (feature.properties.Name) {
-                popupContent += feature.properties.Name + '<br>';
+            if (feature.properties.name) {
+                popupContent += feature.properties.name + '<br>';
             }
             if (feature.properties.type) {
                 popupContent += '<strong>'+ feature.properties.type+'</strong>';
@@ -230,12 +234,15 @@
 
         if (feature.properties) {
             var popupContent = '';
-            if (feature.properties.Name) {
-                popupContent += feature.properties.Name + '<br>';
+            if (feature.properties.name) {
+                popupContent += '<strong>'+ feature.properties.name+'</strong>'+'<br>';
             }
-            if (feature.properties.type) {
-                popupContent +=feature.properties.type;
+            if (feature.properties.desc) {
+                popupContent +=feature.properties.desc;
             }
+            if (feature.properties.imageUrl) {
+                popupContent += '<img src="' + feature.properties.imageUrl + '" alt="' + feature.properties.name + '" style="width:100px; height:70px;">';
+      }
             marker.bindPopup(popupContent, { autoClose: false });
         }
 
@@ -261,8 +268,8 @@
 
         if (feature.properties) {
             var popupContent = '';
-            if (feature.properties.Name) {
-                popupContent += feature.properties.Name + '<br>' ;
+            if (feature.properties.name) {
+                popupContent += feature.properties.name + '<br>' ;
             }
             if (feature.properties.Type) {
                 popupContent += '<strong>'+feature.properties.Type+'</strong>';
@@ -315,6 +322,53 @@ function updateLegend() {
         "Tracks": { layer: tracksLayer, color: "green", type: "line" }
         // Add other layers as needed
     };
+function customGeocoding(query, cb) {
+    var results = [];
+
+    function searchLayer(layer) {
+    layer.eachLayer(function (featureLayer) {
+        console.log("Searching in layer", featureLayer);
+        if (featureLayer.feature.properties.name &&
+            featureLayer.feature.properties.name.toLowerCase().indexOf(query.toLowerCase()) !== -1) {
+            console.log("Found a match:", featureLayer.feature.properties.name);
+            results.push({
+                name: featureLayer.feature.properties.name,
+                center: featureLayer.getLatLng(),
+                layer: featureLayer
+            });
+        }
+    });
+}
+
+
+    // Replace 'hotelsLayer', 'roadsLayer', etc. with your actual layer variables
+    searchLayer(hotelsLayer);
+    searchLayer(roadsLayer);
+    searchLayer(touristPointsLayer);
+    searchLayer(villagesLayer);
+    searchLayer(passesLayer);
+    // ... add other layers to search ...
+
+    cb(results);
+}
+var geocoder = L.Control.geocoder({
+            placeholder: "Search for places...",
+            defaultMarkGeocode: false,
+            geocoder: new L.Control.Geocoder({
+                geocode: function(query, cb) {
+                    customGeocoding(query, function(results) {
+                        cb(results);
+                    });
+                }
+            })
+        }).addTo(map);
+
+geocoder.on('markgeocode', function(e) {
+    var selectedResult = e.geocode || {};
+    if (selectedResult.center) {
+        map.setView(selectedResult.center, 17); // Set view to the center of the result with a zoom level (e.g., 17)
+    }
+});
 
     var legendContent = '<strong>Legend</strong><br>';
     for (var key in layersInfo) {
@@ -335,15 +389,6 @@ function updateLegend() {
     }
 }
 
-
-        var legend = L.control({ position: 'bottomleft' });
-        legend.onAdd = function(map) {
-            var div = L.DomUtil.create('div', 'info legend');
-            div.id = 'map-legend';
-            div.innerHTML = '';
-            return div;
-        };
-        legend.addTo(map);
 
         // Create and add a label control for "@geomapink.com"
         var label = L.control({ position: 'bottomright' }); // Position doesn't matter due to absolute CSS

@@ -16,7 +16,9 @@
       "properties" : {
         "OBJECTID" : 1,
         "OID_" : 0,
-        "Name" : "Khunjarab pass",
+        "name" : "Khunjarab pass",
+        "desc" : "  ",
+        "imageUrl": "src/touristpoint/khunjerab.jpg",
         "SymbolID" : 0,
         "AltMode" : -1,
         "Base" : 0,
@@ -42,7 +44,9 @@
       "properties" : {
         "OBJECTID" : 2,
         "OID_" : 0,
-        "Name" : "Passu Lake",
+        "name" : "Passu Lake",
+        "desc" : "  ",
+        "imageUrl": "src/pass/passulake.jpg",
         "SymbolID" : 0,
         "AltMode" : -1,
         "Base" : 0,
@@ -68,7 +72,9 @@
       "properties" : {
         "OBJECTID" : 3,
         "OID_" : 0,
-        "Name" : "Sost Dry Port",
+        "name" : "Sost Dry Port",
+        "desc" : " ",
+        "imageUrl": "src/touristpoitn/sostdryport.jpg",
         "SymbolID" : 0,
         "AltMode" : -1,
         "Base" : 0,
@@ -94,7 +100,7 @@
       "properties" : {
         "OBJECTID" : 4,
         "OID_" : 0,
-        "Name" : "Babagundi Ziarat",
+        "name" : "Babagundi Ziarat",
         "SymbolID" : 0,
         "AltMode" : -1,
         "Base" : 0,
@@ -120,7 +126,9 @@
       "properties" : {
         "OBJECTID" : 5,
         "OID_" : 0,
-        "Name" : "Batura Glacier View Point",
+        "name" : "Batura Glacier View Point",
+        "desc" : "Klick Pass in near to Misghar Valley  ",
+        "imageUrl": "src/touristpoint/bgvp.jpg",
         "SymbolID" : 0,
         "AltMode" : -1,
         "Base" : 0,
@@ -146,7 +154,7 @@
       "properties" : {
         "OBJECTID" : 6,
         "OID_" : 0,
-        "Name" : "Passu Suspension Bridge",
+        "name" : "Passu Suspension Bridge",
         "SymbolID" : 0,
         "AltMode" : -1,
         "Base" : 0,
@@ -172,7 +180,7 @@
       "properties" : {
         "OBJECTID" : 7,
         "OID_" : 0,
-        "Name" : "Borith Lake",
+        "name" : "Borith Lake",
         "SymbolID" : 0,
         "AltMode" : -1,
         "Base" : 0,
@@ -198,7 +206,7 @@
       "properties" : {
         "OBJECTID" : 8,
         "OID_" : 0,
-        "Name" : "Ondra Poygah",
+        "name" : "Ondra Poygah",
         "SymbolID" : 0,
         "AltMode" : -1,
         "Base" : 0,
@@ -224,7 +232,7 @@
       "properties" : {
         "OBJECTID" : 9,
         "OID_" : 0,
-        "Name" : "Passu Glacier View Point",
+        "name" : "Passu Glacier View Point",
         "SymbolID" : 0,
         "AltMode" : -1,
         "Base" : 0,
@@ -250,7 +258,7 @@
       "properties" : {
         "OBJECTID" : 10,
         "OID_" : 0,
-        "Name" : "Ataabad Lake",
+        "name" : "Ataabad Lake",
         "SymbolID" : 0,
         "AltMode" : -1,
         "Base" : 0,
@@ -276,7 +284,7 @@
       "properties" : {
         "OBJECTID" : 11,
         "OID_" : 0,
-        "Name" : "Altit Fort",
+        "name" : "Altit Fort",
         "SymbolID" : 0,
         "AltMode" : -1,
         "Base" : 0,
@@ -302,7 +310,7 @@
       "properties" : {
         "OBJECTID" : 12,
         "OID_" : 0,
-        "Name" : "Duikar",
+        "name" : "Duikar",
         "SymbolID" : 0,
         "AltMode" : -1,
         "Base" : 0,
@@ -328,7 +336,7 @@
       "properties" : {
         "OBJECTID" : 13,
         "OID_" : 0,
-        "Name" : "Baltit Fort Hunza",
+        "name" : "Baltit Fort Hunza",
         "SymbolID" : 0,
         "AltMode" : -1,
         "Base" : 0,
@@ -354,7 +362,7 @@
       "properties" : {
         "OBJECTID" : 14,
         "OID_" : 0,
-        "Name" : "Ultar Glacier",
+        "name" : "Ultar Glacier",
         "SymbolID" : 0,
         "AltMode" : -1,
         "Base" : 0,
@@ -380,7 +388,7 @@
       "properties" : {
         "OBJECTID" : 15,
         "OID_" : 0,
-        "Name" : "Shishper Glacier",
+        "name" : "Shishper Glacier",
         "SymbolID" : 0,
         "AltMode" : -1,
         "Base" : 0,
@@ -402,7 +410,7 @@
       "properties" : {
         "OBJECTID" : 16,
         "OID_" : null,
-        "Name" : null,
+        "name" : null,
         "SymbolID" : null,
         "AltMode" : null,
         "Base" : null,

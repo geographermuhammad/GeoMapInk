@@ -16,7 +16,9 @@
       "properties" : {
         "OBJECTID" : 1,
         "OID_" : 0,
-        "Name" : "Khairabad Raminj",
+        "name" : "Khairabad Raminj",
+        "desc" : "",
+        "imageUrl": "src/village/raminj.jpg",
         "FolderPath" : "Temporary Places.kmz/Temporary Places",
         "SymbolID" : 0,
         "AltMode" : -1,
@@ -26,7 +28,7 @@
         "HasLabel" : -1,
         "LabelID" : 0,
         "Type" : "Village ",
-        "Name_1" : " "
+        "name_1" : " "
       }
     },
     {
@@ -44,7 +46,7 @@
       "properties" : {
         "OBJECTID" : 2,
         "OID_" : 0,
-        "Name" : "Ramanji",
+        "name" : "Ramanji",
         "FolderPath" : "Temporary Places.kmz/Temporary Places",
         "SymbolID" : 0,
         "AltMode" : -1,
@@ -54,7 +56,7 @@
         "HasLabel" : -1,
         "LabelID" : 0,
         "Type" : "Village ",
-        "Name_1" : " "
+        "name_1" : " "
       }
     },
     {
@@ -72,7 +74,7 @@
       "properties" : {
         "OBJECTID" : 3,
         "OID_" : 0,
-        "Name" : "Past Kirmin",
+        "name" : "Past Kirmin",
         "FolderPath" : "Temporary Places.kmz/Temporary Places",
         "SymbolID" : 0,
         "AltMode" : -1,
@@ -82,7 +84,7 @@
         "HasLabel" : -1,
         "LabelID" : 0,
         "Type" : "Village ",
-        "Name_1" : " "
+        "name_1" : " "
       }
     },
     {
@@ -100,7 +102,7 @@
       "properties" : {
         "OBJECTID" : 4,
         "OID_" : 0,
-        "Name" : "hassanabad",
+        "name" : "Hassanabad",
         "FolderPath" : "Temporary Places.kmz/Temporary Places",
         "SymbolID" : 0,
         "AltMode" : -1,
@@ -110,7 +112,7 @@
         "HasLabel" : -1,
         "LabelID" : 0,
         "Type" : "Village ",
-        "Name_1" : " "
+        "name_1" : " "
       }
     },
     {
@@ -128,7 +130,7 @@
       "properties" : {
         "OBJECTID" : 5,
         "OID_" : 0,
-        "Name" : "Chipurson",
+        "name" : "Chipurson",
         "FolderPath" : "Temporary Places.kmz/Temporary Places",
         "SymbolID" : 0,
         "AltMode" : -1,
@@ -138,7 +140,7 @@
         "HasLabel" : -1,
         "LabelID" : 0,
         "Type" : "Village ",
-        "Name_1" : " "
+        "name_1" : " "
       }
     },
     {
@@ -156,7 +158,7 @@
       "properties" : {
         "OBJECTID" : 6,
         "OID_" : 0,
-        "Name" : "Wuch Kirmin",
+        "name" : "Wuch Kirmin",
         "FolderPath" : "Temporary Places.kmz/Temporary Places",
         "SymbolID" : 0,
         "AltMode" : -1,
@@ -166,7 +168,7 @@
         "HasLabel" : -1,
         "LabelID" : 0,
         "Type" : "Village ",
-        "Name_1" : " "
+        "name_1" : " "
       }
     },
     {
@@ -184,7 +186,7 @@
       "properties" : {
         "OBJECTID" : 7,
         "OID_" : 0,
-        "Name" : "Kil",
+        "name" : "Kil",
         "FolderPath" : "Temporary Places.kmz/Temporary Places",
         "SymbolID" : 0,
         "AltMode" : -1,
@@ -194,7 +196,7 @@
         "HasLabel" : -1,
         "LabelID" : 0,
         "Type" : "Village ",
-        "Name_1" : " "
+        "name_1" : " "
       }
     },
     {
@@ -212,7 +214,7 @@
       "properties" : {
         "OBJECTID" : 8,
         "OID_" : 0,
-        "Name" : "Reshit",
+        "name" : "Reshit",
         "FolderPath" : "Temporary Places.kmz/Temporary Places",
         "SymbolID" : 0,
         "AltMode" : -1,
@@ -222,7 +224,7 @@
         "HasLabel" : -1,
         "LabelID" : 0,
         "Type" : "Village ",
-        "Name_1" : " "
+        "name_1" : " "
       }
     },
     {
@@ -240,7 +242,7 @@
       "properties" : {
         "OBJECTID" : 9,
         "OID_" : 0,
-        "Name" : "Sheresubz",
+        "name" : "Sheresubz",
         "FolderPath" : "Temporary Places.kmz/Temporary Places",
         "SymbolID" : 0,
         "AltMode" : -1,
@@ -250,7 +252,7 @@
         "HasLabel" : -1,
         "LabelID" : 0,
         "Type" : "Village ",
-        "Name_1" : " "
+        "name_1" : " "
       }
     },
     {
@@ -268,7 +270,7 @@
       "properties" : {
         "OBJECTID" : 10,
         "OID_" : 0,
-        "Name" : "Ispenj",
+        "name" : "Ispenj",
         "FolderPath" : "Temporary Places.kmz/Temporary Places",
         "SymbolID" : 0,
         "AltMode" : -1,
@@ -278,7 +280,7 @@
         "HasLabel" : -1,
         "LabelID" : 0,
         "Type" : "Village ",
-        "Name_1" : " "
+        "name_1" : " "
       }
     },
     {
@@ -296,7 +298,7 @@
       "properties" : {
         "OBJECTID" : 11,
         "OID_" : 0,
-        "Name" : "Kumpir Diyor",
+        "name" : "Kumpir Diyor",
         "FolderPath" : "Temporary Places.kmz/Temporary Places",
         "SymbolID" : 0,
         "AltMode" : -1,
@@ -306,7 +308,7 @@
         "HasLabel" : -1,
         "LabelID" : 0,
         "Type" : "Village ",
-        "Name_1" : " "
+        "name_1" : " "
       }
     },
     {
@@ -324,7 +326,7 @@
       "properties" : {
         "OBJECTID" : 12,
         "OID_" : 0,
-        "Name" : "Zuwudkhoon",
+        "name" : "Zuwudkhoon",
         "FolderPath" : "Temporary Places.kmz/Temporary Places",
         "SymbolID" : 0,
         "AltMode" : -1,
@@ -334,7 +336,7 @@
         "HasLabel" : -1,
         "LabelID" : 0,
         "Type" : "Village ",
-        "Name_1" : " "
+        "name_1" : " "
       }
     },
     {
@@ -352,7 +354,7 @@
       "properties" : {
         "OBJECTID" : 13,
         "OID_" : 0,
-        "Name" : "Yashkuk",
+        "name" : "Yashkuk",
         "FolderPath" : "Temporary Places.kmz/Temporary Places",
         "SymbolID" : 0,
         "AltMode" : -1,
@@ -362,7 +364,7 @@
         "HasLabel" : -1,
         "LabelID" : 0,
         "Type" : "Village ",
-        "Name_1" : " "
+        "name_1" : " "
       }
     },
     {
@@ -380,7 +382,7 @@
       "properties" : {
         "OBJECTID" : 14,
         "OID_" : 0,
-        "Name" : "BABA gundi zarat",
+        "name" : "BABA gundi zarat",
         "FolderPath" : "Temporary Places.kmz/Temporary Places",
         "SymbolID" : 0,
         "AltMode" : -1,
@@ -390,7 +392,7 @@
         "HasLabel" : -1,
         "LabelID" : 0,
         "Type" : "Village ",
-        "Name_1" : " "
+        "name_1" : " "
       }
     },
     {
@@ -408,7 +410,7 @@
       "properties" : {
         "OBJECTID" : 15,
         "OID_" : 0,
-        "Name" : "Hussain Abad",
+        "name" : "Hussain Abad",
         "FolderPath" : "Hunza",
         "SymbolID" : 0,
         "AltMode" : -1,
@@ -418,7 +420,7 @@
         "HasLabel" : -1,
         "LabelID" : 0,
         "Type" : "Village ",
-        "Name_1" : " "
+        "name_1" : " "
       }
     },
     {
@@ -436,7 +438,7 @@
       "properties" : {
         "OBJECTID" : 16,
         "OID_" : 0,
-        "Name" : "Mauin",
+        "name" : "Mauin",
         "FolderPath" : "Hunza",
         "SymbolID" : 0,
         "AltMode" : -1,
@@ -446,7 +448,7 @@
         "HasLabel" : -1,
         "LabelID" : 0,
         "Type" : "Village ",
-        "Name_1" : " "
+        "name_1" : " "
       }
     },
     {
@@ -464,7 +466,7 @@
       "properties" : {
         "OBJECTID" : 17,
         "OID_" : 0,
-        "Name" : "Khan Abad",
+        "name" : "Khan Abad",
         "FolderPath" : "Hunza",
         "SymbolID" : 0,
         "AltMode" : -1,
@@ -474,7 +476,7 @@
         "HasLabel" : -1,
         "LabelID" : 0,
         "Type" : "Village ",
-        "Name_1" : " "
+        "name_1" : " "
       }
     },
     {
@@ -492,7 +494,7 @@
       "properties" : {
         "OBJECTID" : 18,
         "OID_" : 0,
-        "Name" : "NasirAbad",
+        "name" : "NasirAbad",
         "FolderPath" : "Hunza",
         "SymbolID" : 0,
         "AltMode" : -1,
@@ -502,7 +504,7 @@
         "HasLabel" : -1,
         "LabelID" : 0,
         "Type" : "Village ",
-        "Name_1" : " "
+        "name_1" : " "
       }
     },
     {
@@ -520,7 +522,7 @@
       "properties" : {
         "OBJECTID" : 19,
         "OID_" : 0,
-        "Name" : "Murtazabad",
+        "name" : "Murtazabad",
         "FolderPath" : "Hunza",
         "SymbolID" : 0,
         "AltMode" : -1,
@@ -530,7 +532,7 @@
         "HasLabel" : -1,
         "LabelID" : 0,
         "Type" : "Village ",
-        "Name_1" : " "
+        "name_1" : " "
       }
     },
     {
@@ -548,7 +550,7 @@
       "properties" : {
         "OBJECTID" : 20,
         "OID_" : 0,
-        "Name" : "Hassanabad",
+        "name" : "Hassanabad",
         "FolderPath" : "Hunza",
         "SymbolID" : 0,
         "AltMode" : -1,
@@ -558,7 +560,7 @@
         "HasLabel" : -1,
         "LabelID" : 0,
         "Type" : "Village ",
-        "Name_1" : " "
+        "name_1" : " "
       }
     },
     {
@@ -576,7 +578,7 @@
       "properties" : {
         "OBJECTID" : 21,
         "OID_" : 0,
-        "Name" : "Aliabad",
+        "name" : "Aliabad",
         "FolderPath" : "Hunza",
         "SymbolID" : 0,
         "AltMode" : -1,
@@ -586,7 +588,7 @@
         "HasLabel" : -1,
         "LabelID" : 0,
         "Type" : "Village ",
-        "Name_1" : " "
+        "name_1" : " "
       }
     },
     {
@@ -604,7 +606,7 @@
       "properties" : {
         "OBJECTID" : 22,
         "OID_" : 0,
-        "Name" : "Dorkhan",
+        "name" : "Dorkhan",
         "FolderPath" : "Hunza",
         "SymbolID" : 0,
         "AltMode" : -1,
@@ -614,7 +616,7 @@
         "HasLabel" : -1,
         "LabelID" : 0,
         "Type" : "Village ",
-        "Name_1" : " "
+        "name_1" : " "
       }
     },
     {
@@ -632,7 +634,7 @@
       "properties" : {
         "OBJECTID" : 23,
         "OID_" : 0,
-        "Name" : "HaiderAbad",
+        "name" : "HaiderAbad",
         "FolderPath" : "Hunza",
         "SymbolID" : 0,
         "AltMode" : -1,
@@ -642,7 +644,7 @@
         "HasLabel" : -1,
         "LabelID" : 0,
         "Type" : "Village ",
-        "Name_1" : " "
+        "name_1" : " "
       }
     },
     {
@@ -660,7 +662,7 @@
       "properties" : {
         "OBJECTID" : 24,
         "OID_" : 0,
-        "Name" : "karimabad",
+        "name" : "Karimabad",
         "FolderPath" : "Hunza",
         "SymbolID" : 0,
         "AltMode" : -1,
@@ -670,7 +672,7 @@
         "HasLabel" : -1,
         "LabelID" : 0,
         "Type" : "Village ",
-        "Name_1" : " "
+        "name_1" : " "
       }
     },
     {
@@ -688,7 +690,7 @@
       "properties" : {
         "OBJECTID" : 25,
         "OID_" : 0,
-        "Name" : "ALtit",
+        "name" : "ALtit",
         "FolderPath" : "Hunza",
         "SymbolID" : 0,
         "AltMode" : -1,
@@ -698,7 +700,7 @@
         "HasLabel" : -1,
         "LabelID" : 0,
         "Type" : "Village ",
-        "Name_1" : " "
+        "name_1" : " "
       }
     },
     {
@@ -716,7 +718,7 @@
       "properties" : {
         "OBJECTID" : 26,
         "OID_" : 0,
-        "Name" : "Ahmad abad",
+        "name" : "Ahmad abad",
         "FolderPath" : "Hunza",
         "SymbolID" : 0,
         "AltMode" : -1,
@@ -726,7 +728,7 @@
         "HasLabel" : -1,
         "LabelID" : 0,
         "Type" : "Village ",
-        "Name_1" : " "
+        "name_1" : " "
       }
     },
     {
@@ -744,7 +746,7 @@
       "properties" : {
         "OBJECTID" : 27,
         "OID_" : 0,
-        "Name" : "salman abad",
+        "name" : "Salmanabad",
         "FolderPath" : "Hunza",
         "SymbolID" : 0,
         "AltMode" : -1,
@@ -754,7 +756,7 @@
         "HasLabel" : -1,
         "LabelID" : 0,
         "Type" : "Village ",
-        "Name_1" : " "
+        "name_1" : " "
       }
     },
     {
@@ -772,7 +774,7 @@
       "properties" : {
         "OBJECTID" : 28,
         "OID_" : 0,
-        "Name" : "Sarat",
+        "name" : "Sarat",
         "FolderPath" : "Hunza",
         "SymbolID" : 0,
         "AltMode" : -1,
@@ -782,7 +784,7 @@
         "HasLabel" : -1,
         "LabelID" : 0,
         "Type" : "Village ",
-        "Name_1" : " "
+        "name_1" : " "
       }
     },
     {
@@ -800,7 +802,7 @@
       "properties" : {
         "OBJECTID" : 29,
         "OID_" : 0,
-        "Name" : "Attaabad",
+        "name" : "Attaabad",
         "FolderPath" : "Hunza",
         "SymbolID" : 0,
         "AltMode" : -1,
@@ -810,7 +812,7 @@
         "HasLabel" : -1,
         "LabelID" : 0,
         "Type" : "Village ",
-        "Name_1" : " "
+        "name_1" : " "
       }
     },
     {
@@ -828,7 +830,7 @@
       "properties" : {
         "OBJECTID" : 30,
         "OID_" : 0,
-        "Name" : "Shiskiat",
+        "name" : "Shiskiat",
         "FolderPath" : "Hunza",
         "SymbolID" : 0,
         "AltMode" : -1,
@@ -838,7 +840,7 @@
         "HasLabel" : -1,
         "LabelID" : 0,
         "Type" : "Village ",
-        "Name_1" : " "
+        "name_1" : " "
       }
     },
     {
@@ -856,7 +858,7 @@
       "properties" : {
         "OBJECTID" : 31,
         "OID_" : 0,
-        "Name" : "Gulmut",
+        "name" : "Gulmut",
         "FolderPath" : "Hunza",
         "SymbolID" : 0,
         "AltMode" : -1,
@@ -866,7 +868,7 @@
         "HasLabel" : -1,
         "LabelID" : 0,
         "Type" : "Village ",
-        "Name_1" : " "
+        "name_1" : " "
       }
     },
     {
@@ -884,7 +886,7 @@
       "properties" : {
         "OBJECTID" : 32,
         "OID_" : 0,
-        "Name" : "Gulkin",
+        "name" : "Gulkin",
         "FolderPath" : "Hunza",
         "SymbolID" : 0,
         "AltMode" : -1,
@@ -894,7 +896,7 @@
         "HasLabel" : -1,
         "LabelID" : 0,
         "Type" : "Village ",
-        "Name_1" : " "
+        "name_1" : " "
       }
     },
     {
@@ -912,7 +914,7 @@
       "properties" : {
         "OBJECTID" : 33,
         "OID_" : 0,
-        "Name" : "Hussani",
+        "name" : "Hussani",
         "FolderPath" : "Hunza",
         "SymbolID" : 0,
         "AltMode" : -1,
@@ -922,7 +924,7 @@
         "HasLabel" : -1,
         "LabelID" : 0,
         "Type" : "Village ",
-        "Name_1" : " "
+        "name_1" : " "
       }
     },
     {
@@ -940,7 +942,7 @@
       "properties" : {
         "OBJECTID" : 34,
         "OID_" : 0,
-        "Name" : "Zar Abad",
+        "name" : "Zar Abad",
         "FolderPath" : "Hunza",
         "SymbolID" : 0,
         "AltMode" : -1,
@@ -950,7 +952,7 @@
         "HasLabel" : -1,
         "LabelID" : 0,
         "Type" : "Village ",
-        "Name_1" : " "
+        "name_1" : " "
       }
     },
     {
@@ -968,7 +970,7 @@
       "properties" : {
         "OBJECTID" : 35,
         "OID_" : 0,
-        "Name" : "Khuramabad",
+        "name" : "Khuramabad",
         "FolderPath" : "Hunza",
         "SymbolID" : 0,
         "AltMode" : -1,
@@ -978,7 +980,7 @@
         "HasLabel" : -1,
         "LabelID" : 0,
         "Type" : "Village ",
-        "Name_1" : " "
+        "name_1" : " "
       }
     },
     {
@@ -996,7 +998,7 @@
       "properties" : {
         "OBJECTID" : 36,
         "OID_" : 0,
-        "Name" : "Passu",
+        "name" : "Passu",
         "FolderPath" : "Hunza",
         "SymbolID" : 0,
         "AltMode" : -1,
@@ -1006,7 +1008,7 @@
         "HasLabel" : -1,
         "LabelID" : 0,
         "Type" : "Village ",
-        "Name_1" : " "
+        "name_1" : " "
       }
     },
     {
@@ -1024,7 +1026,7 @@
       "properties" : {
         "OBJECTID" : 37,
         "OID_" : 0,
-        "Name" : "Khyber",
+        "name" : "Khyber",
         "FolderPath" : "Hunza",
         "SymbolID" : 0,
         "AltMode" : -1,
@@ -1034,7 +1036,7 @@
         "HasLabel" : -1,
         "LabelID" : 0,
         "Type" : "Village ",
-        "Name_1" : " "
+        "name_1" : " "
       }
     },
     {
@@ -1052,7 +1054,7 @@
       "properties" : {
         "OBJECTID" : 38,
         "OID_" : 0,
-        "Name" : "Galapan",
+        "name" : "Galapan",
         "FolderPath" : "Hunza",
         "SymbolID" : 0,
         "AltMode" : -1,
@@ -1062,7 +1064,7 @@
         "HasLabel" : -1,
         "LabelID" : 0,
         "Type" : "Village ",
-        "Name_1" : " "
+        "name_1" : " "
       }
     },
     {
@@ -1080,7 +1082,7 @@
       "properties" : {
         "OBJECTID" : 39,
         "OID_" : 0,
-        "Name" : "Murkhun",
+        "name" : "Murkhun",
         "FolderPath" : "Hunza",
         "SymbolID" : 0,
         "AltMode" : -1,
@@ -1090,7 +1092,7 @@
         "HasLabel" : -1,
         "LabelID" : 0,
         "Type" : "Village ",
-        "Name_1" : " "
+        "name_1" : " "
       }
     },
     {
@@ -1108,7 +1110,7 @@
       "properties" : {
         "OBJECTID" : 40,
         "OID_" : 0,
-        "Name" : "Jamal abad",
+        "name" : "Jamal abad",
         "FolderPath" : "Hunza",
         "SymbolID" : 0,
         "AltMode" : -1,
@@ -1118,7 +1120,7 @@
         "HasLabel" : -1,
         "LabelID" : 0,
         "Type" : "Village ",
-        "Name_1" : " "
+        "name_1" : " "
       }
     },
     {
@@ -1136,7 +1138,7 @@
       "properties" : {
         "OBJECTID" : 41,
         "OID_" : 0,
-        "Name" : "Gircha",
+        "name" : "Gircha",
         "FolderPath" : "Hunza",
         "SymbolID" : 0,
         "AltMode" : -1,
@@ -1146,7 +1148,7 @@
         "HasLabel" : -1,
         "LabelID" : 0,
         "Type" : "Village ",
-        "Name_1" : " "
+        "name_1" : " "
       }
     },
     {
@@ -1164,7 +1166,7 @@
       "properties" : {
         "OBJECTID" : 42,
         "OID_" : 0,
-        "Name" : "Sost",
+        "name" : "Breek Dasth",
         "FolderPath" : "Hunza",
         "SymbolID" : 0,
         "AltMode" : -1,
@@ -1174,7 +1176,7 @@
         "HasLabel" : -1,
         "LabelID" : 0,
         "Type" : "Village ",
-        "Name_1" : " "
+        "name_1" : " "
       }
     },
     {
@@ -1192,7 +1194,7 @@
       "properties" : {
         "OBJECTID" : 43,
         "OID_" : 0,
-        "Name" : "Nazimabad",
+        "name" : "Nazimabad",
         "FolderPath" : "Hunza",
         "SymbolID" : 0,
         "AltMode" : -1,
@@ -1202,7 +1204,7 @@
         "HasLabel" : -1,
         "LabelID" : 0,
         "Type" : "Village ",
-        "Name_1" : " "
+        "name_1" : " "
       }
     },
     {
@@ -1220,7 +1222,7 @@
       "properties" : {
         "OBJECTID" : 44,
         "OID_" : 0,
-        "Name" : "Hussain Abad",
+        "name" : "Hussain Abad",
         "FolderPath" : "Hunza",
         "SymbolID" : 0,
         "AltMode" : -1,
@@ -1230,7 +1232,7 @@
         "HasLabel" : -1,
         "LabelID" : 0,
         "Type" : "Village ",
-        "Name_1" : " "
+        "name_1" : " "
       }
     },
     {
@@ -1248,7 +1250,7 @@
       "properties" : {
         "OBJECTID" : 45,
         "OID_" : 0,
-        "Name" : "Khuda Abad",
+        "name" : "Khuda Abad",
         "FolderPath" : "Hunza",
         "SymbolID" : 0,
         "AltMode" : -1,
@@ -1258,7 +1260,7 @@
         "HasLabel" : -1,
         "LabelID" : 0,
         "Type" : "Village ",
-        "Name_1" : " "
+        "name_1" : " "
       }
     },
     {
@@ -1276,7 +1278,7 @@
       "properties" : {
         "OBJECTID" : 46,
         "OID_" : 0,
-        "Name" : "Misgar",
+        "name" : "Misgar",
         "FolderPath" : "Hunza",
         "SymbolID" : 0,
         "AltMode" : -1,
@@ -1286,7 +1288,7 @@
         "HasLabel" : -1,
         "LabelID" : 0,
         "Type" : "Village ",
-        "Name_1" : " "
+        "name_1" : " "
       }
     },
     {
@@ -1304,7 +1306,7 @@
       "properties" : {
         "OBJECTID" : 47,
         "OID_" : 0,
-        "Name" : "Khunjarab National Park",
+        "name" : "Khunjarab National Park",
         "FolderPath" : "Hunza",
         "SymbolID" : 0,
         "AltMode" : -1,
@@ -1314,7 +1316,7 @@
         "HasLabel" : -1,
         "LabelID" : 0,
         "Type" : "Village ",
-        "Name_1" : " "
+        "name_1" : " "
       }
     },
     {
@@ -1332,7 +1334,7 @@
       "properties" : {
         "OBJECTID" : 48,
         "OID_" : 0,
-        "Name" : "Bara khun",
+        "name" : "Bara khun",
         "FolderPath" : "Hunza",
         "SymbolID" : 0,
         "AltMode" : -1,
@@ -1342,7 +1344,7 @@
         "HasLabel" : -1,
         "LabelID" : 0,
         "Type" : "Village ",
-        "Name_1" : " "
+        "name_1" : " "
       }
     },
     {
@@ -1360,7 +1362,7 @@
       "properties" : {
         "OBJECTID" : 49,
         "OID_" : 0,
-        "Name" : "Kalam Darchi",
+        "name" : "Kalam Darchi",
         "FolderPath" : "Hunza",
         "SymbolID" : 0,
         "AltMode" : -1,
@@ -1370,7 +1372,7 @@
         "HasLabel" : -1,
         "LabelID" : 0,
         "Type" : "Village ",
-        "Name_1" : " "
+        "name_1" : " "
       }
     },
     {
@@ -1388,7 +1390,7 @@
       "properties" : {
         "OBJECTID" : 50,
         "OID_" : 0,
-        "Name" : "Mulangi",
+        "name" : "Mulangi",
         "FolderPath" : "Hunza",
         "SymbolID" : 0,
         "AltMode" : -1,
@@ -1398,7 +1400,7 @@
         "HasLabel" : -1,
         "LabelID" : 0,
         "Type" : "Village ",
-        "Name_1" : " "
+        "name_1" : " "
       }
     },
     {
@@ -1416,7 +1418,7 @@
       "properties" : {
         "OBJECTID" : 51,
         "OID_" : 0,
-        "Name" : "Duet",
+        "name" : "Duet",
         "FolderPath" : "Hunza",
         "SymbolID" : 0,
         "AltMode" : -1,
@@ -1426,7 +1428,7 @@
         "HasLabel" : -1,
         "LabelID" : 0,
         "Type" : "Village ",
-        "Name_1" : " "
+        "name_1" : " "
       }
     },
     {
@@ -1444,7 +1446,7 @@
       "properties" : {
         "OBJECTID" : 52,
         "OID_" : 0,
-        "Name" : "Muhabat abad shimshal",
+        "name" : "Muhabat abad shimshal",
         "FolderPath" : "Hunza",
         "SymbolID" : 0,
         "AltMode" : -1,
@@ -1454,7 +1456,7 @@
         "HasLabel" : -1,
         "LabelID" : 0,
         "Type" : "Village ",
-        "Name_1" : " "
+        "name_1" : " "
       }
     },
     {
@@ -1472,7 +1474,7 @@
       "properties" : {
         "OBJECTID" : 53,
         "OID_" : 0,
-        "Name" : "shimshal",
+        "name" : "Shimshal",
         "FolderPath" : "Hunza",
         "SymbolID" : 0,
         "AltMode" : -1,
@@ -1482,7 +1484,7 @@
         "HasLabel" : -1,
         "LabelID" : 0,
         "Type" : "Village ",
-        "Name_1" : " "
+        "name_1" : " "
       }
     },
     {
@@ -1500,7 +1502,7 @@
       "properties" : {
         "OBJECTID" : 54,
         "OID_" : 0,
-        "Name" : "Bandasar",
+        "name" : "Bandasar",
         "FolderPath" : "Hunza",
         "SymbolID" : 0,
         "AltMode" : -1,
@@ -1510,7 +1512,7 @@
         "HasLabel" : -1,
         "LabelID" : 0,
         "Type" : "Village ",
-        "Name_1" : " "
+        "name_1" : " "
       }
     },
     {
@@ -1528,7 +1530,7 @@
       "properties" : {
         "OBJECTID" : 55,
         "OID_" : 0,
-        "Name" : "Sirtaz",
+        "name" : "Sirtaz",
         "FolderPath" : " ",
         "SymbolID" : 0,
         "AltMode" : 0,
@@ -1538,7 +1540,7 @@
         "HasLabel" : 0,
         "LabelID" : 0,
         "Type" : "Village ",
-        "Name_1" : " "
+        "name_1" : " "
       }
     }
   ]
