@@ -211,7 +211,7 @@
         if (feature.properties) {
             var popupContent = '';
             if (feature.properties.name) {
-                popupContent += feature.properties.name + '<br>';
+                popupContent += '<strong>'+feature.properties.name +'</strong>'+ '<br>';
             }
             if (feature.properties.desc) {
                 popupContent += feature.properties.desc;
@@ -234,7 +234,7 @@
         if (feature.properties) {
             var popupContent = '';
             if (feature.properties.name) {
-                popupContent += feature.properties.name + '<br>';
+                popupContent += '<strong>'+feature.properties.name +'</strong>'+ '<br>';
             }
             if (feature.properties.desc) {
                 popupContent +=feature.properties.desc;
@@ -269,7 +269,7 @@
         if (feature.properties) {
             var popupContent = '';
             if (feature.properties.name) {
-                popupContent += feature.properties.name + '<br>' ;
+                popupContent += '<strong>'+feature.properties.name +'</strong>'+ '<br>' ;
             }
             if (feature.properties.desc) {
                 popupContent +=feature.properties.desc;
@@ -369,18 +369,7 @@ label.addTo(map);
         updateLegend();
         map.on('overlayadd overlayremove', updateLegend);
 
-        
-        // function printMap() {
-        //     var printPlugin = L.easyPrint({
-        //         sizeModes: ['Current', 'A4Landscape', 'A4Portrait'],
-        //         filename: 'Hunza_map',
-        //         exportOnly: true,
-        //         hideControlContainer: true
-        //     }).addTo(map);
-        //     printPlugin.printMap('CurrentSize', 'Hunza_map');
-        // }
 
-        // Reset zoom function
         function printMap() {
     window.print(); // This triggers the browser's print dialog
 }
