@@ -138,9 +138,9 @@
       "properties" : {
         "OBJECTID" : 5,
         "OID_" : 0,
-        "name" : "Chipurson",
-        "desc" : "Chipursan is a valley containing approximately eight scattered villages situated within the Hunza District   ",
-        "imageUrl": "src/village/chipurson.jpg",
+        "name" : "Center Kirmin",
+        "desc" : "Center of kirmin village   ",
+        "imageUrl": "src/village/centerkirmin.jpg",
 
         "FolderPath" : "Temporary Places.kmz/Temporary Places",
         "SymbolID" : 0,
@@ -1646,6 +1646,36 @@
         "name" : "Sirteez",
         "desc" : " ",
         "imageUrl": "src/village/sirteez.jpg",
+        "FolderPath" : " ",
+        "SymbolID" : 0,
+        "AltMode" : 0,
+        "Base" : 0,
+        "Snippet" : " ",
+        "PopupInfo" : " ",
+        "HasLabel" : 0,
+        "LabelID" : 0,
+        "Type" : "Village ",
+        "name_1" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 55,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          74.821073355000072,
+          36.693199005000024,
+          0,
+          null
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 56,
+        "OID_" : 0,
+        "name" : "Sost",
+        "desc" : " ",
+        "imageUrl": "src/village/sost.jpg",
         "FolderPath" : " ",
         "SymbolID" : 0,
         "AltMode" : 0,

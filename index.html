@@ -273,20 +273,29 @@
     }
 }).addTo(map);
 
-        var glaciersLayer = L.geoJSON.ajax('src/glaciers.geojson', {
-            pointToLayer: function(feature, latlng) {
-                return pointToLayer(feature, latlng, 'glaciers');
-            },
-            onEachFeature: function(feature, layer) {
-        // Check if the feature has a property 'name' and bind a tooltip
+var glaciersLayer = L.geoJSON.ajax('src/glaciers.geojson', {
+    style: function(feature) {
+        return {
+            color: '#87CEEB', // Bright sky blue color for the border
+            weight: 1, // Minimal border weight
+            opacity: 1,
+            fillColor: '#FFFFFF', // White color for the fill
+            fillOpacity: 0.7 // Slightly transparent fill
+        };
+    }
+    // other options...
+}).addTo(map);
+
+        // Define and load road layers (with color styling)
+        var highwaysLayer = L.geoJSON.ajax('src/highway.geojson', {
+    style: { color: 'blue' },
+    onEachFeature: function (feature, layer) {
+        // Assuming your GeoJSON features have a property you want to show, for example, 'name'
         if (feature.properties && feature.properties.name) {
             layer.bindTooltip(feature.properties.name, { permanent: false, direction: 'auto' });
         }
     }
-        }).addTo(map);
-
-        // Define and load road layers (with color styling)
-        var highwaysLayer = L.geoJSON.ajax('src/highway.geojson', {style: {color: 'blue'}}).addTo(map);
+}).addTo(map);
         var linkRoadsLayer = L.geoJSON.ajax('src/linkroads.geojson', {style: {color: 'black'}}).addTo(map);
        
         var residentRoadsLayer = L.geoJSON.ajax('src/residential.geojson', {style: {color: 'yellow'}}).addTo(map);
@@ -320,8 +329,13 @@
     }
 }).addTo(map);
 
-        var tracksLayer = L.geoJSON.ajax('src/tracks.geojson', {style: {color: 'green'}}).addTo(map);
-
+        var tracksLayer = L.geoJSON.ajax('src/tracks.geojson', {style: {color: 'green'}, onEachFeature: function (feature, layer) {
+        // Assuming your GeoJSON features have a property you want to show, for example, 'name'
+        if (feature.properties && feature.properties.name) {
+            layer.bindTooltip(feature.properties.name, { permanent: false, direction: 'auto' });
+        }
+    }
+}).addTo(map);
         // Functions to update layer visibility
         function toggleLayer(checkboxId, layer) {
             var checkbox = document.getElementById(checkboxId);
@@ -359,6 +373,7 @@ function updateLegend() {
         "Link Roads": { layer: linkRoadsLayer, color: "black", type: "line" },
         "Residential Roads": { layer: residentRoadsLayer, color: "yellow", type: "line" },
         "Tracks": { layer: tracksLayer, color: "green", type: "line" }
+        
         // Add other layers as needed
     };
 
