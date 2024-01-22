@@ -161,7 +161,12 @@
             attribution: 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors'
         }).addTo(map);
 
-     
+        function addLabels(feature, layer) {
+            if (feature.properties && feature.properties.name) {
+                layer.bindTooltip(feature.properties.name, { permanent: false, direction: 'auto' });
+            }
+        }
+
         // Define custom icons using the names of the GeoJSON files
         var icons = {
             hotels: L.icon({ iconUrl: 'icons/hotel.svg', iconSize: [20, 20] }),
@@ -191,15 +196,21 @@
         if (feature.properties) {
             var popupContent = '';
             if (feature.properties.name) {
-                popupContent +='<strong>'+feature.properties.name +'</strong>'+ '<br>';
+                popupContent += '<strong>' + feature.properties.name + '</strong><br>';
             }
             if (feature.properties.Type) {
-                popupContent += '<strong> ' + feature.properties.type+'</strong>';
+                popupContent += '<strong> ' + feature.properties.Type + '</strong>';
             }
             marker.bindPopup(popupContent, { autoClose: false });
         }
 
         return marker;
+    },
+    onEachFeature: function(feature, layer) {
+        // Check if the feature has a property 'name' and bind a tooltip
+        if (feature.properties && feature.properties.name) {
+            layer.bindTooltip(feature.properties.name, { permanent: false, direction: 'auto' });
+        }
     }
 }).addTo(map);
 
@@ -223,6 +234,12 @@
         }
 
         return marker;
+    },
+    onEachFeature: function(feature, layer) {
+        // Check if the feature has a property 'name' and bind a tooltip
+        if (feature.properties && feature.properties.name) {
+            layer.bindTooltip(feature.properties.name, { permanent: false, direction: 'auto' });
+        }
     }
 }).addTo(map);
 
@@ -247,13 +264,25 @@
         }
 
         return marker;
+    },
+    onEachFeature: function(feature, layer) {
+        // Check if the feature has a property 'name' and bind a tooltip
+        if (feature.properties && feature.properties.name) {
+            layer.bindTooltip(feature.properties.name, { permanent: false, direction: 'auto' });
+        }
     }
 }).addTo(map);
 
         var glaciersLayer = L.geoJSON.ajax('src/glaciers.geojson', {
             pointToLayer: function(feature, latlng) {
                 return pointToLayer(feature, latlng, 'glaciers');
-            }
+            },
+            onEachFeature: function(feature, layer) {
+        // Check if the feature has a property 'name' and bind a tooltip
+        if (feature.properties && feature.properties.name) {
+            layer.bindTooltip(feature.properties.name, { permanent: false, direction: 'auto' });
+        }
+    }
         }).addTo(map);
 
         // Define and load road layers (with color styling)
@@ -282,6 +311,12 @@
         }
 
         return marker;
+    },
+    onEachFeature: function(feature, layer) {
+        // Check if the feature has a property 'name' and bind a tooltip
+        if (feature.properties && feature.properties.name) {
+            layer.bindTooltip(feature.properties.name, { permanent: false, direction: 'auto' });
+        }
     }
 }).addTo(map);
 
