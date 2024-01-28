@@ -6,7 +6,9 @@
     <title>Interactive Map of Hunza</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet-easyprint/dist/easyprint.css" />
-    <style>
+    <link rel="stylesheet" href="path/to/leaflet-measure.css" />
+    
+   <style>
         body, html {
             height: 100%;
             margin: 0;
@@ -93,7 +95,11 @@
     border-radius: 5px;
     line-height: 18px;
     color: #555;
+    z-index: 1000; /* Adjust this value as needed */
+   
 }
+
+
 .info.legend i {
     float: left;
     margin-right: 8px;
@@ -159,6 +165,8 @@
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="https://unpkg.com/leaflet-ajax/dist/leaflet.ajax.min.js"></script>
     <script src="https://unpkg.com/leaflet-easyprint/dist/bundle.js"></script>
+    <script src="path/to/leaflet-measure.js"></script>
+    
     <script>
       //  var map = L.map('map').setView([36.3167, 74.6500], 9);
         var map = L.map('map', {
@@ -346,6 +354,10 @@ var glaciersLayer = L.geoJSON.ajax('src/glaciers.geojson', {
         }
     }
 }).addTo(map);
+
+
+
+
         // Functions to update layer visibility
         function toggleLayer(checkboxId, layer) {
             var checkbox = document.getElementById(checkboxId);
