@@ -5,10 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive Map of Hunza</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet-easyprint/dist/easyprint.css" />
-    <link rel="stylesheet" href="path/to/leaflet-measure.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.css"/>
+   
+    <!-- Include Leaflet.measure CSS and JS if you have them hosted or from a CDN -->
+    <link rel="stylesheet" href="path_to_leaflet_measure.css" />
+  
     
    <style>
+
+
+
         body, html {
             height: 100%;
             margin: 0;
@@ -42,11 +49,12 @@
         .checkbox-container label:hover, .button-container button:hover {
             background: #e9ecef;
         }
-        .print-button {
-            background-color: black;
-            color: black;
-            border-color: white;
-        }
+        .print-button, .reset {
+    background-color: black; /* Button background */
+    color: rgb(0, 0, 0); /* Button text color - making it white for visibility */
+    border: 4px solid rgb(65, 90, 251); /* Blue border */
+}
+
         @media (max-width: 768px) {
     /* Make the map container flex-direction column on small screens */
     #map-container {
@@ -132,13 +140,111 @@
             box-shadow: 0 0 15px rgba(0,0,0,0.2);
             border-radius: 5px;
         }
+
+        search-container {
+    position: absolute; /* Position it relative to right-sidebar */
+    top: 10px; /* Adjust as needed */
+    left: 10px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+    z-index: 100; /* Ensures it stays on top of other elements */
+    padding: 5px;
+    background: white; /* Or any color that fits your design */
+    border: 1px solid #ddd; /* Optional */
+    border-radius: 5px; /* Optional for rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional for shadow */
+}
+
+.search-container input[type="text"] {
+    width: calc(100% - 90px); /* Adjust width to leave space for button */
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+.search-container button {
+    padding: 5px 10px;
+    background-color: #007bff; /* Example blue color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+.map-navigation-controls {
+    position: absolute;
+    right: 120px; /* Adjust as needed */
+    bottom: 10px; /* Adjust as needed */
+    width: 100px; /* Adjust as needed */
+    height: 100px; /* Adjust as needed */
+    border-radius: 50%; /* Circular shape */
+    background-color: #007bff; /* Your desired background color */
+    color: white; /* Text color for buttons */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3); /* Shadow for depth */
+}
+
+.control-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: white; /* Adjust color as needed */
+}
+
+.zoom-in, .zoom-out {
+    position: absolute;
+}
+
+.zoom-in {
+    top: 10px; /* Adjust as needed */
+}
+
+.zoom-out {
+    bottom: 10px; /* Adjust as needed */
+}
+
+.pan-left, .pan-right {
+    position: absolute;
+}
+
+.pan-left {
+    left: 10px; /* Adjust as needed */
+}
+
+.pan-right {
+    right: 10px; /* Adjust as needed */
+}
+
+/* Optional: add hover effect for buttons */
+.control-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+
     </style>
 </head>
 <body>
+    
+
     <div id="map-container">
         <div id="map"></div>
         <div class="right-sidebar">
             <div class="checkbox-container">
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Search...">
+                    <button onclick="searchData()">Search</button>
+                </div>
+            
                 <label><input type="checkbox" id="boundaryCheckbox" checked> Boundary</label>
                 <label><input type="checkbox" id="hotelCheckbox" checked> Hotels</label>
                 <label> Roads</label>
@@ -157,15 +263,22 @@
                 <button class="print-button" onclick="printMap()">Print Map</button>
 
                 <!-- <button class="print-button" onclick="printMap()">Print Map</button> -->
-                <button onclick="resetZoom()">Reset Zoom</button>
+                <button class="reset" onclick="resetZoom()">Reset Zoom</button>
             </div>
+            <div class="map-navigation-controls">
+                <button onclick="smoothZoomIn()" class="control-button zoom-in">+</button>
+                <button onclick="panLeft()" class="control-button pan-left">&#8592;</button>
+                <button onclick="panRight()" class="control-button pan-right">&#8594;</button>
+                <button onclick="smoothZoomOut()" class="control-button zoom-out">&#8722;</button>
+            </div>
+            
+            
         </div>
     </div>
 
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="https://unpkg.com/leaflet-ajax/dist/leaflet.ajax.min.js"></script>
-    <script src="https://unpkg.com/leaflet-easyprint/dist/bundle.js"></script>
-    <script src="path/to/leaflet-measure.js"></script>
+
     
     <script>
       //  var map = L.map('map').setView([36.3167, 74.6500], 9);
@@ -184,7 +297,46 @@
                 layer.bindTooltip(feature.properties.name, { permanent: false, direction: 'auto' });
             }
         }
+        function searchData() {
+            var input = document.getElementById('searchInput').value.toLowerCase();
+            var selectedLayers = [];
 
+            // List of your checkbox IDs
+            var checkboxes = ['villagesCheckbox','passesCheckbox', 'hotelCheckbox' , 'touristPointsCheckbox' ]; // Add all your checkbox IDs here
+            checkboxes.forEach(function(checkboxId) {
+                var checkbox = document.getElementById(checkboxId);
+                
+                if (checkbox && checkbox.checked) {
+                    selectedLayers.push(checkboxId.replace('Checkbox', '').toLowerCase());
+                }
+            });
+
+            // Filter and search logic
+            selectedLayers.forEach(function(layer) {
+                if (window[layer + 'Layer']) {
+                    window[layer + 'Layer'].eachLayer(function(layer) {
+                        if (layer.feature && layer.feature.properties) {
+                            if (input.trim() === '') {
+        // Exit the function if the search input is empty
+        return;
+    }
+
+                            var name = layer.feature.properties.name;
+                            if (name && name.toLowerCase().includes(input)) {
+                                layer.openPopup();
+                            }
+                        }
+                    });
+                }
+            });
+        }
+
+        // Event listener for Enter key in the search input
+        document.getElementById('searchInput').addEventListener('keypress', function(event) {
+            if (event.key === 'Enter') {
+                searchData();
+            }
+        });
         // Define custom icons using the names of the GeoJSON files
         var icons = {
             hotels: L.icon({ iconUrl: 'icons/hotel.svg', iconSize: [20, 20] }),
@@ -447,6 +599,32 @@ label.addTo(map);
 }
         function resetZoom() {
             map.setView([36.3167, 74.6500], 9);
+        }
+        function smoothZoomIn() {
+            var currentZoom = map.getZoom();
+            var newZoom = currentZoom + .3;
+            map.flyTo(map.getCenter(), newZoom);
+        }
+
+        function smoothZoomOut() {
+            var currentZoom = map.getZoom();
+            var newZoom = currentZoom - .3;
+            map.flyTo(map.getCenter(), newZoom);
+        }
+
+        // Smooth Panning Functions
+        function panLeft() {
+            var currentCenter = map.getCenter();
+            var offsetX = 0.05; // Adjust the offset value as needed
+            var newCenter = L.latLng(currentCenter.lat, currentCenter.lng - offsetX);
+            map.panTo(newCenter);
+        }
+
+        function panRight() {
+            var currentCenter = map.getCenter();
+            var offsetX = 0.01; // Adjust the offset value as needed
+            var newCenter = L.latLng(currentCenter.lat, currentCenter.lng + offsetX);
+            map.panTo(newCenter);
         }
     </script>
 </body>
