@@ -346,4 +346,26 @@ window.print(); // This triggers the browser's print dialog
   }
   // Assuming map is already initialized and assigned to variable 'map'
 
+// Initialize the FeatureGroup to store editable layers
+var drawnItems = new L.FeatureGroup();
+map.addLayer(drawnItems);
+
+var drawControl = new L.Control.Draw({
+  edit: {
+    featureGroup: drawnItems,
+  },
+  draw: {
+    polyline: true,
+    polygon: true,
+    rectangle: true,
+    circle: true,
+    marker: true
+  }
+});
+map.addControl(drawControl);
+
+map.on(L.Draw.Event.CREATED, function(event) {
+  var layer = event.layer;
+  drawnItems.addLayer(layer);
+});
 
