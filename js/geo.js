@@ -41,7 +41,13 @@ closePopupOnClick: false // Disable closing popups on map click
 
                       var name = layer.feature.properties.name;
                       if (name && name.toLowerCase().includes(input)) {
-                          layer.openPopup();
+                          
+
+                        // Zoom to the feature
+                        var coordinates = layer.feature.geometry.coordinates;
+                        map.setView([coordinates[1], coordinates[0]], 15); // 15 is the zoom level
+                        layer.openPopup();
+
                       }
                   }
               });
