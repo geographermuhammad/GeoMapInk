@@ -132,7 +132,7 @@
         "OID_" : 0,
         "name" : "Chillinji Pass",
         "desc" : "A high mountain pass in Gilgit-Baltistan, Pakistan.   ",
-        "imageUrl": "src/pass/chillinji.jpg",
+        "imageUrl": "src/pass/chill.jpg",
         "FolderPath" : "passes1.kmz/track",
         "SymbolID" : 0,
         "AltMode" : -1,

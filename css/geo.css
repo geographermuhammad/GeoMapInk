@@ -79,12 +79,14 @@ width: 100%;
     margin-left: 20px;
 }
 .info.legend {
+
 padding: 6px 8px;
-background: white; /* Ensure the background is white */
+background: hsl(0, 0%, 99%); /* Ensure the background is white */
 box-shadow: 0 0 15px rgba(0,0,0,0.2);
 border-radius: 5px;
 line-height: 18px;
-color: #555;
+color: #0d0d0d;
+font-weight: bold;
 z-index: 1000; /* Adjust this value as needed */
 
 }
