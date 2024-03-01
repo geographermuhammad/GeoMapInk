@@ -1,5 +1,5 @@
 
-//  var map = L.map('map').setView([36.3167, 74.6500], 9);
+//  var map = L.map('map').setView([25.3167, 67.6500], 9);
   var map = L.map('map', {
 closePopupOnClick: false // Disable closing popups on map click
 }).setView([36.3167, 74.6500], 9);
